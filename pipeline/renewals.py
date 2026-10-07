@@ -31,6 +31,7 @@ FEATURES = {
     "channel_referral": "Acquired via referral / word of mouth",
 }
 SCHEDULED_CANCEL_P = 0.03
+MIN_SUPPORT = 25
 
 
 def term_features(terms: pd.DataFrame, raw: Raw, as_of) -> pd.DataFrame:
@@ -77,12 +78,13 @@ def renewal_events(feat: pd.DataFrame, as_of) -> pd.DataFrame:
 
 
 class SelfServeRenewalModel:
-    def __init__(self, C=1.0):
+    def __init__(self, C=0.1):  # strong shrinkage: several signals are rare
         self.model = LogisticRegression(C=C, max_iter=2000)
 
     def fit(self, events: pd.DataFrame):
         self.model.fit(events[list(FEATURES)], events["renewed"])
         self.base_rate = events["renewed"].mean()
+        self.support = events[list(FEATURES)].sum()
         return self
 
     def predict(self, rows: pd.DataFrame) -> np.ndarray:
@@ -94,6 +96,8 @@ class SelfServeRenewalModel:
     def drivers(self):
         out = []
         for f, coef in zip(FEATURES, self.model.coef_[0]):
+            if self.support[f] < MIN_SUPPORT:  # too rare to interpret; still used by the model
+                continue
             out.append(dict(feature=f, label=FEATURES[f], oddsRatio=round(float(np.exp(coef)), 3),
                             direction="protective" if coef > 0 else "risk"))
         return sorted(out, key=lambda d: -abs(np.log(d["oddsRatio"])))
