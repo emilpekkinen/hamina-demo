@@ -299,7 +299,7 @@ CREATE VIEW v_mrr_by_month AS
 WITH RECURSIVE months(month_start) AS (
     SELECT '2022-01-01'
     UNION ALL
-    SELECT date(month_start, '+1 month') FROM months WHERE month_start < '2025-12-01'
+    SELECT date(month_start, '+1 month') FROM months WHERE month_start < '2026-09-01'
 ), month_ends AS (
     SELECT strftime('%Y-%m', month_start) AS month,
            CAST(strftime('%s', month_start, '+1 month') AS INTEGER) - 1 AS month_end
@@ -313,7 +313,7 @@ WITH RECURSIVE months(month_start) AS (
     JOIN prices pr    ON pr.id = il.price_id
     JOIN customers c  ON c.id = i.customer_id
     LEFT JOIN charges ch ON ch.id = i.charge_id
-    WHERE i.status = 'paid' AND COALESCE(ch.refunded, 0) = 0
+    WHERE i.status IN ('paid', 'open') AND COALESCE(ch.refunded, 0) = 0
 )
 SELECT me.month,
        COUNT(l.mrr)                                                                   AS active_subscriptions,

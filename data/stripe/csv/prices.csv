@@ -1,0 +1,27 @@
+id,product_id,nickname,plan,currency,unit_amount,type,recurring_interval,recurring_interval_count,active,created
+price_1PzBpWVBZov7oibPYdDyuoxi,prod_M3CS6GTT1ck9Uq,Network Planner – 6-Month License,6_month,eur,59900,recurring,month,6,1,1642411800
+price_15mHNODG6kmsTAyehOoCotl4,prod_M3CS6GTT1ck9Uq,Network Planner – 12-Month License,12_month,eur,100000,recurring,year,1,1,1642411800
+price_1jY4vdGA0UAGDPNOnXdqIbLt,prod_UkwBoiFOtO8drf,Enterprise – Kaarna University of Technology – 2023 term,enterprise,eur,11000000,recurring,year,1,1,1678116687
+price_1gcMtCQPHd41DMi83xKBhJdj,prod_UkwBoiFOtO8drf,Enterprise – St. Alder Regional Health System – 2023 term,enterprise,eur,13500000,recurring,year,1,1,1693575055
+price_1kNucL8K1EGHtRTSb4C2hpst,prod_UkwBoiFOtO8drf,Enterprise – Voltmark Fertigungstechnik GmbH – 2024 term,enterprise,eur,18000000,recurring,year,1,1,1706865217
+price_1uZa4axMCwJWw8qtQqCWHMv4,prod_UkwBoiFOtO8drf,Enterprise – Kaarna University of Technology – 2024 term,enterprise,eur,12100000,recurring,year,1,1,1709998287
+price_1LbL3kHQuQKXYwFdpvIdOKzy,prod_UkwBoiFOtO8drf,Enterprise – Costa Lucera Hotels & Resorts – 2024 term,enterprise,eur,12400000,recurring,year,1,1,1717162679
+price_1o3KIW4QVM1kepQoEgFKRbNU,prod_UkwBoiFOtO8drf,Enterprise – St. Alder Regional Health System – 2024 term,enterprise,eur,15000000,recurring,year,1,1,1724938255
+price_1V8biFFT3gsLkklONTvco829,prod_UkwBoiFOtO8drf,Enterprise – Halden Ridge State University – 2025 term,enterprise,eur,21000000,recurring,year,1,1,1737112219
+price_1rTMZE40E5ZbibPh9OqKXuUL,prod_UkwBoiFOtO8drf,Enterprise – Voltmark Fertigungstechnik GmbH – 2025 term,enterprise,eur,19800000,recurring,year,1,1,1738746817
+price_1eoRQItZvYa6G17hbqlRHK6t,prod_UkwBoiFOtO8drf,Enterprise – Kaarna University of Technology – 2025 term,enterprise,eur,14500000,recurring,year,1,1,1741707087
+price_1ZgpGCHiVdmob2JesrSodxIF,prod_UkwBoiFOtO8drf,Enterprise – Kivimet Paper & Packaging Oyj – 2025 term,enterprise,eur,16000000,recurring,year,1,1,1743249111
+price_1xzxDaWgGGhkvMJFPU46tFX0,prod_UkwBoiFOtO8drf,Enterprise – Marlowe Valley University Hospital – 2025 term,enterprise,eur,28500000,recurring,year,1,1,1750668244
+price_1xd6YB8XMO7YYIMjQ8t99MSf,prod_UkwBoiFOtO8drf,Enterprise – St. Alder Regional Health System – 2025 term,enterprise,eur,16500000,recurring,year,1,1,1756215055
+price_1yryD9UhhmGgBr59pXM8uujF,prod_UkwBoiFOtO8drf,Enterprise – Aurelia Grand Hotels Group – 2025 term,enterprise,eur,11500000,recurring,year,1,1,1759416299
+price_1DDQ0U1Yys27dH20SskZP31T,prod_UkwBoiFOtO8drf,Enterprise – Halden Ridge State University – 2026 term,enterprise,eur,23100000,recurring,year,1,1,1768389019
+price_1rZNWjoHyFR0curJyiOr9KAW,prod_UkwBoiFOtO8drf,Enterprise – Nordhavn Port Authority – 2026 term,enterprise,eur,9500000,recurring,year,1,1,1770983328
+price_1ZmhFJFPY0kq3KkPRWNqnjbX,prod_UkwBoiFOtO8drf,Enterprise – Kaarna University of Technology – 2026 term,enterprise,eur,16000000,recurring,year,1,1,1773156687
+price_1VFZgTR9dq7pUTahBiDCorju,prod_UkwBoiFOtO8drf,Enterprise – Rheinfeld Automotive Systems GmbH – 2026 term,enterprise,eur,14000000,recurring,year,1,1,1774698925
+price_1QKFKLZSgO3CN9njJJlJYelB,prod_UkwBoiFOtO8drf,Enterprise – Kivimet Paper & Packaging Oyj – 2026 term,enterprise,eur,17600000,recurring,year,1,1,1774785111
+price_1H2NeAAS7DuM26JCZiDWX5sP,prod_UkwBoiFOtO8drf,Enterprise – Lakeshore Community College District – 2026 term,enterprise,eur,7000000,recurring,year,1,1,1777646587
+price_1yY5CQCVPGc5AX1pZyHePghN,prod_UkwBoiFOtO8drf,Enterprise – Northgate Retail Holdings plc – 2026 term,enterprise,eur,22000000,recurring,year,1,1,1781683270
+price_1eyBNOOKV5fLpD5Q9SNMVqKg,prod_UkwBoiFOtO8drf,Enterprise – Marlowe Valley University Hospital – 2026 term,enterprise,eur,29900000,recurring,year,1,1,1782377044
+price_1wZemMwqQMUH4bglPawAOQ2U,prod_UkwBoiFOtO8drf,Enterprise – Grand Meridian Resorts – 2026 term,enterprise,eur,8500000,recurring,year,1,1,1784905734
+price_11NXPgeqlW2EMdJUClkB7gM6,prod_UkwBoiFOtO8drf,Enterprise – St. Alder Regional Health System – 2026 term,enterprise,eur,18200000,recurring,year,1,1,1787837455
+price_1QKmUxIkeIp2AZ3qp40IOXjH,prod_UkwBoiFOtO8drf,Enterprise – Pohjanmaa Hospital District – 2026 term,enterprise,eur,12000000,recurring,year,1,1,1789027435

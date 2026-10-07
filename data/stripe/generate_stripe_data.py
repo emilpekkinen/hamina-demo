@@ -12,6 +12,7 @@ Output: hamina_stripe.db  +  csv/<table>.csv
 import calendar
 import csv
 import json
+import math
 import random
 import sqlite3
 import string
@@ -30,13 +31,17 @@ CSV_DIR = ROOT / "csv"
 SCHEMA_PATH = ROOT / "schema.sql"
 
 UTC = timezone.utc
-DATA_END = datetime(2025, 12, 31, 23, 59, 59, tzinfo=UTC)  # snapshot moment
+DATA_END = datetime(2026, 9, 30, 23, 59, 59, tzinfo=UTC)  # snapshot moment
 FIRST_SALE_MONTH = (2022, 2)
 
 # Net cash revenue per calendar year in EUR (charges - refunds). The chart shows
 # 0,1 / 0,5 / 1,1 / 2,1 M EUR and +90 % for 2025 vs 2024; exact values below are
 # read off the bar heights (the 2022 bar sits at roughly 0.06 M).
-REVENUE_TARGETS = {2022: 58_000, 2023: 504_000, 2024: 1_115_000, 2025: 2_119_000}
+# 2026 is an assumption (+60-70 % growth); only Jan-Sep exists in the data.
+REVENUE_TARGETS = {2022: 58_000, 2023: 504_000, 2024: 1_115_000, 2025: 2_119_000, 2026: 3_420_000}
+
+# Full-year self-serve plan for years cut by the snapshot (otherwise: target - enterprise cash).
+SELF_SERVE_PLAN = {2026: 1_320_000}
 
 # Reserved TLD so no generated address can ever reach a real mailbox.
 EMAIL_TLD = "example"
@@ -45,37 +50,60 @@ PRICE_6M = 599_00
 PRICE_12M = 1_000_00
 
 # Self-serve month-over-month growth inside each year (shapes the monthly curve).
-MONTHLY_GROWTH = {2022: 1.18, 2023: 1.09, 2024: 1.05, 2025: 1.04}
+MONTHLY_GROWTH = {2022: 1.18, 2023: 1.09, 2024: 1.05, 2025: 1.04, 2026: 1.03}
 SEASONALITY = {1: 0.95, 2: 1.0, 3: 1.05, 4: 1.0, 5: 1.0, 6: 0.95,
                7: 0.8, 8: 0.9, 9: 1.1, 10: 1.1, 11: 1.1, 12: 0.85}
 
 # Custom enterprise contracts: annual, invoiced upfront, paid by bank transfer.
 # `terms` are the yearly contract values in EUR (first term, then renewals).
+# `net` is the payment term in days; `pay` the days from invoice to payment per term
+# (late payment ahead of a renewal is the main enterprise churn signal).
+# Terms that would start after the snapshot are not generated.
 ENTERPRISE_DEALS = [
     dict(name="Kaarna University of Technology", industry="university", country="FI", city="Tampere",
          contact=("Hannele Rautio", "Director of IT Infrastructure"), owner="Elina Saarela",
-         start=(2023, 3, 14), terms=[110_000, 121_000, 145_000]),
+         start=(2023, 3, 14), terms=[110_000, 121_000, 145_000, 160_000], net=30, pay=[18, 22, 27, 24]),
     dict(name="St. Alder Regional Health System", industry="hospital", country="US", city="Minneapolis",
          contact=("Marcus Ellery", "VP, Network & Infrastructure"), owner="Daniel Brooks",
-         start=(2023, 9, 5), terms=[135_000, 150_000, 165_000]),
+         start=(2023, 9, 5), terms=[135_000, 150_000, 165_000, 182_000], net=45, pay=[41, 44, 47, 38]),
     dict(name="Voltmark Fertigungstechnik GmbH", industry="manufacturing", country="DE", city="Stuttgart",
          contact=("Katrin Oberländer", "Head of IT Infrastructure"), owner="Elina Saarela",
-         start=(2024, 2, 12), terms=[180_000, 198_000]),
+         start=(2024, 2, 12), terms=[180_000, 198_000], net=30, pay=[26, 57],
+         churned=True, feedback="switched_service"),
     dict(name="Costa Lucera Hotels & Resorts", industry="hospitality", country="ES", city="Palma",
          contact=("Javier Montalbán", "Group IT Director"), owner="Elina Saarela",
-         start=(2024, 6, 3), terms=[124_000], churned=True, feedback="too_expensive"),
+         start=(2024, 6, 3), terms=[124_000], net=30, pay=[49], churned=True, feedback="too_expensive"),
     dict(name="Halden Ridge State University", industry="university", country="US", city="Columbus",
          contact=("Rebecca Lindholm", "Associate CIO, Network Services"), owner="Daniel Brooks",
-         start=(2025, 1, 20), terms=[210_000]),
+         start=(2025, 1, 20), terms=[210_000, 231_000], net=45, pay=[40, 44]),
     dict(name="Kivimet Paper & Packaging Oyj", industry="manufacturing", country="FI", city="Lahti",
          contact=("Pekka Vuorinen", "Head of OT & Plant Networks"), owner="Elina Saarela",
-         start=(2025, 4, 8), terms=[160_000]),
+         start=(2025, 4, 8), terms=[160_000, 176_000], net=30, pay=[21, 19]),
     dict(name="Marlowe Valley University Hospital", industry="hospital", country="GB", city="Leeds",
          contact=("Imogen Hartley", "Head of Digital Infrastructure"), owner="Daniel Brooks",
-         start=(2025, 7, 1), terms=[285_000]),
+         start=(2025, 7, 1), terms=[285_000, 299_000], net=60, pay=[55, 62]),
     dict(name="Aurelia Grand Hotels Group", industry="hospitality", country="NL", city="Amsterdam",
          contact=("Willem Verhoeven", "Director of Hotel Technology"), owner="Elina Saarela",
-         start=(2025, 10, 6), terms=[115_000]),
+         start=(2025, 10, 6), terms=[115_000, 120_000], net=30, pay=[61, 30]),
+    # 2026 new logos (closed-won in HubSpot).
+    dict(name="Nordhavn Port Authority", industry="logistics", country="DK", city="Aarhus",
+         contact=("Mette Kjærgaard", "Head of Digital Operations"), owner="Sofia Lindqvist",
+         start=(2026, 2, 16), terms=[95_000], net=30, pay=[24]),
+    dict(name="Rheinfeld Automotive Systems GmbH", industry="manufacturing", country="DE", city="Ingolstadt",
+         contact=("Jürgen Albrecht", "Leiter IT-Infrastruktur"), owner="Elina Saarela",
+         start=(2026, 4, 7), terms=[140_000], net=30, pay=[33]),
+    dict(name="Lakeshore Community College District", industry="university", country="US", city="Milwaukee",
+         contact=("Denise Okafor", "Director of Network Services"), owner="Daniel Brooks",
+         start=(2026, 5, 11), terms=[70_000], net=45, pay=[43]),
+    dict(name="Northgate Retail Holdings plc", industry="retail", country="GB", city="Manchester",
+         contact=("Oliver Pennington", "Head of Store Technology"), owner="Sofia Lindqvist",
+         start=(2026, 6, 22), terms=[220_000], net=30, pay=[29]),
+    dict(name="Grand Meridian Resorts", industry="hospitality", country="US", city="Orlando",
+         contact=("Tasha Whitfield", "VP of IT"), owner="Daniel Brooks",
+         start=(2026, 8, 3), terms=[85_000], net=30, pay=[36]),
+    dict(name="Pohjanmaa Hospital District", industry="hospital", country="FI", city="Vaasa",
+         contact=("Ilkka Peltola", "ICT Infrastructure Manager"), owner="Elina Saarela",
+         start=(2026, 9, 14), terms=[120_000], net=30, pay=[27]),
 ]
 
 # ---------------------------------------------------------------------------
@@ -174,6 +202,12 @@ PERSONAS = {
 
 CHANNELS = {"organic_search": 30, "word_of_mouth": 20, "linkedin": 12, "webinar": 10, "youtube": 8,
             "partner_referral": 8, "conference": 7, "paid_search": 5}
+# Account health is a hidden per-customer score: it drives renewal, and shows up in Stripe
+# beforehand as seat reductions, failed renewal payments and late invoice payments.
+CHANNEL_HEALTH = {"organic_search": 0.0, "word_of_mouth": 0.35, "linkedin": -0.1, "webinar": 0.15, "youtube": -0.05,
+                  "partner_referral": 0.4, "conference": 0.2, "paid_search": -0.35}
+# Share of self-serve buyers (multi-seat teams) who ask to pay by invoice instead of card.
+P_INVOICE_BILLING = {"network_consultant": 0.05, "it_lead": 0.35, "head_of_wireless": 0.45}
 CHURN_FEEDBACK = {"unused": 35, "too_expensive": 20, "switched_service": 10, "missing_features": 8, "other": 12, None: 15}
 
 # ---------------------------------------------------------------------------
@@ -215,6 +249,10 @@ def slug(text):
     text = text.replace("ø", "o").replace("Ø", "O").replace("ß", "ss").replace("æ", "ae")
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
     return "".join(c if c.isalnum() else "-" for c in text.lower()).strip("-").replace("--", "-")
+
+
+def sigmoid(x):
+    return 1 / (1 + math.exp(-x))
 
 
 def eur(cents):
@@ -297,11 +335,11 @@ def create_customer(when, **fields):
     return cust
 
 
-def create_subscription(cust, price, qty, when, collection="charge_automatically"):
+def create_subscription(cust, price, qty, when, collection="charge_automatically", net=30):
     start = ts(when)
     sub = dict(id=new_id("sub", 24, "1"), customer_id=cust["id"], price_id=price["id"], quantity=qty,
                status="active", collection_method=collection,
-               days_until_due=30 if collection == "send_invoice" else None, currency="eur",
+               days_until_due=net if collection == "send_invoice" else None, currency="eur",
                created=start, start_date=start, current_period_start=start,
                current_period_end=ts(add_months(when, term_months(price))),
                cancel_at_period_end=0, cancel_at=None, canceled_at=None, ended_at=None,
@@ -319,7 +357,7 @@ def create_invoice(cust, sub, price, qty, when, reason, period_start, period_end
                customer_id=cust["id"], subscription_id=sub["id"], status="open", billing_reason=reason,
                collection_method=sub["collection_method"], currency="eur", subtotal=amount, tax=0, total=amount,
                amount_due=amount, amount_paid=0, amount_remaining=amount, attempt_count=0, created=ts(when),
-               due_date=ts(when + timedelta(days=30)) if send else None, paid_at=None,
+               due_date=ts(when + timedelta(days=sub["days_until_due"])) if send else None, paid_at=None,
                period_start=ts(period_start), period_end=ts(period_end),
                payment_intent_id=new_id("pi", 24, "3"), charge_id=None)
     invoices.append(inv)
@@ -364,6 +402,14 @@ def create_charge(cust, inv, when, ok, failure=None):
     return ch
 
 
+def settle_invoice(cust, inv, paid_at):
+    """Bank-transfer payment of a sent invoice; stays open if it lands after the snapshot."""
+    if paid_at <= DATA_END:
+        create_charge(cust, inv, paid_at, ok=True)
+        return True
+    return False
+
+
 def create_refund(cust, ch, when):
     amount = ch["amount"]
     bt = dict(id=new_id("txn", 24, "3"), type="refund", reporting_category="refund", source_id=None,
@@ -402,23 +448,27 @@ def build_enterprise(enterprise_product):
         for i, value in enumerate(deal["terms"]):
             period_start = add_months(start, 12 * i)
             period_end = add_months(start, 12 * (i + 1))
+            if period_start > DATA_END:
+                break
             price = dict(id=new_id("price", 24, "1"), product_id=enterprise_product["id"],
                          nickname=f"Enterprise – {deal['name']} – {period_start.year} term", plan="enterprise",
                          currency="eur", unit_amount=value * 100, type="recurring", recurring_interval="year",
                          recurring_interval_count=1, active=1, created=ts(period_start - timedelta(days=rng.randint(3, 10))))
             prices.append(price)
             if sub is None:
-                sub = create_subscription(cust, price, 1, start, collection="send_invoice")
+                sub = create_subscription(cust, price, 1, start, collection="send_invoice", net=deal["net"])
                 reason = "subscription_create"
             else:
                 sub.update(price_id=price["id"], current_period_start=ts(period_start), current_period_end=ts(period_end))
                 reason = "subscription_cycle"
             inv = create_invoice(cust, sub, price, 1, period_start, reason, period_start, period_end, "Hamina Enterprise")
-            paid_at = period_start + timedelta(days=rng.randint(9, 34), hours=rng.randint(0, 6), minutes=rng.randrange(60))
-            create_charge(cust, inv, paid_at, ok=True)
+            paid_at = period_start + timedelta(days=deal["pay"][i], hours=rng.randint(0, 6), minutes=rng.randrange(60))
+            if not settle_invoice(cust, inv, paid_at) and ts(DATA_END) > inv["due_date"]:
+                sub["status"], cust["delinquent"] = "past_due", 1
 
         if deal.get("churned"):
             end = add_months(start, 12 * len(deal["terms"]))
+            assert end <= DATA_END
             sub.update(status="canceled", cancel_at_period_end=1, cancel_at=ts(end), ended_at=ts(end),
                        canceled_at=ts(end - timedelta(days=rng.randint(30, 60))),
                        cancellation_reason="cancellation_requested", cancellation_feedback=deal.get("feedback"))
@@ -458,6 +508,7 @@ def make_selfserve_customer(when, persona):
         company_name=company, contact_name=name, job_title=title, segment="self_serve", industry=industry,
         address_country=country, address_city=rng.choice(CITIES[country]))
     cust.update(persona=persona, acquisition_channel=weighted(CHANNELS))
+    cust["_health"] = rng.gauss(0, 1) + CHANNEL_HEALTH[cust["acquisition_channel"]]
     cust["metadata"] = json.dumps({"segment": "self_serve", "persona": persona, "job_title": title,
                                    "company_name": company, "acquisition_channel": cust["acquisition_channel"]},
                                   ensure_ascii=False)
@@ -470,10 +521,40 @@ def make_selfserve_customer(when, persona):
     return cust
 
 
+def invoice_payment_delay(cust, net):
+    """Days from invoice to payment for invoice-billed self-serve customers; None = never pays."""
+    h = cust["_health"]
+    if h < -1.4 and rng.random() < 0.35:
+        return None
+    if rng.random() < 0.10 + 0.30 * sigmoid(-2 * (h + 0.6)):
+        return net + rng.randint(6, 55)  # late payer
+    return rng.randint(max(2, int(net * 0.3)), net)
+
+
+def collect_invoice(cust, sub, inv, when):
+    """Invoice-billed (bank transfer) collection. Returns paid | open | past_due | failed."""
+    delay = invoice_payment_delay(cust, sub["days_until_due"])
+    if delay is not None:
+        paid_at = when + timedelta(days=delay, hours=rng.randint(0, 8), minutes=rng.randrange(60))
+        if settle_invoice(cust, inv, paid_at):
+            return "paid", paid_at
+    write_off = when + timedelta(days=sub["days_until_due"] + 60)
+    if delay is None and write_off <= DATA_END:
+        return "failed", write_off
+    return ("past_due" if ts(DATA_END) > inv["due_date"] else "open"), DATA_END
+
+
 def new_purchase(when, persona, plan, qty, p6, p12, clean=False):
-    """A new customer buys a license through checkout. `clean` skips failures/refunds."""
+    """A new customer buys a license through checkout (or by invoice). `clean` skips failures/refunds."""
     cust = make_selfserve_customer(when - timedelta(seconds=rng.randint(25, 240)), persona)
     price = p12 if plan == "12m" else p6
+    if not clean and qty >= 2 and rng.random() < P_INVOICE_BILLING[persona]:
+        cust["_pm"] = dict(type="bank_transfer", country=cust["address_country"])
+        sub = create_subscription(cust, price, qty, when, collection="send_invoice", net=rng.choice([14, 30, 30]))
+        inv = create_invoice(cust, sub, price, qty, when, "subscription_create",
+                             when, add_months(when, term_months(price)), "Hamina Network Planner")
+        apply_collection_outcome(sub, cust, inv, *collect_invoice(cust, sub, inv, when))
+        return sub
     sub = create_subscription(cust, price, qty, when)
     inv = create_invoice(cust, sub, price, qty, when, "subscription_create",
                          when, add_months(when, term_months(price)), "Hamina Network Planner")
@@ -497,19 +578,29 @@ def renewal_probability(sub):
     p = 0.58 if six_month else 0.74
     p += min(0.12, 0.04 * (sub["_terms"] - 1))  # loyalty grows with tenure
     p += {"network_consultant": 0.04, "it_lead": -0.05, "head_of_wireless": 0.02}[sub["_cust"]["persona"]]
-    return p
+    p += 0.10 * max(-2.5, min(2.5, sub["_cust"]["_health"]))
+    return min(0.97, max(0.05, p))
+
+
+def apply_collection_outcome(sub, cust, inv, outcome, at):
+    if outcome == "past_due":
+        sub["status"], cust["delinquent"] = "past_due", 1
+    elif outcome == "failed":
+        inv["status"], cust["delinquent"] = "uncollectible", 1
+        sub.update(status="canceled", canceled_at=ts(at), ended_at=ts(at), cancellation_reason="payment_failed")
 
 
 def collect_renewal(cust, inv, when):
     """Charge a renewal invoice with Stripe-style retries. Returns paid | past_due | failed."""
-    pm = cust["_pm"]
-    failure, p_recover = None, 0.55
+    pm, h = cust["_pm"], cust["_health"]
+    failure, p_recover = None, 0.35 + 0.35 * sigmoid(h)
     if pm["type"] == "card" and (when.year, when.month) > pm["exp"]:
         if rng.random() < 0.5:  # card network auto-updated the expiry
             pm["exp"] = (pm["exp"][0] + 3, pm["exp"][1])
         else:
-            failure, p_recover = ("expired_card", "Your card has expired."), 0.6
-    if failure is None and rng.random() < (0.05 if pm["type"] == "card" else 0.02):
+            failure, p_recover = ("expired_card", "Your card has expired."), 0.45 + 0.3 * sigmoid(h)
+    p_fail = 0.025 + 0.08 * sigmoid(-2 * (h + 0.5))
+    if failure is None and rng.random() < (p_fail if pm["type"] == "card" else p_fail / 2):
         failure = rng.choice([("card_declined", "Your card was declined."),
                               ("card_declined", "Your card has insufficient funds.")]) if pm["type"] == "card" \
             else ("payment_failed", "The SEPA Direct Debit payment failed: insufficient funds.")
@@ -542,15 +633,17 @@ def process_renewal(sub, p6, p12):
                    cancellation_reason="cancellation_requested", cancellation_feedback=weighted(CHURN_FEEDBACK))
         return
 
+    h = cust["_health"]
     price, qty = sub["_price"], sub["quantity"]
-    if price is p6 and rng.random() < 0.18:
+    if price is p6 and rng.random() < 0.06 + 0.22 * sigmoid(1.5 * h):
         price = p12  # upgrade to annual
-    elif price is p12 and rng.random() < 0.03:
+    elif price is p12 and rng.random() < 0.01 + 0.05 * sigmoid(-1.5 * h):
         price = p6
     r = rng.random()
-    if r < 0.06:
-        qty += 1  # seat expansion
-    elif r < 0.08 and qty > 1:
+    p_up, p_down = 0.02 + 0.09 * sigmoid(1.5 * h), (0.02 + 0.14 * sigmoid(-1.5 * (h + 0.3))) if qty > 1 else 0
+    if r < p_up:
+        qty += 1 + (rng.random() < 0.25)  # seat expansion
+    elif r < p_up + p_down:
         qty -= 1
 
     months = term_months(price)
@@ -559,12 +652,12 @@ def process_renewal(sub, p6, p12):
     sub.update(price_id=price["id"], quantity=qty, current_period_start=ts(when), current_period_end=ts(period_end),
                _price=price, _months=sub["_months"] + months, _terms=sub["_terms"] + 1, _next=period_end)
 
-    outcome, at = collect_renewal(cust, inv, when)
-    if outcome == "past_due":
-        sub["status"], cust["delinquent"] = "past_due", 1
-    elif outcome == "failed":
-        inv["status"], cust["delinquent"] = "uncollectible", 1
-        sub.update(status="canceled", canceled_at=ts(at), ended_at=ts(at), cancellation_reason="payment_failed")
+    if sub["collection_method"] == "send_invoice":
+        outcome, at = collect_invoice(cust, sub, inv, when)
+    else:
+        outcome, at = collect_renewal(cust, inv, when)
+    apply_collection_outcome(sub, cust, inv, outcome, at)
+    cust["_health"] += rng.gauss(-0.05, 0.45)  # health drifts between terms
 
 
 def month_range():
@@ -576,11 +669,12 @@ def month_range():
 
 def build_self_serve(p6, p12):
     # Self-serve has to deliver whatever the enterprise contracts leave of each year's target.
-    ss_target = {y: t * 100 - net_cash["enterprise"][y] for y, t in REVENUE_TARGETS.items()}
+    ss_target = {y: SELF_SERVE_PLAN[y] * 100 if y in SELF_SERVE_PLAN else t * 100 - net_cash["enterprise"][y]
+                 for y, t in REVENUE_TARGETS.items()}
     months = list(month_range())
     cumulative = {}
     for year in REVENUE_TARGETS:
-        ms = [m for y, m in months if y == year]
+        ms = list(range(FIRST_SALE_MONTH[1] if year == FIRST_SALE_MONTH[0] else 1, 13))  # full year, even if cut
         weights = [MONTHLY_GROWTH[year] ** i * SEASONALITY[m] for i, m in enumerate(ms)]
         running = 0.0
         for m, w in zip(ms, weights):
@@ -592,7 +686,7 @@ def build_self_serve(p6, p12):
         next_month = add_months(datetime(year, month, 1, tzinfo=UTC), 1)
         for sub in sorted((s for s in active if s["_next"] < next_month), key=lambda s: s["_next"]):
             process_renewal(sub, p6, p12)
-        active = [s for s in active if s["status"] == "active"]
+        active = [s for s in active if s["status"] in ("active", "past_due")]
 
         # New customers fill the rest of the month's revenue budget. December stops a
         # little short so the year-end close below has room to land on the target.
@@ -603,7 +697,7 @@ def build_self_serve(p6, p12):
             if net_cash["self_serve"][year] + amount > budget:
                 break
             sub = new_purchase(random_dt_in_month(year, month), persona, plan, qty, p6, p12)
-            if sub["status"] == "active":
+            if sub["status"] in ("active", "past_due"):
                 sub["_next"] = add_months(sub["_anchor"], sub["_months"])
                 active.append(sub)
 
@@ -662,7 +756,7 @@ def report(con):
     print("Rows per table")
     for table, rows in TABLES:
         print(f"  {table:<22}{len(rows):>7,}")
-    print("\nNet cash revenue vs target (EUR)")
+    print("\nNet cash revenue vs target (EUR; the snapshot year is year-to-date vs full-year plan)")
     print(f"  {'year':<6}{'target':>12}{'actual':>14}{'diff':>9}{'self-serve':>14}{'enterprise':>14}")
     for year, charged, gross, refunded, net in con.execute("SELECT * FROM v_revenue_by_year"):
         y = int(year)
@@ -670,7 +764,14 @@ def report(con):
               f"{net_cash['self_serve'][y] / 100:>14,.0f}{net_cash['enterprise'][y] / 100:>14,.0f}")
     y24, y25 = (r[0] for r in con.execute(
         "SELECT net_revenue_eur FROM v_revenue_by_year WHERE year IN ('2024', '2025') ORDER BY year"))
-    print(f"\n  2025 vs 2024: {y25 / y24 - 1:+.0%}")
+    print(f"\n  2025 vs 2024: {y25 / y24 - 1:+.0%}   2026 plan vs 2025: {REVENUE_TARGETS[2026] / y25 - 1:+.0%}")
+    print("\nSubscriptions by status")
+    for row in con.execute("SELECT c.segment, s.status, s.collection_method, COUNT(*) FROM subscriptions s "
+                           "JOIN customers c ON c.id = s.customer_id GROUP BY 1, 2, 3"):
+        print("  ", *row)
+    print("\nOpen invoices at snapshot")
+    for row in con.execute("SELECT COUNT(*), SUM(amount_remaining) / 100.0 FROM invoices WHERE status = 'open'"):
+        print("  ", *row)
 
 
 def main():
