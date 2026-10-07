@@ -41,6 +41,19 @@ cd web && npm install && npm run dev
 
 The AI weekly brief uses the OpenAI Responses API: set `OPEN_AI_API_KEY` (and optionally `OPENAI_MODEL`, default `gpt-5.5`) in `web/.env.local` locally and in Vercel → Project → Settings → Environment Variables.
 
+## Use it from Claude (MCP)
+
+The app exposes a read-only remote MCP server at `https://hamina-revops-demo.vercel.app/api/mcp` (Streamable HTTP)
+with 12 tools: forecast overview, monthly forecast, open deals, account lookup, renewal risks, cash outlook, retention,
+marketing performance, campaigns, what-if scenarios, model trust and data lineage.
+
+- **claude.ai / Claude Desktop:** Settings → Connectors → Add custom connector → paste the URL.
+- **Claude Code:** `claude mcp add --transport http hamina-revops https://hamina-revops-demo.vercel.app/api/mcp`
+  (or open this repo; `.mcp.json` registers it).
+
+Try: *"Where will FY2026 land vs plan, and which three accounts should the CRO call this week?"* or
+*"What happens to FY2027 if we raise LinkedIn-heavy paid spend 30% and win rate 3 points?"*
+
 ## Swapping in real data
 
 The generators write tables shaped like Stripe API objects and HubSpot CRM v3 objects (with `propertiesWithHistory`).

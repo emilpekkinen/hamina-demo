@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "hamina-revops": { "type": "http", "url": "https://hamina-revops-demo.vercel.app/api/mcp" }
+  }
+}
