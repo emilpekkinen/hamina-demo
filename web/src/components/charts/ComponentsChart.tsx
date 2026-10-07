@@ -25,7 +25,6 @@ export function ComponentsChart({ monthly, height = 260 }: { monthly: ForecastDa
       const c = m.components!;
       return { month: m.month, ...c, total: COMPONENTS.reduce((s, k) => s + (c[k.key] ?? 0), 0) };
     });
-  const last = rows.length - 1;
   return (
     <div style={{ height }} className="w-full">
       <ResponsiveContainer width="100%" height="100%">
@@ -57,7 +56,7 @@ export function ComponentsChart({ monthly, height = 260 }: { monthly: ForecastDa
               stroke="#fff"
               strokeWidth={1}
               maxBarSize={24}
-              radius={i === COMPONENTS.length - 1 || (i === last && false) ? [4, 4, 0, 0] : 0}
+              radius={i === COMPONENTS.length - 1 ? [4, 4, 0, 0] : 0}
               isAnimationActive={false}
             />
           ))}

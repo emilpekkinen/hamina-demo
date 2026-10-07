@@ -1,6 +1,7 @@
 # Hamina Wireless — synthetic Stripe data (DEMO)
 
-Fabricated Stripe data for 2022–2025, calibrated so yearly revenue matches Hamina's published revenue chart.
+Fabricated Stripe data for Feb 2022 – Sep 2026. 2022–2025 are calibrated so yearly revenue matches Hamina's published
+revenue chart; 2026 assumes ~+61 % growth (full-year plan €3.42M) and only January–September exists.
 All customers, organisations, emails and payments are invented. Emails use the reserved `.example` TLD so
 nothing can reach a real mailbox.
 
@@ -29,13 +30,16 @@ the bar height in the chart (~0.06 M, which the chart labels as 0,1); change it 
 
 ## What is modelled
 
-- **Self-serve licenses** (862 customers): 6-month €599 and 12-month €1,000 subscriptions, 1–5 seats, paid by card
+- **Self-serve licenses** (~1,300 customers): 6-month €599 and 12-month €1,000 subscriptions, 1–5 seats, paid by card
   or SEPA debit. Buyers are network consultants, IT leads and heads of wireless (`customers.persona`).
   Includes renewals, churn, 6→12-month upgrades, seat changes, declined/expired cards with retries,
   involuntary churn, refunds and scheduled cancellations.
-- **Enterprise contracts** (8 customers, 13 payments): annual custom deals of €110k–€285k with universities,
-  factories, hospitals and hotels, invoiced net 30 and paid by bank transfer. Includes renewals with uplift and one churned account.
-- Snapshot moment is 2025-12-31 23:59:59 UTC: subscription statuses (`active`, `past_due`, `canceled`) are as of then.
+- **Enterprise contracts** (14 customers): annual custom deals of €70k–€299k with universities,
+  factories, hospitals and hotels, invoiced net 30–60 and paid by bank transfer. Includes renewals with uplift, two churned accounts and open invoices at the snapshot.
+- **Churn signals**: a hidden per-customer health score drives renewal and also shows up in Stripe beforehand (failed
+  payments, seat reductions, late invoice payments, acquisition channel). Some team buyers pay by invoice (net 14/30) and some pay late.
+  Enterprise contracts have net 30/45/60 terms; late payment before renewal is the enterprise churn signal.
+- Snapshot moment is 2026-09-30 23:59:59 UTC: subscription statuses (`active`, `past_due`, `canceled`) are as of then.
 
 ## Schema
 
