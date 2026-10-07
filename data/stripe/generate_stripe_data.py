@@ -100,7 +100,7 @@ ENTERPRISE_DEALS = [
          start=(2026, 6, 22), terms=[220_000], net=30, pay=[29]),
     dict(name="Grand Meridian Resorts", industry="hospitality", country="US", city="Orlando",
          contact=("Tasha Whitfield", "VP of IT"), owner="Daniel Brooks",
-         start=(2026, 8, 3), terms=[85_000], net=30, pay=[36]),
+         start=(2026, 8, 3), terms=[85_000], net=30, pay=[64]),  # new logo, paying late
     dict(name="Pohjanmaa Hospital District", industry="hospital", country="FI", city="Vaasa",
          contact=("Ilkka Peltola", "ICT Infrastructure Manager"), owner="Elina Saarela",
          start=(2026, 9, 14), terms=[120_000], net=30, pay=[27]),
@@ -559,7 +559,7 @@ def new_purchase(when, persona, plan, qty, p6, p12, clean=False):
     inv = create_invoice(cust, sub, price, qty, when, "subscription_create",
                          when, add_months(when, term_months(price)), "Hamina Network Planner")
     paid_at = when
-    if not clean and cust["_pm"]["type"] == "card" and rng.random() < 0.03:  # declined, retried at checkout
+    if not clean and cust["_pm"]["type"] == "card" and rng.random() < 0.01 + 0.12 * sigmoid(-2.5 * (cust["_health"] + 0.8)):  # declined, retried at checkout
         create_charge(cust, inv, when, ok=False, failure=("card_declined", "Your card was declined."))
         paid_at = when + timedelta(seconds=rng.randint(60, 540))
     ch = create_charge(cust, inv, paid_at, ok=True)
@@ -578,7 +578,7 @@ def renewal_probability(sub):
     p = 0.58 if six_month else 0.74
     p += min(0.12, 0.04 * (sub["_terms"] - 1))  # loyalty grows with tenure
     p += {"network_consultant": 0.04, "it_lead": -0.05, "head_of_wireless": 0.02}[sub["_cust"]["persona"]]
-    p += 0.10 * max(-2.5, min(2.5, sub["_cust"]["_health"]))
+    p += 0.27 * max(-2.5, min(2.5, sub["_cust"]["_health"]))
     return min(0.97, max(0.05, p))
 
 
@@ -599,7 +599,7 @@ def collect_renewal(cust, inv, when):
             pm["exp"] = (pm["exp"][0] + 3, pm["exp"][1])
         else:
             failure, p_recover = ("expired_card", "Your card has expired."), 0.45 + 0.3 * sigmoid(h)
-    p_fail = 0.025 + 0.08 * sigmoid(-2 * (h + 0.5))
+    p_fail = 0.02 + 0.2 * sigmoid(-3 * (h + 0.5))
     if failure is None and rng.random() < (p_fail if pm["type"] == "card" else p_fail / 2):
         failure = rng.choice([("card_declined", "Your card was declined."),
                               ("card_declined", "Your card has insufficient funds.")]) if pm["type"] == "card" \
@@ -657,7 +657,7 @@ def process_renewal(sub, p6, p12):
     else:
         outcome, at = collect_renewal(cust, inv, when)
     apply_collection_outcome(sub, cust, inv, outcome, at)
-    cust["_health"] += rng.gauss(-0.05, 0.45)  # health drifts between terms
+    cust["_health"] += rng.gauss(-0.05, 0.3)  # health drifts between terms
 
 
 def month_range():

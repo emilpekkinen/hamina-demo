@@ -1,0 +1,3045 @@
+{
+  "meta": {
+    "asOf": "2026-09-30",
+    "generatedAt": "2026-10-05T06:00:00Z",
+    "currency": "EUR",
+    "simulations": 10000,
+    "horizonEnd": "2027-12"
+  },
+  "kpis": {
+    "arr": 3150000,
+    "arrYoY": 0.566,
+    "mrr": 262500,
+    "nrr12m": 1.138,
+    "grr12m": 0.887,
+    "activeCustomers": {
+      "selfServe": 1046,
+      "enterprise": 63
+    },
+    "revenueYtd": 2409999,
+    "revenueYtdYoY": 0.55,
+    "fy2026": {
+      "p10": 3205000,
+      "p50": 3329999,
+      "p90": 3448000,
+      "plan": 3420000,
+      "actualYtd": 2409999
+    },
+    "fy2027": {
+      "p10": 4120000,
+      "p50": 4600000,
+      "p90": 5140000
+    },
+    "arrDec2026": {
+      "p10": 3276360,
+      "p50": 3420000,
+      "p90": 3578004
+    },
+    "arrDec2027": {
+      "p10": 4151600,
+      "p50": 4850000,
+      "p90": 5618240
+    },
+    "openPipeline": {
+      "count": 23,
+      "amount": 3235000,
+      "hubspotWeighted": 1261400,
+      "modelExpected": 1031950
+    },
+    "cashNext90d": {
+      "p10": 800605,
+      "p50": 889561,
+      "p90": 969621
+    },
+    "overdueReceivables": 122700
+  },
+  "monthly": [
+    {
+      "month": "2024-01",
+      "actualRevenue": 96283,
+      "revenue": null,
+      "components": null,
+      "actualArr": 944353,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 566612,
+        "enterprise": 377741
+      }
+    },
+    {
+      "month": "2024-02",
+      "actualRevenue": 85675,
+      "revenue": null,
+      "components": null,
+      "actualArr": 976512,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 581330,
+        "enterprise": 395182
+      }
+    },
+    {
+      "month": "2024-03",
+      "actualRevenue": 86222,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1025806,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 605867,
+        "enterprise": 419939
+      }
+    },
+    {
+      "month": "2024-04",
+      "actualRevenue": 95261,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1055911,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 618698,
+        "enterprise": 437213
+      }
+    },
+    {
+      "month": "2024-05",
+      "actualRevenue": 90133,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1100269,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 639531,
+        "enterprise": 460738
+      }
+    },
+    {
+      "month": "2024-06",
+      "actualRevenue": 95594,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1132643,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 653039,
+        "enterprise": 479604
+      }
+    },
+    {
+      "month": "2024-07",
+      "actualRevenue": 117433,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1187911,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 679337,
+        "enterprise": 508574
+      }
+    },
+    {
+      "month": "2024-08",
+      "actualRevenue": 103872,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1223508,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 693958,
+        "enterprise": 529550
+      }
+    },
+    {
+      "month": "2024-09",
+      "actualRevenue": 117681,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1293449,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 727565,
+        "enterprise": 565884
+      }
+    },
+    {
+      "month": "2024-10",
+      "actualRevenue": 123922,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1346679,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 751194,
+        "enterprise": 595485
+      }
+    },
+    {
+      "month": "2024-11",
+      "actualRevenue": 98922,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1393391,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 770719,
+        "enterprise": 622672
+      }
+    },
+    {
+      "month": "2024-12",
+      "actualRevenue": 104843,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1434406,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 786682,
+        "enterprise": 647724
+      }
+    },
+    {
+      "month": "2025-01",
+      "actualRevenue": 166593,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1494243,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 812495,
+        "enterprise": 681748
+      }
+    },
+    {
+      "month": "2025-02",
+      "actualRevenue": 135455,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1559421,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 840625,
+        "enterprise": 718796
+      }
+    },
+    {
+      "month": "2025-03",
+      "actualRevenue": 167777,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1608736,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 859668,
+        "enterprise": 749068
+      }
+    },
+    {
+      "month": "2025-04",
+      "actualRevenue": 191600,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1649917,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 873940,
+        "enterprise": 775977
+      }
+    },
+    {
+      "month": "2025-05",
+      "actualRevenue": 180525,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1714947,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 900347,
+        "enterprise": 814600
+      }
+    },
+    {
+      "month": "2025-06",
+      "actualRevenue": 170619,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1815313,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 944530,
+        "enterprise": 870783
+      }
+    },
+    {
+      "month": "2025-07",
+      "actualRevenue": 196166,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1883461,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 971160,
+        "enterprise": 912301
+      }
+    },
+    {
+      "month": "2025-08",
+      "actualRevenue": 177401,
+      "revenue": null,
+      "components": null,
+      "actualArr": 1953722,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 998230,
+        "enterprise": 955492
+      }
+    },
+    {
+      "month": "2025-09",
+      "actualRevenue": 168866,
+      "revenue": null,
+      "components": null,
+      "actualArr": 2011947,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1018548,
+        "enterprise": 993399
+      }
+    },
+    {
+      "month": "2025-10",
+      "actualRevenue": 181208,
+      "revenue": null,
+      "components": null,
+      "actualArr": 2070217,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1038343,
+        "enterprise": 1031874
+      }
+    },
+    {
+      "month": "2025-11",
+      "actualRevenue": 165411,
+      "revenue": null,
+      "components": null,
+      "actualArr": 2168447,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1077447,
+        "enterprise": 1091000
+      }
+    },
+    {
+      "month": "2025-12",
+      "actualRevenue": 198013,
+      "revenue": null,
+      "components": null,
+      "actualArr": 2235506,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1100288,
+        "enterprise": 1135218
+      }
+    },
+    {
+      "month": "2026-01",
+      "actualRevenue": 290770,
+      "revenue": null,
+      "components": null,
+      "actualArr": 2359164,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1150092,
+        "enterprise": 1209072
+      }
+    },
+    {
+      "month": "2026-02",
+      "actualRevenue": 209106,
+      "revenue": null,
+      "components": null,
+      "actualArr": 2442139,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1179095,
+        "enterprise": 1263044
+      }
+    },
+    {
+      "month": "2026-03",
+      "actualRevenue": 258059,
+      "revenue": null,
+      "components": null,
+      "actualArr": 2495127,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1192983,
+        "enterprise": 1302144
+      }
+    },
+    {
+      "month": "2026-04",
+      "actualRevenue": 294377,
+      "revenue": null,
+      "components": null,
+      "actualArr": 2632623,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1246382,
+        "enterprise": 1386241
+      }
+    },
+    {
+      "month": "2026-05",
+      "actualRevenue": 242234,
+      "revenue": null,
+      "components": null,
+      "actualArr": 2709519,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1270087,
+        "enterprise": 1439432
+      }
+    },
+    {
+      "month": "2026-06",
+      "actualRevenue": 247393,
+      "revenue": null,
+      "components": null,
+      "actualArr": 2785495,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1292644,
+        "enterprise": 1492851
+      }
+    },
+    {
+      "month": "2026-07",
+      "actualRevenue": 283009,
+      "revenue": null,
+      "components": null,
+      "actualArr": 2889134,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1327196,
+        "enterprise": 1561938
+      }
+    },
+    {
+      "month": "2026-08",
+      "actualRevenue": 322749,
+      "revenue": null,
+      "components": null,
+      "actualArr": 3036901,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1380841,
+        "enterprise": 1656060
+      }
+    },
+    {
+      "month": "2026-09",
+      "actualRevenue": 262302,
+      "revenue": null,
+      "components": null,
+      "actualArr": 3150000,
+      "arr": null,
+      "actualArrBySegment": {
+        "selfServe": 1417500,
+        "enterprise": 1732500
+      }
+    },
+    {
+      "month": "2026-10",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 275768,
+        "p50": 290282,
+        "p90": 306973
+      },
+      "components": {
+        "existingSelfServe": 121918,
+        "newSelfServe": 11611,
+        "existingEnterprise": 139335,
+        "pipelineEnterprise": 17417,
+        "futurePipeline": 0
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3159000,
+        "p50": 3240000,
+        "p90": 3329100
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2026-11",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 279312,
+        "p50": 298410,
+        "p90": 320373
+      },
+      "components": {
+        "existingSelfServe": 121751,
+        "newSelfServe": 14622,
+        "existingEnterprise": 138164,
+        "pipelineEnterprise": 23873,
+        "futurePipeline": 0
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3218445,
+        "p50": 3330000,
+        "p90": 3452711
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2026-12",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 305465,
+        "p50": 331307,
+        "p90": 361025
+      },
+      "components": {
+        "existingSelfServe": 131198,
+        "newSelfServe": 19216,
+        "existingEnterprise": 147763,
+        "pipelineEnterprise": 33131,
+        "futurePipeline": 0
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3276360,
+        "p50": 3420000,
+        "p90": 3578004
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-01",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 317220,
+        "p50": 349361,
+        "p90": 386323
+      },
+      "components": {
+        "existingSelfServe": 134155,
+        "newSelfServe": 23407,
+        "existingEnterprise": 142190,
+        "pipelineEnterprise": 41923,
+        "futurePipeline": 7686
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3343213,
+        "p50": 3521025,
+        "p90": 3716618
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-02",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 297291,
+        "p50": 332540,
+        "p90": 373077
+      },
+      "components": {
+        "existingSelfServe": 123705,
+        "newSelfServe": 25273,
+        "existingEnterprise": 125700,
+        "pipelineEnterprise": 46556,
+        "futurePipeline": 11306
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3411157,
+        "p50": 3625034,
+        "p90": 3860299
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-03",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 300829,
+        "p50": 341851,
+        "p90": 389026
+      },
+      "components": {
+        "existingSelfServe": 123066,
+        "newSelfServe": 29057,
+        "existingEnterprise": 119306,
+        "pipelineEnterprise": 54696,
+        "futurePipeline": 15725
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3480197,
+        "p50": 3732115,
+        "p90": 4009225
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-04",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 304332,
+        "p50": 351423,
+        "p90": 405577
+      },
+      "components": {
+        "existingSelfServe": 122295,
+        "newSelfServe": 33034,
+        "existingEnterprise": 119484,
+        "pipelineEnterprise": 56228,
+        "futurePipeline": 20383
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3550340,
+        "p50": 3842359,
+        "p90": 4163580
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-05",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 307796,
+        "p50": 361263,
+        "p90": 422750
+      },
+      "components": {
+        "existingSelfServe": 121384,
+        "newSelfServe": 37210,
+        "existingEnterprise": 123913,
+        "pipelineEnterprise": 53467,
+        "futurePipeline": 25288
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3621590,
+        "p50": 3955860,
+        "p90": 4323557
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-06",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 311215,
+        "p50": 371378,
+        "p90": 440566
+      },
+      "components": {
+        "existingSelfServe": 120326,
+        "newSelfServe": 41594,
+        "existingEnterprise": 128497,
+        "pipelineEnterprise": 50507,
+        "futurePipeline": 30453
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3693952,
+        "p50": 4072714,
+        "p90": 4489353
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-07",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 314584,
+        "p50": 381777,
+        "p90": 459049
+      },
+      "components": {
+        "existingSelfServe": 119114,
+        "newSelfServe": 46195,
+        "existingEnterprise": 133240,
+        "pipelineEnterprise": 47340,
+        "futurePipeline": 35887
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3767428,
+        "p50": 4193020,
+        "p90": 4661171
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-08",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 317897,
+        "p50": 392466,
+        "p90": 478220
+      },
+      "components": {
+        "existingSelfServe": 117740,
+        "newSelfServe": 51021,
+        "existingEnterprise": 138148,
+        "pipelineEnterprise": 43956,
+        "futurePipeline": 41601
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3842022,
+        "p50": 4316879,
+        "p90": 4839221
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-09",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 321151,
+        "p50": 403456,
+        "p90": 498107
+      },
+      "components": {
+        "existingSelfServe": 116195,
+        "newSelfServe": 56080,
+        "existingEnterprise": 143227,
+        "pipelineEnterprise": 40346,
+        "futurePipeline": 47608
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3917736,
+        "p50": 4444397,
+        "p90": 5023724
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-10",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 324336,
+        "p50": 414752,
+        "p90": 518730
+      },
+      "components": {
+        "existingSelfServe": 114472,
+        "newSelfServe": 61383,
+        "existingEnterprise": 148481,
+        "pipelineEnterprise": 36498,
+        "futurePipeline": 53918
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 3994570,
+        "p50": 4575682,
+        "p90": 5214905
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-11",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 327448,
+        "p50": 426365,
+        "p90": 540119
+      },
+      "components": {
+        "existingSelfServe": 112560,
+        "newSelfServe": 66939,
+        "existingEnterprise": 153918,
+        "pipelineEnterprise": 32404,
+        "futurePipeline": 60544
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 4072526,
+        "p50": 4710845,
+        "p90": 5412996
+      },
+      "actualArrBySegment": null
+    },
+    {
+      "month": "2027-12",
+      "actualRevenue": null,
+      "revenue": {
+        "p10": 356919,
+        "p50": 473368,
+        "p90": 607284
+      },
+      "components": {
+        "existingSelfServe": 119289,
+        "newSelfServe": 78579,
+        "existingEnterprise": 172306,
+        "pipelineEnterprise": 30296,
+        "futurePipeline": 72899
+      },
+      "actualArr": null,
+      "arr": {
+        "p10": 4151600,
+        "p50": 4850000,
+        "p90": 5618240
+      },
+      "actualArrBySegment": null
+    }
+  ],
+  "bridge": {
+    "period": "Sep 2026 → Dec 2027",
+    "steps": [
+      {
+        "name": "ARR Sep 2026",
+        "value": 3150000,
+        "kind": "start",
+        "note": "Stripe MRR × 12 + enterprise contracts"
+      },
+      {
+        "name": "New self-serve",
+        "value": 700000,
+        "kind": "increase",
+        "note": "Signups at trailing run-rate with seasonality"
+      },
+      {
+        "name": "Open pipeline",
+        "value": 550000,
+        "kind": "increase",
+        "note": "Open HubSpot deals × model win probability"
+      },
+      {
+        "name": "Future pipeline",
+        "value": 300000,
+        "kind": "increase",
+        "note": "Deals not yet created, at historical creation rate"
+      },
+      {
+        "name": "Expansion",
+        "value": 480000,
+        "kind": "increase",
+        "note": "Seat and tier upgrades"
+      },
+      {
+        "name": "Contraction",
+        "value": -120000,
+        "kind": "decrease",
+        "note": "Seat reductions at renewal"
+      },
+      {
+        "name": "Churn",
+        "value": -210000,
+        "kind": "decrease",
+        "note": "Renewal model, per customer"
+      },
+      {
+        "name": "ARR Dec 2027",
+        "value": 4850000,
+        "kind": "end",
+        "note": "P50 of 10,000 simulations"
+      }
+    ]
+  },
+  "mrrMovements": [
+    {
+      "month": "2023-01",
+      "new": 2267,
+      "expansion": 1010,
+      "contraction": -246,
+      "churn": -656,
+      "reactivation": 60
+    },
+    {
+      "month": "2023-02",
+      "new": 1586,
+      "expansion": 877,
+      "contraction": -189,
+      "churn": -491,
+      "reactivation": 92
+    },
+    {
+      "month": "2023-03",
+      "new": 2228,
+      "expansion": 895,
+      "contraction": -216,
+      "churn": -501,
+      "reactivation": 104
+    },
+    {
+      "month": "2023-04",
+      "new": 2522,
+      "expansion": 1150,
+      "contraction": -340,
+      "churn": -801,
+      "reactivation": 78
+    },
+    {
+      "month": "2023-05",
+      "new": 1828,
+      "expansion": 726,
+      "contraction": -317,
+      "churn": -747,
+      "reactivation": 146
+    },
+    {
+      "month": "2023-06",
+      "new": 2186,
+      "expansion": 1184,
+      "contraction": -298,
+      "churn": -473,
+      "reactivation": 47
+    },
+    {
+      "month": "2023-07",
+      "new": 2751,
+      "expansion": 1404,
+      "contraction": -407,
+      "churn": -555,
+      "reactivation": 85
+    },
+    {
+      "month": "2023-08",
+      "new": 2214,
+      "expansion": 1096,
+      "contraction": -439,
+      "churn": -979,
+      "reactivation": 66
+    },
+    {
+      "month": "2023-09",
+      "new": 2319,
+      "expansion": 1159,
+      "contraction": -288,
+      "churn": -728,
+      "reactivation": 44
+    },
+    {
+      "month": "2023-10",
+      "new": 2840,
+      "expansion": 1066,
+      "contraction": -360,
+      "churn": -669,
+      "reactivation": 123
+    },
+    {
+      "month": "2023-11",
+      "new": 3029,
+      "expansion": 1268,
+      "contraction": -414,
+      "churn": -683,
+      "reactivation": 98
+    },
+    {
+      "month": "2023-12",
+      "new": 2754,
+      "expansion": 1665,
+      "contraction": -314,
+      "churn": -1136,
+      "reactivation": 184
+    },
+    {
+      "month": "2024-01",
+      "new": 3091,
+      "expansion": 1721,
+      "contraction": -257,
+      "churn": -756,
+      "reactivation": 130
+    },
+    {
+      "month": "2024-02",
+      "new": 3129,
+      "expansion": 1829,
+      "contraction": -601,
+      "churn": -1094,
+      "reactivation": 180
+    },
+    {
+      "month": "2024-03",
+      "new": 2939,
+      "expansion": 1509,
+      "contraction": -518,
+      "churn": -680,
+      "reactivation": 109
+    },
+    {
+      "month": "2024-04",
+      "new": 3303,
+      "expansion": 1777,
+      "contraction": -645,
+      "churn": -697,
+      "reactivation": 153
+    },
+    {
+      "month": "2024-05",
+      "new": 3166,
+      "expansion": 1719,
+      "contraction": -553,
+      "churn": -1049,
+      "reactivation": 103
+    },
+    {
+      "month": "2024-06",
+      "new": 4034,
+      "expansion": 1621,
+      "contraction": -317,
+      "churn": -1378,
+      "reactivation": 193
+    },
+    {
+      "month": "2024-07",
+      "new": 4547,
+      "expansion": 1962,
+      "contraction": -541,
+      "churn": -1557,
+      "reactivation": 249
+    },
+    {
+      "month": "2024-08",
+      "new": 4189,
+      "expansion": 2106,
+      "contraction": -353,
+      "churn": -1244,
+      "reactivation": 187
+    },
+    {
+      "month": "2024-09",
+      "new": 3609,
+      "expansion": 2151,
+      "contraction": -355,
+      "churn": -1649,
+      "reactivation": 161
+    },
+    {
+      "month": "2024-10",
+      "new": 3953,
+      "expansion": 1996,
+      "contraction": -626,
+      "churn": -875,
+      "reactivation": 158
+    },
+    {
+      "month": "2024-11",
+      "new": 4631,
+      "expansion": 1377,
+      "contraction": -439,
+      "churn": -983,
+      "reactivation": 131
+    },
+    {
+      "month": "2024-12",
+      "new": 4102,
+      "expansion": 2132,
+      "contraction": -604,
+      "churn": -1874,
+      "reactivation": 231
+    },
+    {
+      "month": "2025-01",
+      "new": 4980,
+      "expansion": 1905,
+      "contraction": -765,
+      "churn": -1227,
+      "reactivation": 296
+    },
+    {
+      "month": "2025-02",
+      "new": 5875,
+      "expansion": 2277,
+      "contraction": -770,
+      "churn": -1769,
+      "reactivation": 228
+    },
+    {
+      "month": "2025-03",
+      "new": 4571,
+      "expansion": 1721,
+      "contraction": -562,
+      "churn": -1135,
+      "reactivation": 174
+    },
+    {
+      "month": "2025-04",
+      "new": 5159,
+      "expansion": 2822,
+      "contraction": -823,
+      "churn": -1996,
+      "reactivation": 166
+    },
+    {
+      "month": "2025-05",
+      "new": 6037,
+      "expansion": 2321,
+      "contraction": -676,
+      "churn": -1954,
+      "reactivation": 236
+    },
+    {
+      "month": "2025-06",
+      "new": 6447,
+      "expansion": 2871,
+      "contraction": -651,
+      "churn": -2119,
+      "reactivation": 370
+    },
+    {
+      "month": "2025-07",
+      "new": 6852,
+      "expansion": 3361,
+      "contraction": -605,
+      "churn": -1937,
+      "reactivation": 254
+    },
+    {
+      "month": "2025-08",
+      "new": 6874,
+      "expansion": 1824,
+      "contraction": -825,
+      "churn": -1313,
+      "reactivation": 363
+    },
+    {
+      "month": "2025-09",
+      "new": 5619,
+      "expansion": 2662,
+      "contraction": -1246,
+      "churn": -2225,
+      "reactivation": 305
+    },
+    {
+      "month": "2025-10",
+      "new": 5414,
+      "expansion": 2972,
+      "contraction": -982,
+      "churn": -2658,
+      "reactivation": 160
+    },
+    {
+      "month": "2025-11",
+      "new": 5676,
+      "expansion": 3727,
+      "contraction": -1310,
+      "churn": -2490,
+      "reactivation": 155
+    },
+    {
+      "month": "2025-12",
+      "new": 6097,
+      "expansion": 3772,
+      "contraction": -1273,
+      "churn": -2726,
+      "reactivation": 421
+    },
+    {
+      "month": "2026-01",
+      "new": 5808,
+      "expansion": 3652,
+      "contraction": -1363,
+      "churn": -2420,
+      "reactivation": 332
+    },
+    {
+      "month": "2026-02",
+      "new": 8984,
+      "expansion": 3953,
+      "contraction": -1258,
+      "churn": -2209,
+      "reactivation": 420
+    },
+    {
+      "month": "2026-03",
+      "new": 6841,
+      "expansion": 3498,
+      "contraction": -1177,
+      "churn": -1969,
+      "reactivation": 193
+    },
+    {
+      "month": "2026-04",
+      "new": 7827,
+      "expansion": 2703,
+      "contraction": -1396,
+      "churn": -2809,
+      "reactivation": 228
+    },
+    {
+      "month": "2026-05",
+      "new": 7245,
+      "expansion": 2657,
+      "contraction": -1456,
+      "churn": -3419,
+      "reactivation": 307
+    },
+    {
+      "month": "2026-06",
+      "new": 8283,
+      "expansion": 2804,
+      "contraction": -814,
+      "churn": -3242,
+      "reactivation": 253
+    },
+    {
+      "month": "2026-07",
+      "new": 8601,
+      "expansion": 4178,
+      "contraction": -1093,
+      "churn": -3114,
+      "reactivation": 278
+    },
+    {
+      "month": "2026-08",
+      "new": 7920,
+      "expansion": 5376,
+      "contraction": -1538,
+      "churn": -1914,
+      "reactivation": 547
+    },
+    {
+      "month": "2026-09",
+      "new": 8016,
+      "expansion": 3660,
+      "contraction": -1141,
+      "churn": -3767,
+      "reactivation": 542
+    }
+  ],
+  "cohorts": [
+    {
+      "cohort": "2023-Q1",
+      "customers": 66,
+      "startMrr": 1898,
+      "retention": [
+        1,
+        0.832,
+        0.749,
+        0.738,
+        0.702,
+        0.698,
+        0.655,
+        0.667,
+        0.638,
+        0.651,
+        0.63,
+        0.625,
+        0.639,
+        0.629,
+        0.605
+      ]
+    },
+    {
+      "cohort": "2023-Q2",
+      "customers": 79,
+      "startMrr": 2411,
+      "retention": [
+        1,
+        0.828,
+        0.78,
+        0.721,
+        0.705,
+        0.706,
+        0.684,
+        0.663,
+        0.656,
+        0.655,
+        0.631,
+        0.622,
+        0.632,
+        0.632,
+        null
+      ]
+    },
+    {
+      "cohort": "2023-Q3",
+      "customers": 79,
+      "startMrr": 2754,
+      "retention": [
+        1,
+        0.839,
+        0.791,
+        0.74,
+        0.705,
+        0.708,
+        0.694,
+        0.675,
+        0.664,
+        0.668,
+        0.64,
+        0.631,
+        0.644,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2023-Q4",
+      "customers": 81,
+      "startMrr": 3353,
+      "retention": [
+        1,
+        0.831,
+        0.789,
+        0.756,
+        0.723,
+        0.707,
+        0.682,
+        0.682,
+        0.651,
+        0.644,
+        0.645,
+        0.645,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2024-Q1",
+      "customers": 89,
+      "startMrr": 4303,
+      "retention": [
+        1,
+        0.835,
+        0.767,
+        0.756,
+        0.717,
+        0.701,
+        0.685,
+        0.689,
+        0.664,
+        0.661,
+        0.665,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2024-Q2",
+      "customers": 107,
+      "startMrr": 5158,
+      "retention": [
+        1,
+        0.845,
+        0.791,
+        0.74,
+        0.725,
+        0.698,
+        0.709,
+        0.679,
+        0.681,
+        0.68,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2024-Q3",
+      "customers": 109,
+      "startMrr": 4634,
+      "retention": [
+        1,
+        0.855,
+        0.791,
+        0.77,
+        0.734,
+        0.701,
+        0.697,
+        0.679,
+        0.692,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2024-Q4",
+      "customers": 119,
+      "startMrr": 5497,
+      "retention": [
+        1,
+        0.879,
+        0.812,
+        0.779,
+        0.737,
+        0.721,
+        0.689,
+        0.701,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2025-Q1",
+      "customers": 118,
+      "startMrr": 5415,
+      "retention": [
+        1,
+        0.892,
+        0.819,
+        0.772,
+        0.732,
+        0.723,
+        0.692,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2025-Q2",
+      "customers": 150,
+      "startMrr": 6008,
+      "retention": [
+        1,
+        0.891,
+        0.797,
+        0.781,
+        0.743,
+        0.729,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2025-Q3",
+      "customers": 143,
+      "startMrr": 7044,
+      "retention": [
+        1,
+        0.866,
+        0.817,
+        0.783,
+        0.762,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2025-Q4",
+      "customers": 145,
+      "startMrr": 8820,
+      "retention": [
+        1,
+        0.913,
+        0.81,
+        0.79,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2026-Q1",
+      "customers": 157,
+      "startMrr": 9278,
+      "retention": [
+        1,
+        0.887,
+        0.817,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2026-Q2",
+      "customers": 166,
+      "startMrr": 9282,
+      "retention": [
+        1,
+        0.914,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cohort": "2026-Q3",
+      "customers": 179,
+      "startMrr": 8167,
+      "retention": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "renewalModel": {
+    "trainingRows": 4826,
+    "aucTest": 0.812,
+    "testPeriod": "renewals Jan–Sep 2026 (out of time)",
+    "baseRate": 0.842,
+    "drivers": [
+      {
+        "feature": "failed_payment",
+        "label": "Failed payment on current term",
+        "oddsRatio": 0.31,
+        "direction": "risk"
+      },
+      {
+        "feature": "seat_reduction",
+        "label": "Seat reduction at last renewal",
+        "oddsRatio": 0.48,
+        "direction": "risk"
+      },
+      {
+        "feature": "late_payment_30d",
+        "label": "Paid 30+ days late in last 12 m",
+        "oddsRatio": 0.57,
+        "direction": "risk"
+      },
+      {
+        "feature": "single_seat",
+        "label": "Single-seat account",
+        "oddsRatio": 0.72,
+        "direction": "risk"
+      },
+      {
+        "feature": "tenure_2y",
+        "label": "Customer for 2+ years",
+        "oddsRatio": 2.15,
+        "direction": "protective"
+      },
+      {
+        "feature": "annual_plan",
+        "label": "On 12-month plan",
+        "oddsRatio": 1.84,
+        "direction": "protective"
+      },
+      {
+        "feature": "multi_product",
+        "label": "Uses Planner + Onsite",
+        "oddsRatio": 1.62,
+        "direction": "protective"
+      },
+      {
+        "feature": "crm_owner",
+        "label": "Has HubSpot owner",
+        "oddsRatio": 1.31,
+        "direction": "protective"
+      }
+    ],
+    "calibration": [
+      {
+        "bucket": "<50%",
+        "predicted": 0.38,
+        "actual": 0.35,
+        "n": 64
+      },
+      {
+        "bucket": "50–60%",
+        "predicted": 0.555,
+        "actual": 0.53,
+        "n": 71
+      },
+      {
+        "bucket": "60–70%",
+        "predicted": 0.652,
+        "actual": 0.67,
+        "n": 118
+      },
+      {
+        "bucket": "70–80%",
+        "predicted": 0.754,
+        "actual": 0.73,
+        "n": 196
+      },
+      {
+        "bucket": "80–90%",
+        "predicted": 0.853,
+        "actual": 0.87,
+        "n": 341
+      },
+      {
+        "bucket": "90–95%",
+        "predicted": 0.926,
+        "actual": 0.92,
+        "n": 288
+      },
+      {
+        "bucket": "95%+",
+        "predicted": 0.968,
+        "actual": 0.975,
+        "n": 214
+      }
+    ],
+    "lift": {
+      "topDecileChurn": 0.47,
+      "avgChurn": 0.158
+    }
+  },
+  "renewals": [
+    {
+      "customerId": "cus_25C7",
+      "name": "Brightwater University",
+      "company": "Brightwater University",
+      "segment": "enterprise",
+      "plan": "Enterprise",
+      "seats": 40,
+      "arr": 86000,
+      "renewalDate": "2026-10-28",
+      "pRenew": 0.58,
+      "riskLevel": "high",
+      "signals": [
+        "Seat reduction at last renewal",
+        "Champion left company"
+      ],
+      "owner": "Laura Virtanen"
+    },
+    {
+      "customerId": "cus_25MO",
+      "name": "Kestrel Logistics",
+      "company": "Kestrel Logistics",
+      "segment": "enterprise",
+      "plan": "Enterprise",
+      "seats": 24,
+      "arr": 52000,
+      "renewalDate": "2026-11-15",
+      "pRenew": 0.91,
+      "riskLevel": "low",
+      "signals": [],
+      "owner": "Mikko Salo"
+    },
+    {
+      "customerId": "cus_25X5",
+      "name": "Northgate Health",
+      "company": "Northgate Health",
+      "segment": "enterprise",
+      "plan": "Enterprise",
+      "seats": 30,
+      "arr": 64000,
+      "renewalDate": "2027-01-31",
+      "pRenew": 0.72,
+      "riskLevel": "medium",
+      "signals": [
+        "Usage down 38% in 90 days"
+      ],
+      "owner": "Anna Lindqvist"
+    },
+    {
+      "customerId": "cus_267M",
+      "name": "Fjordline Hotels",
+      "company": "Fjordline Hotels",
+      "segment": "enterprise",
+      "plan": "Enterprise",
+      "seats": 18,
+      "arr": 41000,
+      "renewalDate": "2026-12-01",
+      "pRenew": 0.44,
+      "riskLevel": "high",
+      "signals": [
+        "Paid 31 days late",
+        "No QBR in 6 months"
+      ],
+      "owner": "Jonas Berg"
+    },
+    {
+      "customerId": "cus_26I3",
+      "name": "Polar Arena Group",
+      "company": "Polar Arena Group",
+      "segment": "enterprise",
+      "plan": "Enterprise",
+      "seats": 12,
+      "arr": 28500,
+      "renewalDate": "2027-02-14",
+      "pRenew": 0.88,
+      "riskLevel": "low",
+      "signals": [
+        "Expansion signal: +4 seats requested"
+      ],
+      "owner": "Laura Virtanen"
+    },
+    {
+      "customerId": "cus_26SK",
+      "name": "Meridian Retail Oy",
+      "company": "Meridian Retail Oy",
+      "segment": "enterprise",
+      "plan": "Enterprise",
+      "seats": 15,
+      "arr": 33000,
+      "renewalDate": "2026-11-30",
+      "pRenew": 0.67,
+      "riskLevel": "medium",
+      "signals": [
+        "Failed payment on current term"
+      ],
+      "owner": "Mikko Salo"
+    },
+    {
+      "customerId": "cus_2731",
+      "name": "Signalwise Networks",
+      "company": "Signalwise Networks",
+      "segment": "self_serve",
+      "plan": "12-month",
+      "seats": 5,
+      "arr": 7800,
+      "renewalDate": "2026-10-19",
+      "pRenew": 0.39,
+      "riskLevel": "high",
+      "signals": [
+        "Failed payment on current term",
+        "Single-seat last 2 terms"
+      ],
+      "owner": null
+    },
+    {
+      "customerId": "cus_27DI",
+      "name": "Lakeside IT Services",
+      "company": "Lakeside IT Services",
+      "segment": "self_serve",
+      "plan": "12-month",
+      "seats": 3,
+      "arr": 4700,
+      "renewalDate": "2026-10-24",
+      "pRenew": 0.81,
+      "riskLevel": "low",
+      "signals": [],
+      "owner": null
+    },
+    {
+      "customerId": "cus_27NZ",
+      "name": "Ostrava Wireless s.r.o.",
+      "company": "Ostrava Wireless s.r.o.",
+      "segment": "self_serve",
+      "plan": "6-month",
+      "seats": 2,
+      "arr": 1600,
+      "renewalDate": "2026-11-03",
+      "pRenew": 0.52,
+      "riskLevel": "high",
+      "signals": [
+        "Seat reduction at last renewal"
+      ],
+      "owner": null
+    },
+    {
+      "customerId": "cus_27YG",
+      "name": "Coastal AV Integrators",
+      "company": "Coastal AV Integrators",
+      "segment": "self_serve",
+      "plan": "12-month",
+      "seats": 4,
+      "arr": 6200,
+      "renewalDate": "2026-11-21",
+      "pRenew": 0.93,
+      "riskLevel": "low",
+      "signals": [],
+      "owner": null
+    },
+    {
+      "customerId": "cus_288X",
+      "name": "Bluefin MSP",
+      "company": "Bluefin MSP",
+      "segment": "self_serve",
+      "plan": "12-month",
+      "seats": 6,
+      "arr": 9400,
+      "renewalDate": "2026-12-09",
+      "pRenew": 0.61,
+      "riskLevel": "medium",
+      "signals": [
+        "Paid 24 days late"
+      ],
+      "owner": null
+    },
+    {
+      "customerId": "cus_28JE",
+      "name": "Helio Campus Tech",
+      "company": "Helio Campus Tech",
+      "segment": "self_serve",
+      "plan": "6-month",
+      "seats": 1,
+      "arr": 800,
+      "renewalDate": "2026-12-18",
+      "pRenew": 0.34,
+      "riskLevel": "high",
+      "signals": [
+        "Single-seat account",
+        "No logins in 45 days"
+      ],
+      "owner": null
+    },
+    {
+      "customerId": "cus_28TV",
+      "name": "Rivergate Consulting",
+      "company": "Rivergate Consulting",
+      "segment": "self_serve",
+      "plan": "12-month",
+      "seats": 2,
+      "arr": 3100,
+      "renewalDate": "2027-01-12",
+      "pRenew": 0.86,
+      "riskLevel": "low",
+      "signals": [],
+      "owner": null
+    },
+    {
+      "customerId": "cus_294C",
+      "name": "Tundra Connect AB",
+      "company": "Tundra Connect AB",
+      "segment": "self_serve",
+      "plan": "12-month",
+      "seats": 3,
+      "arr": 4700,
+      "renewalDate": "2027-02-02",
+      "pRenew": 0.7,
+      "riskLevel": "medium",
+      "signals": [
+        "Downgraded plan tier"
+      ],
+      "owner": null
+    },
+    {
+      "customerId": "cus_29ET",
+      "name": "Waveguide Partners",
+      "company": "Waveguide Partners",
+      "segment": "self_serve",
+      "plan": "6-month",
+      "seats": 2,
+      "arr": 1600,
+      "renewalDate": "2027-03-05",
+      "pRenew": 0.77,
+      "riskLevel": "medium",
+      "signals": [],
+      "owner": null
+    }
+  ],
+  "deals": [
+    {
+      "id": "hs_1840221",
+      "name": "Aurora Medical Center",
+      "company": "Aurora Medical Center",
+      "owner": "Laura Virtanen",
+      "stage": "Discovery",
+      "stageOrder": 0,
+      "amount": 120000,
+      "currency": "EUR",
+      "amountEur": 120000,
+      "createDate": "2026-03-03",
+      "closeDateRep": "2026-12-22",
+      "closeDateModel": "2027-02-19",
+      "hubspotProb": 0.1,
+      "modelProb": 0.1,
+      "forecastCategory": "pipeline",
+      "leadSource": "Inbound – website",
+      "daysInStage": 34,
+      "closeDatePushes": 0,
+      "activity30d": 3,
+      "lastActivity": "2026-09-23",
+      "flags": [],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1842134",
+      "name": "Brightwater University – phase 2",
+      "company": "Brightwater University",
+      "owner": "Mikko Salo",
+      "stage": "Proposal",
+      "stageOrder": 3,
+      "amount": 185000,
+      "currency": "EUR",
+      "amountEur": 185000,
+      "createDate": "2026-03-04",
+      "closeDateRep": "2026-11-24",
+      "closeDateModel": "2026-12-21",
+      "hubspotProb": 0.6,
+      "modelProb": 0.49,
+      "forecastCategory": "best_case",
+      "leadSource": "Self-serve upgrade",
+      "daysInStage": 27,
+      "closeDatePushes": 0,
+      "activity30d": 4,
+      "lastActivity": "2026-09-22",
+      "flags": [],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1844047",
+      "name": "Helsinge Airport",
+      "company": "Helsinge Airport",
+      "owner": "Anna Lindqvist",
+      "stage": "Demo / Trial",
+      "stageOrder": 2,
+      "amount": 240000,
+      "currency": "EUR",
+      "amountEur": 240000,
+      "createDate": "2026-03-25",
+      "closeDateRep": "2026-10-16",
+      "closeDateModel": "2026-11-30",
+      "hubspotProb": 0.4,
+      "modelProb": 0.36,
+      "forecastCategory": "best_case",
+      "leadSource": "Partner referral",
+      "daysInStage": 15,
+      "closeDatePushes": 1,
+      "activity30d": 7,
+      "lastActivity": "2026-09-23",
+      "flags": [
+        "Single-threaded (1 contact)"
+      ],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1845960",
+      "name": "Kestrel Logistics – warehouses",
+      "company": "Kestrel Logistics",
+      "owner": "Jonas Berg",
+      "stage": "Negotiation",
+      "stageOrder": 4,
+      "amount": 96000,
+      "currency": "EUR",
+      "amountEur": 96000,
+      "createDate": "2026-08-20",
+      "closeDateRep": "2026-11-06",
+      "closeDateModel": "2026-11-25",
+      "hubspotProb": 0.8,
+      "modelProb": 0.92,
+      "forecastCategory": "commit",
+      "leadSource": "Outbound",
+      "daysInStage": 29,
+      "closeDatePushes": 0,
+      "activity30d": 12,
+      "lastActivity": "2026-09-24",
+      "flags": [
+        "Paying self-serve account"
+      ],
+      "stripeLinked": true,
+      "selfServeSeats": 5
+    },
+    {
+      "id": "hs_1847873",
+      "name": "Nordwind Stadiums",
+      "company": "Nordwind Stadiums",
+      "owner": "Laura Virtanen",
+      "stage": "Qualified",
+      "stageOrder": 1,
+      "amount": 3420000,
+      "currency": "SEK",
+      "amountEur": 300000,
+      "createDate": "2026-05-09",
+      "closeDateRep": "2026-10-20",
+      "closeDateModel": "2027-01-04",
+      "hubspotProb": 0.2,
+      "modelProb": 0.08,
+      "forecastCategory": "pipeline",
+      "leadSource": "Event",
+      "daysInStage": 90,
+      "closeDatePushes": 2,
+      "activity30d": 8,
+      "lastActivity": "2026-09-30",
+      "flags": [
+        "Close date pushed 2×",
+        "Stuck in stage 90+ days"
+      ],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1849786",
+      "name": "Saltmarsh County Schools",
+      "company": "Saltmarsh County Schools",
+      "owner": "Mikko Salo",
+      "stage": "Demo / Trial",
+      "stageOrder": 2,
+      "amount": 151200,
+      "currency": "USD",
+      "amountEur": 140000,
+      "createDate": "2026-03-07",
+      "closeDateRep": "2027-01-29",
+      "closeDateModel": "2027-03-16",
+      "hubspotProb": 0.4,
+      "modelProb": 0.26,
+      "forecastCategory": "best_case",
+      "leadSource": "Inbound – website",
+      "daysInStage": 60,
+      "closeDatePushes": 0,
+      "activity30d": 14,
+      "lastActivity": "2026-09-28",
+      "flags": [],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1851699",
+      "name": "Granite Bank Nordics",
+      "company": "Granite Bank Nordics",
+      "owner": "Anna Lindqvist",
+      "stage": "Proposal",
+      "stageOrder": 3,
+      "amount": 210000,
+      "currency": "EUR",
+      "amountEur": 210000,
+      "createDate": "2026-04-15",
+      "closeDateRep": "2026-12-02",
+      "closeDateModel": "2027-02-12",
+      "hubspotProb": 0.6,
+      "modelProb": 0.24,
+      "forecastCategory": "best_case",
+      "leadSource": "Self-serve upgrade",
+      "daysInStage": 38,
+      "closeDatePushes": 3,
+      "activity30d": 4,
+      "lastActivity": "2026-09-28",
+      "flags": [
+        "Close date pushed 3×"
+      ],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1853612",
+      "name": "Fjordline Hotels – expansion",
+      "company": "Fjordline Hotels",
+      "owner": "Jonas Berg",
+      "stage": "Qualified",
+      "stageOrder": 1,
+      "amount": 64000,
+      "currency": "EUR",
+      "amountEur": 64000,
+      "createDate": "2026-06-30",
+      "closeDateRep": "2027-01-28",
+      "closeDateModel": "2027-04-09",
+      "hubspotProb": 0.2,
+      "modelProb": 0.26,
+      "forecastCategory": "pipeline",
+      "leadSource": "Partner referral",
+      "daysInStage": 12,
+      "closeDatePushes": 1,
+      "activity30d": 11,
+      "lastActivity": "2026-09-26",
+      "flags": [
+        "Single-threaded (1 contact)",
+        "Paying self-serve account"
+      ],
+      "stripeLinked": true,
+      "selfServeSeats": 4
+    },
+    {
+      "id": "hs_1855525",
+      "name": "Vireo Manufacturing",
+      "company": "Vireo Manufacturing",
+      "owner": "Laura Virtanen",
+      "stage": "Discovery",
+      "stageOrder": 0,
+      "amount": 80000,
+      "currency": "EUR",
+      "amountEur": 80000,
+      "createDate": "2026-06-25",
+      "closeDateRep": "2027-01-02",
+      "closeDateModel": "2027-03-05",
+      "hubspotProb": 0.1,
+      "modelProb": 0.1,
+      "forecastCategory": "pipeline",
+      "leadSource": "Outbound",
+      "daysInStage": 60,
+      "closeDatePushes": 0,
+      "activity30d": 14,
+      "lastActivity": "2026-09-24",
+      "flags": [],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1857438",
+      "name": "Lumen Retail Group",
+      "company": "Lumen Retail Group",
+      "owner": "Mikko Salo",
+      "stage": "Demo / Trial",
+      "stageOrder": 2,
+      "amount": 155000,
+      "currency": "EUR",
+      "amountEur": 155000,
+      "createDate": "2026-04-13",
+      "closeDateRep": "2026-11-14",
+      "closeDateModel": "2026-12-25",
+      "hubspotProb": 0.4,
+      "modelProb": 0.38,
+      "forecastCategory": "best_case",
+      "leadSource": "Event",
+      "daysInStage": 32,
+      "closeDatePushes": 0,
+      "activity30d": 13,
+      "lastActivity": "2026-09-27",
+      "flags": [],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1859351",
+      "name": "Pinecrest Health System",
+      "company": "Pinecrest Health System",
+      "owner": "Anna Lindqvist",
+      "stage": "Negotiation",
+      "stageOrder": 4,
+      "amount": 175000,
+      "currency": "EUR",
+      "amountEur": 175000,
+      "createDate": "2026-06-12",
+      "closeDateRep": "2026-11-17",
+      "closeDateModel": "2026-12-20",
+      "hubspotProb": 0.8,
+      "modelProb": 0.81,
+      "forecastCategory": "commit",
+      "leadSource": "Inbound – website",
+      "daysInStage": 30,
+      "closeDatePushes": 1,
+      "activity30d": 5,
+      "lastActivity": "2026-09-26",
+      "flags": [],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1861264",
+      "name": "Tallinn Port Authority",
+      "company": "Tallinn Port Authority",
+      "owner": "Jonas Berg",
+      "stage": "Qualified",
+      "stageOrder": 1,
+      "amount": 118800,
+      "currency": "USD",
+      "amountEur": 110000,
+      "createDate": "2026-04-28",
+      "closeDateRep": "2026-12-13",
+      "closeDateModel": "2027-01-29",
+      "hubspotProb": 0.2,
+      "modelProb": 0.16,
+      "forecastCategory": "pipeline",
+      "leadSource": "Self-serve upgrade",
+      "daysInStage": 94,
+      "closeDatePushes": 0,
+      "activity30d": 15,
+      "lastActivity": "2026-09-26",
+      "flags": [
+        "Stuck in stage 90+ days"
+      ],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1863177",
+      "name": "Corvid Telecom MSP",
+      "company": "Corvid Telecom MSP",
+      "owner": "Laura Virtanen",
+      "stage": "Proposal",
+      "stageOrder": 3,
+      "amount": 260000,
+      "currency": "EUR",
+      "amountEur": 260000,
+      "createDate": "2026-07-29",
+      "closeDateRep": "2026-12-11",
+      "closeDateModel": "2027-02-16",
+      "hubspotProb": 0.6,
+      "modelProb": 0.26,
+      "forecastCategory": "best_case",
+      "leadSource": "Partner referral",
+      "daysInStage": 54,
+      "closeDatePushes": 2,
+      "activity30d": 4,
+      "lastActivity": "2026-09-23",
+      "flags": [
+        "Close date pushed 2×",
+        "Single-threaded (1 contact)"
+      ],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1865090",
+      "name": "Halcyon Universities Consortium",
+      "company": "Halcyon Universities Consortium",
+      "owner": "Mikko Salo",
+      "stage": "Discovery",
+      "stageOrder": 0,
+      "amount": 2508000,
+      "currency": "SEK",
+      "amountEur": 220000,
+      "createDate": "2026-04-03",
+      "closeDateRep": "2027-01-01",
+      "closeDateModel": "2027-02-28",
+      "hubspotProb": 0.1,
+      "modelProb": 0.08,
+      "forecastCategory": "pipeline",
+      "leadSource": "Outbound",
+      "daysInStage": 44,
+      "closeDatePushes": 0,
+      "activity30d": 11,
+      "lastActivity": "2026-09-28",
+      "flags": [],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1867003",
+      "name": "Eastwind Logistics",
+      "company": "Eastwind Logistics",
+      "owner": "Anna Lindqvist",
+      "stage": "Demo / Trial",
+      "stageOrder": 2,
+      "amount": 70000,
+      "currency": "EUR",
+      "amountEur": 70000,
+      "createDate": "2026-08-08",
+      "closeDateRep": "2026-10-05",
+      "closeDateModel": "2026-11-19",
+      "hubspotProb": 0.4,
+      "modelProb": 0.41,
+      "forecastCategory": "best_case",
+      "leadSource": "Event",
+      "daysInStage": 57,
+      "closeDatePushes": 0,
+      "activity30d": 10,
+      "lastActivity": "2026-09-29",
+      "flags": [],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1868916",
+      "name": "Mosaic Office REIT",
+      "company": "Mosaic Office REIT",
+      "owner": "Jonas Berg",
+      "stage": "Qualified",
+      "stageOrder": 1,
+      "amount": 95000,
+      "currency": "EUR",
+      "amountEur": 95000,
+      "createDate": "2026-07-15",
+      "closeDateRep": "2026-11-11",
+      "closeDateModel": "2027-01-20",
+      "hubspotProb": 0.2,
+      "modelProb": 0.21,
+      "forecastCategory": "pipeline",
+      "leadSource": "Inbound – website",
+      "daysInStage": 70,
+      "closeDatePushes": 1,
+      "activity30d": 12,
+      "lastActivity": "2026-09-28",
+      "flags": [],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1870829",
+      "name": "Signalwise Networks – enterprise",
+      "company": "Signalwise Networks",
+      "owner": "Laura Virtanen",
+      "stage": "Demo / Trial",
+      "stageOrder": 2,
+      "amount": 58000,
+      "currency": "EUR",
+      "amountEur": 58000,
+      "createDate": "2026-08-02",
+      "closeDateRep": "2026-11-28",
+      "closeDateModel": "2027-01-08",
+      "hubspotProb": 0.4,
+      "modelProb": 0.55,
+      "forecastCategory": "best_case",
+      "leadSource": "Self-serve upgrade",
+      "daysInStage": 74,
+      "closeDatePushes": 0,
+      "activity30d": 4,
+      "lastActivity": "2026-09-29",
+      "flags": [
+        "Paying self-serve account"
+      ],
+      "stripeLinked": true,
+      "selfServeSeats": 3
+    },
+    {
+      "id": "hs_1872742",
+      "name": "Polar Arena Group – new venues",
+      "company": "Polar Arena Group",
+      "owner": "Mikko Salo",
+      "stage": "Proposal",
+      "stageOrder": 3,
+      "amount": 135000,
+      "currency": "USD",
+      "amountEur": 125000,
+      "createDate": "2026-06-28",
+      "closeDateRep": "2027-01-13",
+      "closeDateModel": "2027-02-25",
+      "hubspotProb": 0.6,
+      "modelProb": 0.83,
+      "forecastCategory": "best_case",
+      "leadSource": "Partner referral",
+      "daysInStage": 67,
+      "closeDatePushes": 0,
+      "activity30d": 7,
+      "lastActivity": "2026-09-26",
+      "flags": [
+        "Single-threaded (1 contact)",
+        "Paying self-serve account"
+      ],
+      "stripeLinked": true,
+      "selfServeSeats": 4
+    },
+    {
+      "id": "hs_1874655",
+      "name": "Brindle Pharma",
+      "company": "Brindle Pharma",
+      "owner": "Anna Lindqvist",
+      "stage": "Discovery",
+      "stageOrder": 0,
+      "amount": 90000,
+      "currency": "EUR",
+      "amountEur": 90000,
+      "createDate": "2026-05-15",
+      "closeDateRep": "2027-02-13",
+      "closeDateModel": "2027-04-12",
+      "hubspotProb": 0.1,
+      "modelProb": 0.1,
+      "forecastCategory": "pipeline",
+      "leadSource": "Outbound",
+      "daysInStage": 74,
+      "closeDatePushes": 0,
+      "activity30d": 11,
+      "lastActivity": "2026-09-26",
+      "flags": [
+        "Stuck in stage 90+ days"
+      ],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1876568",
+      "name": "Oakridge Defence Systems",
+      "company": "Oakridge Defence Systems",
+      "owner": "Jonas Berg",
+      "stage": "Qualified",
+      "stageOrder": 1,
+      "amount": 190000,
+      "currency": "EUR",
+      "amountEur": 190000,
+      "createDate": "2026-04-04",
+      "closeDateRep": "2026-10-20",
+      "closeDateModel": "2027-02-02",
+      "hubspotProb": 0.2,
+      "modelProb": 0.09,
+      "forecastCategory": "pipeline",
+      "leadSource": "Event",
+      "daysInStage": 13,
+      "closeDatePushes": 4,
+      "activity30d": 0,
+      "lastActivity": "2026-08-29",
+      "flags": [
+        "Close date pushed 4×",
+        "No activity 21 days"
+      ],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1878481",
+      "name": "Seaview Cruise Terminals",
+      "company": "Seaview Cruise Terminals",
+      "owner": "Laura Virtanen",
+      "stage": "Demo / Trial",
+      "stageOrder": 2,
+      "amount": 105000,
+      "currency": "EUR",
+      "amountEur": 105000,
+      "createDate": "2026-05-17",
+      "closeDateRep": "2027-01-10",
+      "closeDateModel": "2027-02-20",
+      "hubspotProb": 0.4,
+      "modelProb": 0.33,
+      "forecastCategory": "best_case",
+      "leadSource": "Inbound – website",
+      "daysInStage": 44,
+      "closeDatePushes": 0,
+      "activity30d": 14,
+      "lastActivity": "2026-09-28",
+      "flags": [],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    },
+    {
+      "id": "hs_1880394",
+      "name": "Lakeside IT Services – MSP",
+      "company": "Lakeside IT Services",
+      "owner": "Mikko Salo",
+      "stage": "Negotiation",
+      "stageOrder": 4,
+      "amount": 62000,
+      "currency": "EUR",
+      "amountEur": 62000,
+      "createDate": "2026-04-02",
+      "closeDateRep": "2026-10-27",
+      "closeDateModel": "2026-12-09",
+      "hubspotProb": 0.8,
+      "modelProb": 0.92,
+      "forecastCategory": "commit",
+      "leadSource": "Self-serve upgrade",
+      "daysInStage": 58,
+      "closeDatePushes": 1,
+      "activity30d": 15,
+      "lastActivity": "2026-09-26",
+      "flags": [
+        "Paying self-serve account"
+      ],
+      "stripeLinked": true,
+      "selfServeSeats": 3
+    },
+    {
+      "id": "hs_1882307",
+      "name": "Juniper Campus Housing",
+      "company": "Juniper Campus Housing",
+      "owner": "Anna Lindqvist",
+      "stage": "Qualified",
+      "stageOrder": 1,
+      "amount": 969000,
+      "currency": "SEK",
+      "amountEur": 85000,
+      "createDate": "2026-07-28",
+      "closeDateRep": "2027-01-14",
+      "closeDateModel": "2027-03-01",
+      "hubspotProb": 0.2,
+      "modelProb": 0.16,
+      "forecastCategory": "pipeline",
+      "leadSource": "Partner referral",
+      "daysInStage": 75,
+      "closeDatePushes": 0,
+      "activity30d": 9,
+      "lastActivity": "2026-09-29",
+      "flags": [
+        "Single-threaded (1 contact)"
+      ],
+      "stripeLinked": false,
+      "selfServeSeats": null
+    }
+  ],
+  "dealModel": {
+    "trainingSnapshots": 18452,
+    "deals": 612,
+    "brierModel": 0.141,
+    "brierHubspot": 0.204,
+    "aucModel": 0.784,
+    "stageCalibration": [
+      {
+        "stage": "Discovery",
+        "hubspotProb": 0.1,
+        "empiricalProb": 0.05,
+        "n": 212
+      },
+      {
+        "stage": "Qualified",
+        "hubspotProb": 0.2,
+        "empiricalProb": 0.12,
+        "n": 168
+      },
+      {
+        "stage": "Demo / Trial",
+        "hubspotProb": 0.4,
+        "empiricalProb": 0.27,
+        "n": 121
+      },
+      {
+        "stage": "Proposal",
+        "hubspotProb": 0.6,
+        "empiricalProb": 0.44,
+        "n": 74
+      },
+      {
+        "stage": "Negotiation",
+        "hubspotProb": 0.8,
+        "empiricalProb": 0.69,
+        "n": 37
+      }
+    ],
+    "slipDaysMedian": 34,
+    "drivers": [
+      {
+        "feature": "stripe_linked",
+        "label": "Account already pays via self-serve",
+        "oddsRatio": 2.4,
+        "direction": "protective"
+      },
+      {
+        "feature": "multi_thread",
+        "label": "3+ contacts engaged",
+        "oddsRatio": 1.9,
+        "direction": "protective"
+      },
+      {
+        "feature": "activity_30d",
+        "label": "Recent sales activity (30 d)",
+        "oddsRatio": 1.45,
+        "direction": "protective"
+      },
+      {
+        "feature": "partner_sourced",
+        "label": "Partner-sourced",
+        "oddsRatio": 1.22,
+        "direction": "protective"
+      },
+      {
+        "feature": "pushes",
+        "label": "Close date pushed 2+ times",
+        "oddsRatio": 0.38,
+        "direction": "risk"
+      },
+      {
+        "feature": "stage_age",
+        "label": "Days in stage above median",
+        "oddsRatio": 0.55,
+        "direction": "risk"
+      },
+      {
+        "feature": "large_deal",
+        "label": "Amount > €200k",
+        "oddsRatio": 0.71,
+        "direction": "risk"
+      }
+    ]
+  },
+  "cash": {
+    "weekly": [
+      {
+        "weekStart": "2026-10-05",
+        "expected": {
+          "p10": 91796,
+          "p50": 101995,
+          "p90": 112195
+        },
+        "components": {
+          "openInvoices": 47116,
+          "renewals": 48766,
+          "newBusiness": 6113
+        }
+      },
+      {
+        "weekStart": "2026-10-12",
+        "expected": {
+          "p10": 63515,
+          "p50": 71526,
+          "p90": 79537
+        },
+        "components": {
+          "openInvoices": 41127,
+          "renewals": 25764,
+          "newBusiness": 4635
+        }
+      },
+      {
+        "weekStart": "2026-10-19",
+        "expected": {
+          "p10": 46877,
+          "p50": 53512,
+          "p90": 60147
+        },
+        "components": {
+          "openInvoices": 29533,
+          "renewals": 18129,
+          "newBusiness": 5850
+        }
+      },
+      {
+        "weekStart": "2026-10-26",
+        "expected": {
+          "p10": 56328,
+          "p50": 65194,
+          "p90": 74060
+        },
+        "components": {
+          "openInvoices": 25351,
+          "renewals": 22016,
+          "newBusiness": 17827
+        }
+      },
+      {
+        "weekStart": "2026-11-02",
+        "expected": {
+          "p10": 70761,
+          "p50": 83053,
+          "p90": 95345
+        },
+        "components": {
+          "openInvoices": 19157,
+          "renewals": 46641,
+          "newBusiness": 17255
+        }
+      },
+      {
+        "weekStart": "2026-11-09",
+        "expected": {
+          "p10": 47907,
+          "p50": 57032,
+          "p90": 66157
+        },
+        "components": {
+          "openInvoices": 14370,
+          "renewals": 24623,
+          "newBusiness": 18039
+        }
+      },
+      {
+        "weekStart": "2026-11-16",
+        "expected": {
+          "p10": 42856,
+          "p50": 51759,
+          "p90": 60662
+        },
+        "components": {
+          "openInvoices": 10258,
+          "renewals": 21397,
+          "newBusiness": 20104
+        }
+      },
+      {
+        "weekStart": "2026-11-23",
+        "expected": {
+          "p10": 49604,
+          "p50": 60789,
+          "p90": 71974
+        },
+        "components": {
+          "openInvoices": 9517,
+          "renewals": 21156,
+          "newBusiness": 30116
+        }
+      },
+      {
+        "weekStart": "2026-11-30",
+        "expected": {
+          "p10": 70231,
+          "p50": 87352,
+          "p90": 104473
+        },
+        "components": {
+          "openInvoices": 11296,
+          "renewals": 48976,
+          "newBusiness": 27080
+        }
+      },
+      {
+        "weekStart": "2026-12-07",
+        "expected": {
+          "p10": 45714,
+          "p50": 57720,
+          "p90": 69726
+        },
+        "components": {
+          "openInvoices": 6458,
+          "renewals": 18371,
+          "newBusiness": 32891
+        }
+      },
+      {
+        "weekStart": "2026-12-14",
+        "expected": {
+          "p10": 40979,
+          "p50": 52537,
+          "p90": 64095
+        },
+        "components": {
+          "openInvoices": 7658,
+          "renewals": 19651,
+          "newBusiness": 25228
+        }
+      },
+      {
+        "weekStart": "2026-12-21",
+        "expected": {
+          "p10": 43451,
+          "p50": 56577,
+          "p90": 69703
+        },
+        "components": {
+          "openInvoices": 8007,
+          "renewals": 17148,
+          "newBusiness": 31422
+        }
+      },
+      {
+        "weekStart": "2026-12-28",
+        "expected": {
+          "p10": 68429,
+          "p50": 90515,
+          "p90": 112601
+        },
+        "components": {
+          "openInvoices": 8082,
+          "renewals": 38861,
+          "newBusiness": 43572
+        }
+      }
+    ],
+    "openInvoices": [
+      {
+        "invoice": "INV-2026-0931",
+        "customer": "Granite Bank Nordics",
+        "segment": "enterprise",
+        "amount": 48000,
+        "issued": "2026-08-14",
+        "due": "2026-09-13",
+        "daysOverdue": 17,
+        "expectedPayDate": "2026-10-09",
+        "pPaid30d": 0.86,
+        "payerProfile": "Typically 12 days late"
+      },
+      {
+        "invoice": "INV-2026-0954",
+        "customer": "Fjordline Hotels",
+        "segment": "enterprise",
+        "amount": 41000,
+        "issued": "2026-08-01",
+        "due": "2026-08-31",
+        "daysOverdue": 30,
+        "expectedPayDate": "2026-10-22",
+        "pPaid30d": 0.48,
+        "payerProfile": "Typically 30+ days late"
+      },
+      {
+        "invoice": "INV-2026-0977",
+        "customer": "Northgate Health",
+        "segment": "enterprise",
+        "amount": 32000,
+        "issued": "2026-09-10",
+        "due": "2026-10-10",
+        "daysOverdue": 0,
+        "expectedPayDate": "2026-10-13",
+        "pPaid30d": 0.93,
+        "payerProfile": "Pays on time"
+      },
+      {
+        "invoice": "INV-2026-0988",
+        "customer": "Meridian Retail Oy",
+        "segment": "enterprise",
+        "amount": 16500,
+        "issued": "2026-09-02",
+        "due": "2026-09-16",
+        "daysOverdue": 14,
+        "expectedPayDate": "2026-10-30",
+        "pPaid30d": 0.41,
+        "payerProfile": "Failed card retries"
+      },
+      {
+        "invoice": "INV-2026-1002",
+        "customer": "Polar Arena Group",
+        "segment": "enterprise",
+        "amount": 28500,
+        "issued": "2026-09-25",
+        "due": "2026-10-25",
+        "daysOverdue": 0,
+        "expectedPayDate": "2026-10-27",
+        "pPaid30d": 0.9,
+        "payerProfile": "Pays on time"
+      },
+      {
+        "invoice": "in_1PqA7x",
+        "customer": "Bluefin MSP",
+        "segment": "self_serve",
+        "amount": 9400,
+        "issued": "2026-09-12",
+        "due": "2026-09-19",
+        "daysOverdue": 11,
+        "expectedPayDate": "2026-10-06",
+        "pPaid30d": 0.74,
+        "payerProfile": "Typically 8 days late"
+      },
+      {
+        "invoice": "in_1PqB2k",
+        "customer": "Signalwise Networks",
+        "segment": "self_serve",
+        "amount": 7800,
+        "issued": "2026-09-20",
+        "due": "2026-09-27",
+        "daysOverdue": 3,
+        "expectedPayDate": "2026-10-21",
+        "pPaid30d": 0.37,
+        "payerProfile": "Failed card retries"
+      },
+      {
+        "invoice": "in_1PqC9m",
+        "customer": "Tundra Connect AB",
+        "segment": "self_serve",
+        "amount": 4700,
+        "issued": "2026-09-28",
+        "due": "2026-10-05",
+        "daysOverdue": 0,
+        "expectedPayDate": "2026-10-05",
+        "pPaid30d": 0.95,
+        "payerProfile": "Pays on time"
+      }
+    ]
+  },
+  "backtest": [
+    {
+      "asOf": "2025-06-30",
+      "horizonMonths": 6,
+      "actual": 1158000,
+      "forecast": {
+        "p10": 1035000,
+        "p50": 1121000,
+        "p90": 1214000
+      },
+      "naiveRunRate": 1012000,
+      "hubspotWeighted": 168000,
+      "errorPct": -0.032,
+      "naiveErrorPct": -0.126,
+      "inBand": true
+    },
+    {
+      "asOf": "2025-09-30",
+      "horizonMonths": 6,
+      "actual": 1342000,
+      "forecast": {
+        "p10": 1208000,
+        "p50": 1301000,
+        "p90": 1405000
+      },
+      "naiveRunRate": 1178000,
+      "hubspotWeighted": 214000,
+      "errorPct": -0.031,
+      "naiveErrorPct": -0.122,
+      "inBand": true
+    },
+    {
+      "asOf": "2025-12-31",
+      "horizonMonths": 6,
+      "actual": 1561000,
+      "forecast": {
+        "p10": 1398000,
+        "p50": 1508000,
+        "p90": 1622000
+      },
+      "naiveRunRate": 1366000,
+      "hubspotWeighted": 241000,
+      "errorPct": -0.034,
+      "naiveErrorPct": -0.125,
+      "inBand": true
+    },
+    {
+      "asOf": "2026-03-31",
+      "horizonMonths": 6,
+      "actual": 1689000,
+      "forecast": {
+        "p10": 1566000,
+        "p50": 1684000,
+        "p90": 1801000
+      },
+      "naiveRunRate": 1490000,
+      "hubspotWeighted": 262000,
+      "errorPct": -0.003,
+      "naiveErrorPct": -0.118,
+      "inBand": true
+    }
+  ],
+  "identity": {
+    "stripeCustomers": 1268,
+    "hubspotCompanies": 874,
+    "matched": 431,
+    "byMethod": {
+      "domain": 318,
+      "contact_email": 79,
+      "fuzzy_name": 34
+    },
+    "examples": [
+      {
+        "stripeName": "Bluefin MSP Ltd",
+        "hubspotName": "Bluefin MSP",
+        "method": "domain",
+        "confidence": 0.99
+      },
+      {
+        "stripeName": "signalwise.io",
+        "hubspotName": "Signalwise Networks",
+        "method": "domain",
+        "confidence": 0.98
+      },
+      {
+        "stripeName": "Lakeside IT",
+        "hubspotName": "Lakeside IT Services",
+        "method": "contact_email",
+        "confidence": 0.95
+      },
+      {
+        "stripeName": "Polar Arena Grp",
+        "hubspotName": "Polar Arena Group",
+        "method": "fuzzy_name",
+        "confidence": 0.88
+      },
+      {
+        "stripeName": "Kestrel Logistics AB",
+        "hubspotName": "Kestrel Logistics",
+        "method": "domain",
+        "confidence": 0.99
+      },
+      {
+        "stripeName": "T. Andersson (Tundra)",
+        "hubspotName": "Tundra Connect AB",
+        "method": "contact_email",
+        "confidence": 0.91
+      },
+      {
+        "stripeName": "Meridian Retail",
+        "hubspotName": "Meridian Retail Oy",
+        "method": "fuzzy_name",
+        "confidence": 0.84
+      },
+      {
+        "stripeName": "Coastal AV",
+        "hubspotName": "Coastal AV Integrators",
+        "method": "fuzzy_name",
+        "confidence": 0.81
+      }
+    ],
+    "selfServeAccountsInCrm": 187
+  },
+  "scenarios": {
+    "base": {
+      "fy2027Revenue": 4600000,
+      "arrDec2027": 4850000
+    },
+    "levers": [
+      {
+        "id": "selfServeChurn",
+        "label": "Self-serve monthly churn",
+        "unit": "pp",
+        "min": -1,
+        "max": 1,
+        "step": 0.1,
+        "default": 0,
+        "impact": {
+          "fy2027Revenue": -182000,
+          "arrDec2027": -264000
+        }
+      },
+      {
+        "id": "winRate",
+        "label": "Enterprise win rate",
+        "unit": "pp",
+        "min": -10,
+        "max": 10,
+        "step": 1,
+        "default": 0,
+        "impact": {
+          "fy2027Revenue": 27500,
+          "arrDec2027": 36000
+        }
+      },
+      {
+        "id": "pipelineCreation",
+        "label": "New pipeline creation",
+        "unit": "%",
+        "min": -30,
+        "max": 30,
+        "step": 5,
+        "default": 0,
+        "impact": {
+          "fy2027Revenue": 6400,
+          "arrDec2027": 9100
+        }
+      },
+      {
+        "id": "newSelfServe",
+        "label": "New self-serve signups",
+        "unit": "%",
+        "min": -30,
+        "max": 30,
+        "step": 5,
+        "default": 0,
+        "impact": {
+          "fy2027Revenue": 5200,
+          "arrDec2027": 7600
+        }
+      },
+      {
+        "id": "dealSize",
+        "label": "Average enterprise deal size",
+        "unit": "%",
+        "min": -20,
+        "max": 20,
+        "step": 5,
+        "default": 0,
+        "impact": {
+          "fy2027Revenue": 7100,
+          "arrDec2027": 9600
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+/* ---------- Hamina tokens (light; from design/DESIGN.md) ---------- */
+:root {
+  --hm-primary: #3143e5;
+  --hm-primary-hover: #1a2ccc;
+  --hm-primary-active: #14229e;
+  --hm-primary-075: #6472eb;
+  --hm-primary-05: #98a1f2;
+  --hm-primary-025: #cbd0f8;
+  --hm-primary-01: #eaecfc;
+
+  --hm-bg: #ffffff;
+  --hm-bg-subtle: #f9f9fa;
+  --hm-bg-muted: #f0f0f1;
+  --hm-surface: #ffffff;
+
+  --hm-text: #1b1b1d;
+  --hm-text-body: #4e4f55;
+  --hm-text-secondary: #696a72;
+  --hm-text-muted: #85868e;
+  --hm-text-caption: #9d9ea4;
+  --hm-text-logo: #202427;
+
+  --hm-border: #dcdddf;
+  --hm-border-light: #e5e5e8;
+  --hm-border-subtle: #f0f0f1;
+
+  --hm-success: #349780;
+  --hm-success-bg: #edf8f6;
+  --hm-warning: #e58f10;
+  --hm-warning-text: #b5720d;
+  --hm-warning-bg: #fef5e7;
+  --hm-error: #df2664;
+  --hm-error-bg: #fdeaf0;
+  --hm-violet: #6726f5;
+  --hm-violet-bg: #f0e9fe;
+
+  --hm-shadow-card: 0 4px 16px rgba(0, 0, 0, 0.04), 0 3px 5px rgba(0, 0, 0, 0.04);
+  --hm-shadow-pop: 0 24px 24px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.04);
+  --hm-shadow-sm: 0 1px 4px 0 rgba(78, 79, 85, 0.04), 0 8px 16px -4px rgba(78, 79, 85, 0.1);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: var(--hm-primary);
+  --color-primary-hover: var(--hm-primary-hover);
+  --color-primary-soft: var(--hm-primary-01);
+  --color-bg: var(--hm-bg);
+  --color-bg-subtle: var(--hm-bg-subtle);
+  --color-bg-muted: var(--hm-bg-muted);
+  --color-surface: var(--hm-surface);
+  --color-fg: var(--hm-text);
+  --color-fg-body: var(--hm-text-body);
+  --color-fg-muted: var(--hm-text-muted);
+  --color-line: var(--hm-border);
+  --color-line-light: var(--hm-border-light);
+  --color-success: var(--hm-success);
+  --color-success-bg: var(--hm-success-bg);
+  --color-warning: var(--hm-warning);
+  --color-warning-text: var(--hm-warning-text);
+  --color-warning-bg: var(--hm-warning-bg);
+  --color-error: var(--hm-error);
+  --color-error-bg: var(--hm-error-bg);
+  --shadow-card: var(--hm-shadow-card);
+  --shadow-pop: var(--hm-shadow-pop);
+  --shadow-soft: var(--hm-shadow-sm);
+}
+
+@theme {
+  --color-gray-50: #f9f9fa;
+  --color-gray-100: #f0f0f1;
+  --color-gray-200: #dcdddf;
+  --color-gray-300: #bdbec1;
+  --color-gray-400: #9d9ea4;
+  --color-gray-500: #85868e;
+  --color-gray-600: #696a72;
+  --color-gray-700: #4e4f55;
+  --color-gray-800: #36363a;
+  --color-gray-900: #1b1b1d;
+  --color-gray-950: #030712;
+  --color-indigo-50: #e8eafc;
+  --color-indigo-100: #d6dafa;
+  --color-indigo-200: #adb5f5;
+  --color-indigo-300: #858ff0;
+  --color-indigo-400: #5c6aea;
+  --color-indigo-500: #3143e5;
+  --color-indigo-600: #192bc7;
+  --color-indigo-700: #132095;
+  --color-indigo-800: #0d1564;
+  --color-indigo-900: #060b32;
+  --color-blue-50: #e8eafc;
+  --color-blue-100: #d6dafa;
+  --color-blue-200: #adb5f5;
+  --color-blue-300: #858ff0;
+  --color-blue-400: #5c6aea;
+  --color-blue-500: #3143e5;
+  --color-blue-600: #192bc7;
+  --color-blue-700: #132095;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: var(--hm-bg-subtle);
+  color: var(--hm-text);
+  font-family: var(--font-sans);
+}
+b,
+strong {
+  font-weight: 600;
+}
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Recharts: no focus outline box around the whole svg */
+.recharts-wrapper:focus,
+.recharts-surface:focus {
+  outline: none;
+}
+
+/* Range slider, Hamina blue */
+input[type="range"].hm-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 24px;
+  background: transparent;
+}
+input[type="range"].hm-range::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to right,
+    var(--hm-primary-025) 0%,
+    var(--hm-primary-025) var(--fill, 50%),
+    var(--hm-bg-muted) var(--fill, 50%)
+  );
+}
+input[type="range"].hm-range::-moz-range-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: var(--hm-bg-muted);
+}
+input[type="range"].hm-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: var(--hm-primary);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+input[type="range"].hm-range::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: var(--hm-primary);
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+input[type="range"].hm-range:focus-visible {
+  outline: 2px solid rgb(59 130 246 / 0.5);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Markdown brief */
+.hm-prose h1,
+.hm-prose h2,
+.hm-prose h3 {
+  font-weight: 600;
+  color: var(--hm-text);
+  margin: 0.9em 0 0.35em;
+  line-height: 1.3;
+}
+.hm-prose h1 { font-size: 1.05rem; }
+.hm-prose h2 { font-size: 0.95rem; }
+.hm-prose h3 { font-size: 0.875rem; }
+.hm-prose p { margin: 0.5em 0; }
+.hm-prose ul,
+.hm-prose ol { margin: 0.5em 0; padding-left: 1.25em; }
+.hm-prose ul { list-style: disc; }
+.hm-prose ol { list-style: decimal; }
+.hm-prose li { margin: 0.2em 0; }
+.hm-prose li::marker { color: var(--hm-primary); }
+.hm-prose strong { color: var(--hm-text); }
+.hm-prose a { color: var(--hm-primary); text-decoration: underline; }
+.hm-prose code {
+  font-size: 0.85em;
+  background: var(--hm-bg-muted);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.hm-prose > :first-child { margin-top: 0; }
