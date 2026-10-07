@@ -1,0 +1,16 @@
+id,product_id,nickname,plan,currency,unit_amount,type,recurring_interval,recurring_interval_count,active,created
+price_1PzBpWVBZov7oibPYdDyuoxi,prod_M3CS6GTT1ck9Uq,Network Planner – 6-Month License,6_month,eur,59900,recurring,month,6,1,1642411800
+price_15mHNODG6kmsTAyehOoCotl4,prod_M3CS6GTT1ck9Uq,Network Planner – 12-Month License,12_month,eur,100000,recurring,year,1,1,1642411800
+price_1jY4vdGA0UAGDPNOnXdqIbLt,prod_UkwBoiFOtO8drf,Enterprise – Kaarna University of Technology – 2023 term,enterprise,eur,11000000,recurring,year,1,1,1678116687
+price_1Rj84vXXthZWC6sFhWyXhFvM,prod_UkwBoiFOtO8drf,Enterprise – St. Alder Regional Health System – 2023 term,enterprise,eur,13500000,recurring,year,1,1,1693048027
+price_115xwUKVzOGPL5unvioYV7qQ,prod_UkwBoiFOtO8drf,Enterprise – Voltmark Fertigungstechnik GmbH – 2024 term,enterprise,eur,18000000,recurring,year,1,1,1707483783
+price_1YLshhL4NpjZVEKdi8bXkTjg,prod_UkwBoiFOtO8drf,Enterprise – Kaarna University of Technology – 2024 term,enterprise,eur,12100000,recurring,year,1,1,1709998287
+price_1AFKnKkyuPBYdktQEU7S7UUK,prod_UkwBoiFOtO8drf,Enterprise – Costa Lucera Hotels & Resorts – 2024 term,enterprise,eur,12400000,recurring,year,1,1,1717169927
+price_12Ve7OFWcLD5ys6Ymhf0qbJH,prod_UkwBoiFOtO8drf,Enterprise – St. Alder Regional Health System – 2024 term,enterprise,eur,15000000,recurring,year,1,1,1724929627
+price_1LbJoUiqQvKZhhPV0bP4Koxm,prod_UkwBoiFOtO8drf,Enterprise – Halden Ridge State University – 2025 term,enterprise,eur,21000000,recurring,year,1,1,1736519060
+price_1JfyVcWTqcNiZD8hqmKABch4,prod_UkwBoiFOtO8drf,Enterprise – Voltmark Fertigungstechnik GmbH – 2025 term,enterprise,eur,19800000,recurring,year,1,1,1738501383
+price_10WucLoS3Nw9IrVEyNEyxc4L,prod_UkwBoiFOtO8drf,Enterprise – Kaarna University of Technology – 2025 term,enterprise,eur,14500000,recurring,year,1,1,1741707087
+price_11lwytPiRpczwlSG1xmtXi7S,prod_UkwBoiFOtO8drf,Enterprise – Kivimet Paper & Packaging Oyj – 2025 term,enterprise,eur,16000000,recurring,year,1,1,1743841798
+price_11rwpK7TMG1Okx6VDDQ0U1Yy,prod_UkwBoiFOtO8drf,Enterprise – Marlowe Valley University Hospital – 2025 term,enterprise,eur,28500000,recurring,year,1,1,1750767304
+price_1gjLnteA8tNVGgb9rrLF2Pea,prod_UkwBoiFOtO8drf,Enterprise – St. Alder Regional Health System – 2025 term,enterprise,eur,16500000,recurring,year,1,1,1756552027
+price_1fATdDUOrNlYtsUSYnSD8V4j,prod_UkwBoiFOtO8drf,Enterprise – Aurelia Grand Hotels Group – 2025 term,enterprise,eur,11500000,recurring,year,1,1,1759394865
