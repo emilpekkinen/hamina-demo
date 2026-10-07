@@ -1,13 +1,14 @@
-import Anthropic from "@anthropic-ai/sdk";
+import OpenAI from "openai";
 import { data } from "@/lib/data";
 
-// Weekly RevOps brief written by Claude from the forecast snapshot.
+// Weekly RevOps brief written by an OpenAI model from the forecast snapshot.
 // The snapshot only changes on redeploy, so one brief per instance per snapshot is enough:
 // it keeps the demo fast and stops repeated clicks from spending tokens.
 
 export const maxDuration = 60;
 
-const MODEL = "claude-opus-5-5";
+const MODEL = process.env.OPENAI_MODEL || "gpt-5.5";
+const API_KEY = process.env.OPEN_AI_API_KEY || process.env.OPENAI_API_KEY;
 
 const SYSTEM = `You are the RevOps analyst at Hamina Wireless (Wi-Fi planning SaaS). You write the weekly forecast brief for the CRO.
 Write in Markdown, max ~250 words, plain business English, no preamble.
@@ -17,7 +18,7 @@ Structure:
 **Act this week** – 3–4 bullets naming specific accounts or deals, the number at stake, and the concrete action (who should do what).
 **Pipeline reality check** – how the model's view differs from HubSpot stage probabilities, in one or two sentences.
 **Cash** – overdue receivables and expected inflow next 90 days.
-Use only numbers from the JSON. Round money to €k or €M. Never invent accounts, people or figures.`;
+Use only numbers from the JSON. Round money to €k or €M; write probabilities as percentages (0.21 → 21 %). Never invent accounts, people or figures.`;
 
 function summary() {
   const k = data.kpis;
@@ -47,45 +48,34 @@ function summary() {
   };
 }
 
-const client = new Anthropic();
 let cached: { key: string; markdown: string } | null = null;
 
 export async function POST() {
   const key = data.meta.generatedAt;
   if (cached?.key === key) return Response.json({ markdown: cached.markdown, cached: true });
 
-  if (!process.env.ANTHROPIC_API_KEY) {
-    return Response.json({ error: "ANTHROPIC_API_KEY is not configured" }, { status: 503 });
+  if (!API_KEY) {
+    return Response.json({ error: "OPEN_AI_API_KEY is not configured" }, { status: 503 });
   }
 
   try {
-    const response = await client.beta.messages.create({
+    const client = new OpenAI({ apiKey: API_KEY });
+    const response = await client.responses.create({
       model: MODEL,
-      max_tokens: 16000,
-      output_config: { effort: "medium" },
-      betas: ["server-side-fallback-2026-07-01"],
-      fallbacks: "default",
-      system: SYSTEM,
-      messages: [{ role: "user", content: `Forecast snapshot:\n${JSON.stringify(summary())}` }],
+      instructions: SYSTEM,
+      input: `Forecast snapshot:\n${JSON.stringify(summary())}`,
     });
-
-    if (response.stop_reason === "refusal") {
-      return Response.json({ error: "The model declined to write this brief." }, { status: 502 });
-    }
-    const markdown = response.content
-      .map((block) => (block.type === "text" ? block.text : ""))
-      .join("")
-      .trim();
+    const markdown = response.output_text.trim();
     if (!markdown) return Response.json({ error: "Empty response" }, { status: 502 });
 
     cached = { key, markdown };
     return Response.json({ markdown });
   } catch (error) {
-    if (error instanceof Anthropic.RateLimitError) {
+    if (error instanceof OpenAI.RateLimitError) {
       return Response.json({ error: "Rate limited, try again shortly" }, { status: 429 });
     }
-    if (error instanceof Anthropic.APIError) {
-      console.error("Claude API error", error.status, error.message);
+    if (error instanceof OpenAI.APIError) {
+      console.error("OpenAI API error", error.status, error.message);
       return Response.json({ error: "Brief generation failed" }, { status: 502 });
     }
     throw error;

@@ -39,7 +39,7 @@ python3 pipeline/build.py                        # → web/src/data/forecast.jso
 cd web && npm install && npm run dev
 ```
 
-The AI weekly brief needs `ANTHROPIC_API_KEY` in the environment (Vercel: Project → Settings → Environment Variables).
+The AI weekly brief uses the OpenAI Responses API: set `OPEN_AI_API_KEY` (and optionally `OPENAI_MODEL`, default `gpt-5.5`) in `web/.env.local` locally and in Vercel → Project → Settings → Environment Variables.
 
 ## Swapping in real data
 
