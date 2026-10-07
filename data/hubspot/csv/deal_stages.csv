@@ -1,0 +1,8 @@
+stage_id,label,display_order,probability,is_closed
+appointmentscheduled,Discovery,0,0.1,0
+qualifiedtobuy,Qualified,1,0.2,0
+presentationscheduled,Technical evaluation,2,0.4,0
+decisionmakerboughtin,Business case,3,0.6,0
+contractsent,Contract sent,4,0.8,0
+closedwon,Closed won,5,1.0,1
+closedlost,Closed lost,6,0.0,1

@@ -1,0 +1,7 @@
+id,email,firstname,lastname,team,role,createdate
+28451987,elina.saarela@hamina.example,Elina,Saarela,Enterprise Sales EMEA,account_executive,2022-10-03T09:00:00.000Z
+68913217,daniel.brooks@hamina.example,Daniel,Brooks,Enterprise Sales Americas,account_executive,2023-04-11T09:00:00.000Z
+74830180,aino.lehto@hamina.example,Aino,Lehto,SDR,sdr,2024-09-02T09:00:00.000Z
+75435653,jake.morrison@hamina.example,Jake,Morrison,SDR,sdr,2025-05-05T09:00:00.000Z
+84634470,sofia.lindqvist@hamina.example,Sofia,Lindqvist,Enterprise Sales EMEA,account_executive,2025-08-18T09:00:00.000Z
+49986920,ryan.calloway@hamina.example,Ryan,Calloway,Enterprise Sales Americas,account_executive,2026-03-02T09:00:00.000Z
