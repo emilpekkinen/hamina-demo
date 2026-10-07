@@ -327,7 +327,7 @@ def _pipeline(sim: Sim, lv: Levers):
         p = np.clip(d["p_win"] + lv.win_rate_pp / 100, 0, 0.99)
         win = rng.random(n) < p
         rep = sim.day(d["closedate_at"])
-        close = rep + rng.choice(slip, n)
+        close = rep + rng.choice(ctx.deal_model.slip_for_stage(d["stage_idx"]), n)
         close = np.where(close < 0, rng.integers(7, 60, n), close)  # overdue deals: closes soon if at all
         sims = np.nonzero(win)[0]
         amount = np.full(len(sims), d["amount_in_home_currency"] * (1 + lv.deal_size_pct / 100))

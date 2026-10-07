@@ -4,16 +4,16 @@ import { Bar, BarChart, CartesianGrid, Cell, LabelList, ResponsiveContainer, Too
 import type { ForecastData } from "@/lib/types";
 import { C, axisProps, yAxisProps } from "@/lib/chart";
 import { eur, eurTick } from "@/lib/format";
+import { BRIDGE_COLORS } from "@/lib/series";
 import { TipBox, rowOf } from "./Tip";
 
 type Step = ForecastData["bridge"]["steps"][number];
 type Row = Step & { base: number; size: number; label: string; color: string; running: number };
 
-export const BRIDGE_COLORS = { total: C.inkSoft, increase: C.blue, decrease: C.pink };
 
-export function BridgeChart({ steps, height = 280 }: { steps: Step[]; height?: number }) {
+function bridgeRows(steps: Step[]): Row[] {
   let running = 0;
-  const rows: Row[] = steps.map((s) => {
+  return steps.map((s) => {
     if (s.kind === "start" || s.kind === "end") {
       running = s.value;
       return { ...s, base: 0, size: s.value, label: eur(s.value), color: BRIDGE_COLORS.total, running };
@@ -30,6 +30,10 @@ export function BridgeChart({ steps, height = 280 }: { steps: Step[]; height?: n
       running,
     };
   });
+}
+
+export function BridgeChart({ steps, height = 280 }: { steps: Step[]; height?: number }) {
+  const rows = bridgeRows(steps);
   const max = Math.max(...rows.map((r) => r.base + r.size), 1);
   return (
     <div style={{ height }} className="w-full">
@@ -40,13 +44,13 @@ export function BridgeChart({ steps, height = 280 }: { steps: Step[]; height?: n
             dataKey="name"
             {...axisProps}
             interval={0}
-            height={40}
+            height={44}
             tick={({ x, y, payload }) => {
               const words = String(payload.value).split(" ");
               const mid = Math.ceil(words.length / 2);
-              const lines = words.length > 2 ? [words.slice(0, mid).join(" "), words.slice(mid).join(" ")] : [words.join(" ")];
+              const lines = words.length > 1 ? [words.slice(0, mid).join(" "), words.slice(mid).join(" ")] : words;
               return (
-                <text x={x} y={y + 12} textAnchor="middle" fill={C.axis} fontSize={11}>
+                <text x={x} y={Number(y) + 12} textAnchor="middle" fill={C.axis} fontSize={10}>
                   {lines.map((l, i) => (
                     <tspan key={i} x={x} dy={i === 0 ? 0 : 13}>
                       {l}

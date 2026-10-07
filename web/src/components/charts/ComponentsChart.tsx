@@ -4,17 +4,11 @@ import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxi
 import type { ForecastData } from "@/lib/types";
 import { C, axisProps, yAxisProps } from "@/lib/chart";
 import { eur, eurTick, monthLabel } from "@/lib/format";
+import { COMPONENTS } from "@/lib/series";
 import { TipBox, rowOf } from "./Tip";
 
 type Comp = NonNullable<ForecastData["monthly"][number]["components"]>;
 
-export const COMPONENTS: { key: keyof Comp; label: string; color: string }[] = [
-  { key: "existingSelfServe", label: "Existing self-serve", color: C.blue },
-  { key: "newSelfServe", label: "New self-serve", color: C.teal },
-  { key: "existingEnterprise", label: "Existing enterprise", color: C.orange },
-  { key: "pipelineEnterprise", label: "Open pipeline", color: C.violet },
-  { key: "futurePipeline", label: "Future pipeline", color: C.pink },
-];
 
 type Row = Comp & { month: string; total: number };
 

@@ -18,8 +18,8 @@ export function BriefCard({ initial, asOf }: { initial: string | null; asOf: str
     setState((s) => ({ status: "loading", markdown: s.markdown }));
     try {
       const res = await fetch("/api/brief", { method: "POST" });
-      if (!res.ok) throw new Error(`Request failed (${res.status})`);
-      const json = (await res.json()) as { markdown?: unknown };
+      const json = (await res.json().catch(() => ({}))) as { markdown?: unknown; error?: unknown };
+      if (!res.ok) throw new Error(typeof json.error === "string" ? json.error : `Request failed (${res.status})`);
       if (typeof json.markdown !== "string") throw new Error("Unexpected response");
       setState({ status: "done", markdown: json.markdown });
     } catch (e) {
@@ -36,33 +36,33 @@ export function BriefCard({ initial, asOf }: { initial: string | null; asOf: str
 
   return (
     <Card className="flex flex-col">
-      <div className="mb-4 flex items-start justify-between gap-3">
-        <div className="flex items-start gap-3">
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-blue-500">
-            <Sparkles size={18} strokeWidth={1.5} aria-hidden />
-          </span>
-          <div>
+      <div className="mb-4">
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2.5">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-blue-500">
+              <Sparkles size={16} strokeWidth={1.5} aria-hidden />
+            </span>
             <h2 className="text-base font-semibold leading-6 text-gray-900">AI weekly brief</h2>
-            <p className="text-[13px] leading-5 text-gray-500">
-              What changed, what to act on. Generated from the forecast snapshot of {asOf}.
-            </p>
           </div>
+          <button
+            type="button"
+            onClick={generate}
+            disabled={loading}
+            className="inline-flex h-8 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-md bg-blue-500 px-3 text-xs font-medium text-white shadow-sm transition-colors duration-150 hover:bg-[#1A2CCC] active:bg-[#14229E] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:opacity-60"
+          >
+            {loading ? (
+              <span className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-white/30 border-t-white" aria-hidden />
+            ) : md ? (
+              <RefreshCw size={14} strokeWidth={2} aria-hidden />
+            ) : (
+              <Sparkles size={14} strokeWidth={2} aria-hidden />
+            )}
+            {loading ? "Generating…" : md ? "Regenerate" : "Generate brief"}
+          </button>
         </div>
-        <button
-          type="button"
-          onClick={generate}
-          disabled={loading}
-          className="inline-flex h-8 shrink-0 items-center gap-1.5 rounded-md bg-blue-500 px-3 text-xs font-medium text-white shadow-sm transition-colors duration-150 hover:bg-[#1A2CCC] active:bg-[#14229E] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:opacity-60"
-        >
-          {loading ? (
-            <span className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-white/30 border-t-white" aria-hidden />
-          ) : md ? (
-            <RefreshCw size={14} strokeWidth={2} aria-hidden />
-          ) : (
-            <Sparkles size={14} strokeWidth={2} aria-hidden />
-          )}
-          {loading ? "Generating…" : md ? "Regenerate" : "Generate brief"}
-        </button>
+        <p className="mt-2 text-[13px] leading-5 text-gray-500">
+          What changed and what to act on, written from the forecast snapshot of {asOf}.
+        </p>
       </div>
 
       {state.status === "error" && (

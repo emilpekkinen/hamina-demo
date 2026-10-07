@@ -76,9 +76,17 @@ class DealModel:
         # Slip: how far past the rep's close date won deals actually closed.
         won = snaps[snaps["won"] == 1]
         self.slip_days = ((won["closed_at"] - won["closedate_at"]).dt.days).to_numpy()
+        # Early-stage close dates are guesses; they slip more. Pool stages 0-1, 2, 3-4.
+        group = won["stage_idx"].map({0: 0, 1: 0, 2: 1, 3: 2, 4: 2})
+        self.slip_by_group = {g: ((w["closed_at"] - w["closedate_at"]).dt.days).to_numpy() for g, w in won.groupby(group)}
         self.cycle_days = ((won.groupby("hs_object_id")["closed_at"].first()
                             - won.groupby("hs_object_id")["createdate"].first()).dt.days).to_numpy()
         return self
+
+    def slip_for_stage(self, stage_idx):
+        g = {0: 0, 1: 0, 2: 1, 3: 2, 4: 2}[int(stage_idx)]
+        arr = self.slip_by_group.get(g, self.slip_days)
+        return arr if len(arr) >= 5 else self.slip_days
 
     def predict(self, rows):
         return np.clip(self.model.predict_proba(rows[list(FEATURES)])[:, 1], 0.02, 0.95)

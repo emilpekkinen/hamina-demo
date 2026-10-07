@@ -167,7 +167,11 @@ def main():
     sc = ctx.ss_current[(ctx.ss_current["effective_end"] > AS_OF) & (ctx.ss_current["effective_end"] <= horizon_r)].copy()
     sc["arr"] = sc["quantity"] * sc["unit_eur"] * 12 / sc["months"]
     sc["exp_loss"] = sc["arr"] * (1 - sc["p_renew"])
-    for _, r in sc.sort_values("exp_loss", ascending=False).head(28).iterrows():
+    # Scheduled cancellations are already known; show a few, then the model's riskiest open decisions.
+    sched = sc[sc["scheduled_cancel"]].sort_values("exp_loss", ascending=False).head(6)
+    scored = sc[~sc["scheduled_cancel"]].sort_values("exp_loss", ascending=False).head(22)
+    kpis["scheduledCancellations"] = dict(count=int(sc["scheduled_cancel"].sum()), arr=round(float(sc.loc[sc["scheduled_cancel"], "arr"].sum())))
+    for _, r in pd.concat([sched, scored]).iterrows():
         sig = []
         if r["scheduled_cancel"]:
             sig.append("Cancellation scheduled in Stripe")
@@ -217,7 +221,8 @@ def main():
     slip_med = float(np.median(ctx.slip_days)) if len(ctx.slip_days) else 30.0
     deals_out = []
     for _, r in od.sort_values("amount_in_home_currency", ascending=False).iterrows():
-        model_close = max(r["closedate_at"] + pd.Timedelta(days=slip_med), AS_OF + pd.Timedelta(days=21))
+        stage_slip = float(np.median(ctx.deal_model.slip_for_stage(r["stage_idx"])))
+        model_close = max(r["closedate_at"] + pd.Timedelta(days=stage_slip), AS_OF + pd.Timedelta(days=21))
         flags = []
         if r["pushes"] >= 2:
             flags.append(f"Close date pushed {int(r['pushes'])}×")
@@ -270,7 +275,9 @@ def main():
         days = sim.invoice_paid_day[r["number"]]
         paid_days = days[days >= 0]
         expected = sim.day0 + pd.Timedelta(days=float(np.median(paid_days))) if len(paid_days) else None
-        if r["customer_id"] in hist_late.index:
+        if r["collection_method"] == "charge_automatically":
+            profile = "Card payment failed, Stripe retrying"
+        elif r["customer_id"] in hist_late.index:
             m = hist_late.loc[r["customer_id"], "mean"]
             profile = "Pays on time" if m <= 2 else f"Typically {int(round(m))} days late"
         else:
