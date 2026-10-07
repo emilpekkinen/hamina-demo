@@ -21,6 +21,10 @@ import string
 import unicodedata
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "marketing"))
+from marketing_index import ENTERPRISE_EFFECT, monthly_index  # noqa: E402
 
 SEED = 54
 ROOT = Path(__file__).resolve().parent
@@ -357,11 +361,24 @@ def self_serve_accounts():
     return rows
 
 
+# LinkedIn/search pressure creates enterprise opportunities ~1 month later (adstock half-life ≈ 1.4 months).
+AD_LIFT_STRENGTH = 0.7
+_AD_INDEX = monthly_index(ENTERPRISE_EFFECT, decay=0.6, lag=1)
+
+
+def ad_lift(year, month):
+    if not _AD_INDEX:
+        return 1.0
+    known = [v for (y, m), v in _AD_INDEX.items() if y == year and (y, m) <= (DATA_END.year, DATA_END.month)]
+    mean = sum(known) / len(known) if known else 0
+    return 1.0 if mean == 0 else max(0.2, 1 + AD_LIFT_STRENGTH * (_AD_INDEX[(year, month)] / mean - 1))
+
+
 def build_pipeline_deals():
     pqls = self_serve_accounts()
     month = FIRST_DEAL
     while month <= DATA_END:
-        lam = DEALS_PER_MONTH[month.year] * SEASONALITY[month.month]
+        lam = DEALS_PER_MONTH[month.year] * SEASONALITY[month.month] * ad_lift(month.year, month.month)
         n = sum(rng.random() < lam / 8 for _ in range(8))
         for _ in range(n):
             create = work_time(month + timedelta(days=rng.randint(0, 27)))

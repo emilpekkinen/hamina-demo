@@ -19,6 +19,7 @@ import renewals as rn
 import simulate as sm
 from data import ROOT, cash_by_month, customer_mrr_at, load, month_ends, mrr_at, terms_as_of
 from identity import resolve
+from marketing import analyse as analyse_marketing
 
 warnings.filterwarnings("ignore")
 
@@ -304,6 +305,14 @@ def main():
         rev, arr = fy27_and_arr(sm.run(ctx, n=2000, seed=11, levers=sm.Levers(**{attr: delta})))
         levers.append(dict(id=lid, label=label, unit=unit, min=lo, max=hi, step=step, default=0,
                            impact=dict(fy2027Revenue=round((rev - base_rev) / delta), arrDec2027=round((arr - base_arr) / delta))))
+    # Paid marketing lever: spend moves new self-serve bookings and deal creation in proportion to the
+    # share of each the marketing models attribute to paid media (linear, no saturation).
+    mkt = analyse_marketing(raw, AS_OF)
+    by_id = {l["id"]: l["impact"] for l in levers}
+    ss_share, ent_share = mkt.pop("_paid_share_ss"), mkt.pop("_paid_share_ent")
+    levers.append(dict(id="marketingBudget", label="Paid marketing budget", unit="%", min=-50, max=100, step=10, default=0,
+                       impact={k: round(ss_share * by_id["newSelfServe"][k] + ent_share * by_id["pipelineCreation"][k])
+                               for k in ("fy2027Revenue", "arrDec2027")}))
     scenarios = dict(base=dict(fy2027Revenue=round(base_rev), arrDec2027=round(base_arr)), levers=levers)
 
     # ---------------------------------------------------------------- backtests
@@ -329,7 +338,8 @@ def main():
                          simulations=N_SIMS, horizonEnd=HORIZON_END.strftime("%Y-%m")),
                kpis=kpis, monthly=monthly, bridge=bridge, mrrMovements=movements, cohorts=cohorts, renewalModel=renewal_model,
                renewals=renewals, deals=deals_out, dealModel=deal_model,
-               cash=dict(weekly=weekly, openInvoices=open_list), backtest=backtest, identity=identity, scenarios=scenarios)
+               cash=dict(weekly=weekly, openInvoices=open_list), backtest=backtest, identity=identity, scenarios=scenarios,
+               marketing=mkt)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1, ensure_ascii=False, default=lambda o: o.item() if hasattr(o, "item") else str(o)))
     print(f"wrote {OUT} in {time.time() - t0:.1f}s")

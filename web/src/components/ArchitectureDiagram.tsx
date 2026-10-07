@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { ArrowRight, Boxes, Brain, CreditCard, Database, GitMerge, LayoutDashboard, MessageSquare, Send, Shuffle, Target, Users } from "lucide-react";
+import { ArrowRight, Boxes, Megaphone, Brain, CreditCard, Database, GitMerge, LayoutDashboard, MessageSquare, Send, Shuffle, Target, Users } from "lucide-react";
 
 type Node = { title: string; sub: string; icon: ReactNode; tone?: "brand" | "plain" | "accent" };
 
@@ -13,6 +13,7 @@ const COLUMNS: { label: string; nodes: Node[] }[] = [
     nodes: [
       { title: "Stripe API", sub: "Subscriptions, invoices, payments", icon: <CreditCard size={16} strokeWidth={1.5} /> },
       { title: "HubSpot API", sub: "Companies, deals, deal history", icon: <Users size={16} strokeWidth={1.5} /> },
+      { title: "Ad platform APIs", sub: "Google, LinkedIn, Meta, YouTube, G2, Reddit", icon: <Megaphone size={16} strokeWidth={1.5} /> },
     ],
   },
   {

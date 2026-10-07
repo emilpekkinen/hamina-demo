@@ -186,4 +186,27 @@ export interface ForecastData {
       impact: { fy2027Revenue: number; arrDec2027: number };  // change per +1 unit
     }>;
   };
+
+  marketing?: Marketing;
+}
+
+export type ChannelId = "google_ads" | "linkedin_ads" | "meta_ads" | "review_sites" | "youtube_ads" | "reddit_ads";
+
+// Paid marketing → new revenue (pipeline/marketing.py).
+export interface Marketing {
+  asOf: string;
+  yearly: Array<{ year: number; spend: number; revenue: number; pctOfRevenue: number; channels: number; campaigns: number; partialYear: boolean }>;
+  monthly: Array<{ month: string; newSelfServe: number; dealsCreated: number; newEnterpriseArr: number;
+                   modelSelfServe: number | null; paidSelfServe: number } & Record<ChannelId, number>>;
+  channels: Array<{ platform: ChannelId; label: string; spend: number; spend12m: number; impressions: number; clicks: number;
+                    conversions: number; cpc: number; ctr: number; cpl: number; firstSpend: string }>;
+  campaigns: Array<{ name: string; platform: string; kind: string; segment: string; objective: string; start: string; end: string;
+                     spend: number; clicks: number; conversions: number; cpl: number }>;
+  lag: { rows: Array<{ lag: number; newSelfServe: number | null; dealsCreated: number | null; newEnterpriseArr: number | null }>;
+         best: { newSelfServe: number; dealsCreated: number; newEnterpriseArr: number };
+         labels: { newSelfServe: string; dealsCreated: string; newEnterpriseArr: string } };
+  mmm: { target: string; decay: number; halfLifeMonths: number; r2: number; cvMae: number; paidShare12m: number;
+         paidBookings12m: number; spend12m: number; roas12m: number };
+  enterprise: { lagMonths: number; dealsPer10k: number; winRate: number; avgDeal: number; cycleDays: number;
+                paidShareDeals12m: number; expectedArrPer10k: number; revenueLagMonths: number };
 }

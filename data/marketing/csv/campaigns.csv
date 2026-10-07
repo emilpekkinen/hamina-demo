@@ -1,0 +1,109 @@
+campaign_id,platform,name,objective,audience,target_segment,kind,start_date,end_date
+cmp_1001,google_ads,Search – Brand – 2022,conversions,brand searchers,self_serve,always_on,2022-07-04,2022-12-31
+cmp_1002,google_ads,Search – Brand – 2023,conversions,brand searchers,self_serve,always_on,2023-01-01,2023-12-31
+cmp_1003,google_ads,Search – Brand – 2024,conversions,brand searchers,self_serve,always_on,2024-01-01,2024-12-31
+cmp_1004,google_ads,Search – Brand – 2025,conversions,brand searchers,self_serve,always_on,2025-01-01,2025-12-31
+cmp_1005,google_ads,Search – Brand – 2026,conversions,brand searchers,self_serve,always_on,2026-01-01,2026-10-04
+cmp_1006,google_ads,Search – Wi-Fi planning software (non-brand) – 2022,conversions,network engineers,self_serve,always_on,2022-07-04,2022-12-31
+cmp_1007,google_ads,Search – Wi-Fi planning software (non-brand) – 2023,conversions,network engineers,self_serve,always_on,2023-01-01,2023-12-31
+cmp_1008,google_ads,Search – Wi-Fi planning software (non-brand) – 2024,conversions,network engineers,self_serve,always_on,2024-01-01,2024-12-31
+cmp_1009,google_ads,Search – Wi-Fi planning software (non-brand) – 2025,conversions,network engineers,self_serve,always_on,2025-01-01,2025-12-31
+cmp_1010,google_ads,Search – Wi-Fi planning software (non-brand) – 2026,conversions,network engineers,self_serve,always_on,2026-01-01,2026-10-04
+cmp_1011,google_ads,"Search – Competitor terms (Ekahau, iBwave) – 2022",conversions,network engineers,self_serve,always_on,2022-07-04,2022-12-31
+cmp_1012,google_ads,"Search – Competitor terms (Ekahau, iBwave) – 2023",conversions,network engineers,self_serve,always_on,2023-01-01,2023-12-31
+cmp_1013,google_ads,"Search – Competitor terms (Ekahau, iBwave) – 2024",conversions,network engineers,self_serve,always_on,2024-01-01,2024-12-31
+cmp_1014,google_ads,"Search – Competitor terms (Ekahau, iBwave) – 2025",conversions,network engineers,self_serve,always_on,2025-01-01,2025-12-31
+cmp_1015,google_ads,"Search – Competitor terms (Ekahau, iBwave) – 2026",conversions,network engineers,self_serve,always_on,2026-01-01,2026-10-04
+cmp_1016,google_ads,"Search – Enterprise Wi-Fi design (hospitals, campuses) – 2022",leads,IT leads,enterprise,always_on,2022-07-04,2022-12-31
+cmp_1017,google_ads,"Search – Enterprise Wi-Fi design (hospitals, campuses) – 2023",leads,IT leads,enterprise,always_on,2023-01-01,2023-12-31
+cmp_1018,google_ads,"Search – Enterprise Wi-Fi design (hospitals, campuses) – 2024",leads,IT leads,enterprise,always_on,2024-01-01,2024-12-31
+cmp_1019,google_ads,"Search – Enterprise Wi-Fi design (hospitals, campuses) – 2025",leads,IT leads,enterprise,always_on,2025-01-01,2025-12-31
+cmp_1020,google_ads,"Search – Enterprise Wi-Fi design (hospitals, campuses) – 2026",leads,IT leads,enterprise,always_on,2026-01-01,2026-10-04
+cmp_1021,linkedin_ads,ABM – Hospitals & health systems – 2023 (Sep),leads,"IT directors, healthcare",enterprise,burst,2023-09-16,2023-11-11
+cmp_1022,linkedin_ads,ABM – Hospitals & health systems – 2023 (Nov),leads,"IT directors, healthcare",enterprise,burst,2023-11-13,2024-01-01
+cmp_1023,linkedin_ads,ABM – Hospitals & health systems – 2024 (May),leads,"IT directors, healthcare",enterprise,burst,2024-05-18,2024-06-15
+cmp_1024,linkedin_ads,ABM – Hospitals & health systems – 2024 (Sep),leads,"IT directors, healthcare",enterprise,burst,2024-09-09,2024-10-07
+cmp_1025,linkedin_ads,ABM – Hospitals & health systems – 2024 (Nov),leads,"IT directors, healthcare",enterprise,burst,2024-11-08,2025-01-03
+cmp_1026,linkedin_ads,ABM – Hospitals & health systems – 2025 (Oct),leads,"IT directors, healthcare",enterprise,burst,2025-10-08,2025-11-05
+cmp_1027,linkedin_ads,ABM – Hospitals & health systems – 2025 (Nov),leads,"IT directors, healthcare",enterprise,burst,2025-11-13,2025-12-18
+cmp_1028,linkedin_ads,ABM – Hospitals & health systems – 2026 (Feb),leads,"IT directors, healthcare",enterprise,burst,2026-02-08,2026-03-15
+cmp_1029,linkedin_ads,ABM – Universities – 2022 (Sep),leads,"network services, higher-ed",enterprise,burst,2022-09-10,2022-10-22
+cmp_1030,linkedin_ads,ABM – Universities – 2022 (Oct),leads,"network services, higher-ed",enterprise,burst,2022-10-12,2022-12-07
+cmp_1031,linkedin_ads,ABM – Universities – 2023 (May),leads,"network services, higher-ed",enterprise,burst,2023-05-06,2023-06-10
+cmp_1032,linkedin_ads,ABM – Universities – 2023 (Nov),leads,"network services, higher-ed",enterprise,burst,2023-11-08,2023-12-20
+cmp_1033,linkedin_ads,ABM – Universities – 2024 (Feb),leads,"network services, higher-ed",enterprise,burst,2024-02-10,2024-03-16
+cmp_1034,linkedin_ads,ABM – Universities – 2024 (Nov),leads,"network services, higher-ed",enterprise,burst,2024-11-14,2025-01-02
+cmp_1035,linkedin_ads,ABM – Universities – 2025 (Oct),leads,"network services, higher-ed",enterprise,burst,2025-10-03,2025-11-14
+cmp_1036,linkedin_ads,ABM – Universities – 2025 (Nov),leads,"network services, higher-ed",enterprise,burst,2025-11-02,2025-12-14
+cmp_1037,linkedin_ads,ABM – Universities – 2026 (Feb),leads,"network services, higher-ed",enterprise,burst,2026-02-03,2026-03-31
+cmp_1038,linkedin_ads,ABM – Universities – 2026 (Mar),leads,"network services, higher-ed",enterprise,burst,2026-03-14,2026-05-02
+cmp_1039,linkedin_ads,ABM – Universities – 2026 (Sep),leads,"network services, higher-ed",enterprise,burst,2026-09-16,2026-10-04
+cmp_1040,linkedin_ads,Webinar promo – Wi-Fi 7 design – 2022 (Nov),registrations,wireless engineers,self_serve,burst,2022-11-04,2022-12-16
+cmp_1041,linkedin_ads,Webinar promo – Wi-Fi 7 design – 2023 (Jun),registrations,wireless engineers,self_serve,burst,2023-06-14,2023-08-02
+cmp_1042,linkedin_ads,Webinar promo – Wi-Fi 7 design – 2023 (Oct),registrations,wireless engineers,self_serve,burst,2023-10-19,2023-11-23
+cmp_1043,linkedin_ads,Webinar promo – Wi-Fi 7 design – 2024 (Jan),registrations,wireless engineers,self_serve,burst,2024-01-12,2024-03-01
+cmp_1044,linkedin_ads,Webinar promo – Wi-Fi 7 design – 2024 (Feb),registrations,wireless engineers,self_serve,burst,2024-02-11,2024-03-24
+cmp_1045,linkedin_ads,Webinar promo – Wi-Fi 7 design – 2024 (Sep),registrations,wireless engineers,self_serve,burst,2024-09-18,2024-10-16
+cmp_1046,linkedin_ads,Webinar promo – Wi-Fi 7 design – 2025 (Sep),registrations,wireless engineers,self_serve,burst,2025-09-07,2025-10-26
+cmp_1047,linkedin_ads,Webinar promo – Wi-Fi 7 design – 2025 (Nov),registrations,wireless engineers,self_serve,burst,2025-11-11,2025-12-30
+cmp_1048,linkedin_ads,Webinar promo – Wi-Fi 7 design – 2026 (Mar),registrations,wireless engineers,self_serve,burst,2026-03-16,2026-04-20
+cmp_1049,linkedin_ads,Webinar promo – Wi-Fi 7 design – 2026 (Sep),registrations,wireless engineers,self_serve,burst,2026-09-08,2026-10-04
+cmp_1050,linkedin_ads,Lead gen – Free trial (network engineers) – 2022,leads,network engineers,self_serve,always_on,2022-09-05,2022-12-31
+cmp_1051,linkedin_ads,Lead gen – Free trial (network engineers) – 2023,leads,network engineers,self_serve,always_on,2023-01-01,2023-12-31
+cmp_1052,linkedin_ads,Lead gen – Free trial (network engineers) – 2024,leads,network engineers,self_serve,always_on,2024-01-01,2024-12-31
+cmp_1053,linkedin_ads,Lead gen – Free trial (network engineers) – 2025,leads,network engineers,self_serve,always_on,2025-01-01,2025-12-31
+cmp_1054,linkedin_ads,Lead gen – Free trial (network engineers) – 2026,leads,network engineers,self_serve,always_on,2026-01-01,2026-10-04
+cmp_1055,linkedin_ads,Thought leadership – Predictive design – 2022 (Sep),awareness,IT leads,enterprise,burst,2022-09-05,2022-10-28
+cmp_1056,linkedin_ads,Thought leadership – Predictive design – 2022 (Nov),awareness,IT leads,enterprise,burst,2022-11-04,2022-12-30
+cmp_1057,linkedin_ads,Thought leadership – Predictive design – 2023 (Feb),awareness,IT leads,enterprise,burst,2023-02-14,2023-03-14
+cmp_1058,linkedin_ads,Thought leadership – Predictive design – 2023 (Mar),awareness,IT leads,enterprise,burst,2023-03-14,2023-04-18
+cmp_1059,linkedin_ads,Thought leadership – Predictive design – 2023 (May),awareness,IT leads,enterprise,burst,2023-05-10,2023-06-14
+cmp_1060,linkedin_ads,Thought leadership – Predictive design – 2024 (May),awareness,IT leads,enterprise,burst,2024-05-19,2024-07-07
+cmp_1061,linkedin_ads,Thought leadership – Predictive design – 2024 (Nov),awareness,IT leads,enterprise,burst,2024-11-20,2024-12-25
+cmp_1062,linkedin_ads,Thought leadership – Predictive design – 2025 (Jan),awareness,IT leads,enterprise,burst,2025-01-09,2025-02-06
+cmp_1063,linkedin_ads,Thought leadership – Predictive design – 2025 (Mar),awareness,IT leads,enterprise,burst,2025-03-14,2025-04-25
+cmp_1064,linkedin_ads,Thought leadership – Predictive design – 2025 (May),awareness,IT leads,enterprise,burst,2025-05-14,2025-07-09
+cmp_1065,linkedin_ads,Thought leadership – Predictive design – 2026 (Jan),awareness,IT leads,enterprise,burst,2026-01-05,2026-02-23
+cmp_1066,linkedin_ads,Thought leadership – Predictive design – 2026 (Sep),awareness,IT leads,enterprise,burst,2026-09-05,2026-10-03
+cmp_1067,meta_ads,Retargeting – website visitors – 2023,conversions,site visitors,self_serve,always_on,2023-05-01,2023-12-31
+cmp_1068,meta_ads,Retargeting – website visitors – 2024,conversions,site visitors,self_serve,always_on,2024-01-01,2024-12-31
+cmp_1069,meta_ads,Retargeting – website visitors – 2025,conversions,site visitors,self_serve,always_on,2025-01-01,2025-12-31
+cmp_1070,meta_ads,Retargeting – website visitors – 2026,conversions,site visitors,self_serve,always_on,2026-01-01,2026-10-04
+cmp_1071,meta_ads,Lookalike – trial users – 2023 (Jun),conversions,lookalike,self_serve,burst,2023-06-12,2023-07-10
+cmp_1072,meta_ads,Lookalike – trial users – 2023 (Sep),conversions,lookalike,self_serve,burst,2023-09-18,2023-10-16
+cmp_1073,meta_ads,Lookalike – trial users – 2024 (Jan),conversions,lookalike,self_serve,burst,2024-01-17,2024-03-06
+cmp_1074,meta_ads,Lookalike – trial users – 2024 (May),conversions,lookalike,self_serve,burst,2024-05-03,2024-05-31
+cmp_1075,meta_ads,Lookalike – trial users – 2024 (Sep),conversions,lookalike,self_serve,burst,2024-09-12,2024-10-31
+cmp_1076,meta_ads,Lookalike – trial users – 2025 (Jun),conversions,lookalike,self_serve,burst,2025-06-08,2025-07-20
+cmp_1077,meta_ads,Lookalike – trial users – 2025 (Oct),conversions,lookalike,self_serve,burst,2025-10-05,2025-11-09
+cmp_1078,meta_ads,Lookalike – trial users – 2026 (Jun),conversions,lookalike,self_serve,burst,2026-06-03,2026-07-22
+cmp_1079,meta_ads,Lookalike – trial users – 2026 (Sep),conversions,lookalike,self_serve,burst,2026-09-16,2026-10-04
+cmp_1080,review_sites,Capterra PPC – Network design software – 2023,clicks,software buyers,self_serve,always_on,2023-03-06,2023-12-31
+cmp_1081,review_sites,Capterra PPC – Network design software – 2024,clicks,software buyers,self_serve,always_on,2024-01-01,2024-12-31
+cmp_1082,review_sites,Capterra PPC – Network design software – 2025,clicks,software buyers,self_serve,always_on,2025-01-01,2025-12-31
+cmp_1083,review_sites,Capterra PPC – Network design software – 2026,clicks,software buyers,self_serve,always_on,2026-01-01,2026-10-04
+cmp_1084,review_sites,G2 – Category sponsorship – 2023,awareness,software buyers,self_serve,always_on,2023-03-06,2023-12-31
+cmp_1085,review_sites,G2 – Category sponsorship – 2024,awareness,software buyers,self_serve,always_on,2024-01-01,2024-12-31
+cmp_1086,review_sites,G2 – Category sponsorship – 2025,awareness,software buyers,self_serve,always_on,2025-01-01,2025-12-31
+cmp_1087,review_sites,G2 – Category sponsorship – 2026,awareness,software buyers,self_serve,always_on,2026-01-01,2026-10-04
+cmp_1088,youtube_ads,Tutorial pre-roll – Wi-Fi survey how-to – 2023 (Sep),views,wireless engineers,self_serve,burst,2023-09-10,2023-10-08
+cmp_1089,youtube_ads,Tutorial pre-roll – Wi-Fi survey how-to – 2024 (Mar),views,wireless engineers,self_serve,burst,2024-03-03,2024-04-21
+cmp_1090,youtube_ads,Tutorial pre-roll – Wi-Fi survey how-to – 2024 (Oct),views,wireless engineers,self_serve,burst,2024-10-15,2024-11-26
+cmp_1091,youtube_ads,Tutorial pre-roll – Wi-Fi survey how-to – 2025 (Feb),views,wireless engineers,self_serve,burst,2025-02-13,2025-03-13
+cmp_1092,youtube_ads,Tutorial pre-roll – Wi-Fi survey how-to – 2025 (Sep),views,wireless engineers,self_serve,burst,2025-09-18,2025-10-23
+cmp_1093,youtube_ads,Tutorial pre-roll – Wi-Fi survey how-to – 2026 (Jan),views,wireless engineers,self_serve,burst,2026-01-14,2026-02-11
+cmp_1094,youtube_ads,Tutorial pre-roll – Wi-Fi survey how-to – 2026 (Mar),views,wireless engineers,self_serve,burst,2026-03-03,2026-03-31
+cmp_1095,youtube_ads,Product launch – Hamina Onsite – 2023 (Apr),awareness,network engineers,self_serve,burst,2023-04-03,2023-04-14
+cmp_1096,youtube_ads,Product launch – Hamina Onsite – 2023 (Nov),awareness,network engineers,self_serve,burst,2023-11-20,2024-01-08
+cmp_1097,youtube_ads,Product launch – Hamina Onsite – 2024 (Feb),awareness,network engineers,self_serve,burst,2024-02-11,2024-03-31
+cmp_1098,youtube_ads,Product launch – Hamina Onsite – 2024 (Mar),awareness,network engineers,self_serve,burst,2024-03-12,2024-04-30
+cmp_1099,youtube_ads,Product launch – Hamina Onsite – 2025 (Mar),awareness,network engineers,self_serve,burst,2025-03-16,2025-05-11
+cmp_1100,youtube_ads,Product launch – Hamina Onsite – 2025 (Nov),awareness,network engineers,self_serve,burst,2025-11-17,2025-12-29
+cmp_1101,youtube_ads,Product launch – Hamina Onsite – 2026 (Jan),awareness,network engineers,self_serve,burst,2026-01-20,2026-03-03
+cmp_1102,youtube_ads,Product launch – Hamina Onsite – 2026 (Jun),awareness,network engineers,self_serve,burst,2026-06-15,2026-07-27
+cmp_1103,reddit_ads,r/networking + r/sysadmin test – 2024 (May),clicks,network engineers,self_serve,burst,2024-05-04,2024-06-15
+cmp_1104,reddit_ads,r/networking + r/sysadmin test – 2024 (Jun),clicks,network engineers,self_serve,burst,2024-06-08,2024-07-06
+cmp_1105,reddit_ads,r/networking + r/sysadmin test – 2024 (Sep),clicks,network engineers,self_serve,burst,2024-09-20,2024-10-18
+cmp_1106,reddit_ads,r/networking + r/sysadmin test – 2025 (Jan),clicks,network engineers,self_serve,burst,2025-01-15,2025-03-05
+cmp_1107,reddit_ads,r/networking + r/sysadmin test – 2025 (Sep),clicks,network engineers,self_serve,burst,2025-09-17,2025-11-12
+cmp_1108,reddit_ads,r/networking + r/sysadmin test – 2026 (Jan),clicks,network engineers,self_serve,burst,2026-01-09,2026-02-06

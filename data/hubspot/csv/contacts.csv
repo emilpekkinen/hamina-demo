@@ -1,338 +1,297 @@
 hs_object_id,firstname,lastname,email,jobtitle,company_id,lifecyclestage,createdate
+25779417001,Julia,Turner,julia.turner@bay-health-system.example,Network Operations Lead,33506285399,salesqualifiedlead,2022-12-02T08:46:49.000Z
+17883449456,Laura,Novak,laura.novak@bay-health-system.example,Procurement Manager,33506285399,salesqualifiedlead,2022-12-02T08:46:49.000Z
 20145437912,Hannele,Rautio,hannele.rautio@kut.example,Director of IT Infrastructure,25242404630,salesqualifiedlead,2022-12-03T12:29:27.000Z
 32459568210,David,Wagner,david.wagner@kut.example,IT Manager,25242404630,salesqualifiedlead,2022-12-03T12:29:27.000Z
 15922512830,Emma,Clarke,emma.clarke@kut.example,VP of IT,25242404630,salesqualifiedlead,2022-12-03T12:29:27.000Z
 35369602859,Chris,Novak,chris.novak@kut.example,Network Architect,25242404630,salesqualifiedlead,2022-12-07T12:29:27.000Z
-18437480844,Elena,Laine,elena.laine@redhill-hotels.example,Head of IT,23065614676,salesqualifiedlead,2022-12-10T11:39:05.000Z
+31883660566,David,Moreau,david.moreau@bay-health-system.example,Head of Network Engineering,33506285399,salesqualifiedlead,2022-12-12T08:46:49.000Z
 17303371465,Mark,Moreau,mark.moreau@kut.example,Director of IT Infrastructure,25242404630,salesqualifiedlead,2022-12-17T12:29:27.000Z
-25700520455,Peter,Turner,peter.turner@highland-precision-manufacturing.example,Director of IT Infrastructure,38111128021,salesqualifiedlead,2023-02-24T12:22:26.000Z
-38076134366,Chris,Kelly,chris.kelly@highland-precision-manufacturing.example,Head of Network Engineering,38111128021,salesqualifiedlead,2023-02-26T12:22:26.000Z
-34963907782,Mark,Kelly,mark.kelly@highland-precision-manufacturing.example,Director of IT Infrastructure,38111128021,salesqualifiedlead,2023-02-26T12:22:26.000Z
-19486335276,Sanna,Turner,sanna.turner@harborpeak-wireless-engineering.example,Network Architect,15478460047,salesqualifiedlead,2023-03-13T11:43:53.000Z
-32636666777,Chris,Wagner,chris.wagner@oakmont-hotels.example,Network Operations Lead,15878440861,salesqualifiedlead,2023-03-15T10:40:46.000Z
-20091049570,Olivia,Clarke,olivia.clarke@harborpeak-wireless-engineering.example,Network Operations Lead,15478460047,salesqualifiedlead,2023-03-19T11:43:53.000Z
-20063313250,Sarah,Nelson,sarah.nelson@harborpeak-wireless-engineering.example,Director of Wireless Engineering,15478460047,salesqualifiedlead,2023-03-20T11:43:53.000Z
-30542065099,Lukas,Lindgren,lukas.lindgren@harborpeak-wireless-engineering.example,CIO,15478460047,salesqualifiedlead,2023-03-23T11:43:53.000Z
-22827546010,Emma,Lindgren,emma.lindgren@oakmont-hotels.example,IT Manager,15878440861,salesqualifiedlead,2023-03-26T10:40:46.000Z
-22121743372,Sara,Becker,sara.becker@oakmont-hotels.example,Network Architect,15878440861,salesqualifiedlead,2023-03-29T10:40:46.000Z
+21329797837,Michael,Fischer,michael.fischer@granite-institute-of-technology.example,Network Architect,29643656535,salesqualifiedlead,2023-01-03T17:15:22.000Z
+11677371634,Peter,Rossi,peter.rossi@granite-institute-of-technology.example,CIO,29643656535,salesqualifiedlead,2023-01-06T17:15:22.000Z
+38699154155,Lukas,Smith,lukas.smith@granite-institute-of-technology.example,CIO,29643656535,salesqualifiedlead,2023-01-06T17:15:22.000Z
+11874103846,Sanna,Fischer,sanna.fischer@granite-institute-of-technology.example,Wireless Engineer,29643656535,salesqualifiedlead,2023-01-16T17:15:22.000Z
+20240973019,Hanna,Rossi,hanna.rossi@clearwater-steelworks.example,VP of IT,38331940061,salesqualifiedlead,2023-03-03T15:01:47.000Z
+12138978973,Hanna,Laine,hanna.laine@clearwater-steelworks.example,CIO,38331940061,salesqualifiedlead,2023-03-16T15:01:47.000Z
 29331526506,Marcus,Ellery,marcus.ellery@stalderhealth.example,"VP, Network & Infrastructure",38606378819,salesqualifiedlead,2023-04-13T10:53:34.000Z
 28680372703,Anna,Jensen,anna.jensen@stalderhealth.example,IT Manager,38606378819,salesqualifiedlead,2023-04-16T10:53:34.000Z
 14735945622,Sara,Moreau,sara.moreau@stalderhealth.example,Network Architect,38606378819,salesqualifiedlead,2023-04-20T10:53:34.000Z
 10157861972,Chris,Laine,chris.laine@stalderhealth.example,Head of Network Engineering,38606378819,salesqualifiedlead,2023-04-24T10:53:34.000Z
 17578632264,Chris,Hughes,chris.hughes@stalderhealth.example,Network Operations Lead,38606378819,salesqualifiedlead,2023-05-02T10:53:34.000Z
-33780409704,Elena,Jensen,elena.jensen@ashford-components.example,Network Architect,18175657845,salesqualifiedlead,2023-05-21T16:15:34.000Z
-21360215025,Michael,Fischer,michael.fischer@bay-steelworks.example,Director of IT Infrastructure,26671692180,salesqualifiedlead,2023-07-09T17:17:34.000Z
-38159381785,Chris,Virtanen,chris.virtanen@bay-steelworks.example,Wireless Engineer,26671692180,salesqualifiedlead,2023-07-16T17:17:34.000Z
-32212904016,Chris,Wagner,chris.wagner@bay-steelworks.example,VP of IT,26671692180,salesqualifiedlead,2023-07-22T17:17:34.000Z
+13018301729,Mikko,Kelly,mikko.kelly@nordicstream-industries.example,Procurement Manager,39621515047,salesqualifiedlead,2023-05-07T17:42:31.000Z
+11676905224,David,Lindgren,david.lindgren@nordicstream-industries.example,Network Operations Lead,39621515047,salesqualifiedlead,2023-05-08T17:42:31.000Z
+23061597116,Nils,Halvorsen,nils.halvorsen@nordicstream-industries.example,IT Infrastructure Manager,39621515047,salesqualifiedlead,2023-05-13T17:42:31.000Z
+36173319556,Anna,Lindgren,anna.lindgren@ashford-retail-group.example,Network Architect,25686233106,salesqualifiedlead,2023-05-16T17:41:41.000Z
+38309971222,Peter,Novak,peter.novak@maplewood-hospitality.example,Head of IT,20663877119,salesqualifiedlead,2023-07-14T15:36:00.000Z
+29552239643,Julia,Laine,julia.laine@maplewood-hospitality.example,Head of Network Engineering,20663877119,salesqualifiedlead,2023-07-20T15:36:00.000Z
 13238555453,Lukas,Wagner,lukas.wagner@voltmark.example,Procurement Manager,14888540457,salesqualifiedlead,2023-09-02T15:40:10.000Z
 18550170660,James,Hughes,james.hughes@voltmark.example,Head of IT,14888540457,salesqualifiedlead,2023-09-05T15:40:10.000Z
 20002801095,Katrin,Oberländer,katrin.oberlander@voltmark.example,Head of IT Infrastructure,14888540457,salesqualifiedlead,2023-09-17T15:40:10.000Z
+22742741012,Michael,Rossi,michael.rossi@oakmont-hotels.example,CIO,29439633748,salesqualifiedlead,2023-09-17T16:28:17.000Z
 35131445714,Thomas,Kelly,thomas.kelly@voltmark.example,Procurement Manager,14888540457,salesqualifiedlead,2023-09-18T15:40:10.000Z
-16504854811,Chris,Martin,chris.martin@harborview-medical-center.example,IT Manager,17615829706,salesqualifiedlead,2023-10-11T17:19:52.000Z
-28940839804,Peter,Wagner,peter.wagner@harborview-medical-center.example,IT Manager,17615829706,salesqualifiedlead,2023-10-15T17:19:52.000Z
-34277101173,David,Clarke,david.clarke@harborview-medical-center.example,Procurement Manager,17615829706,salesqualifiedlead,2023-10-19T17:19:52.000Z
-34579615184,Anna,Rossi,anna.rossi@harborview-medical-center.example,VP of IT,17615829706,salesqualifiedlead,2023-10-24T17:19:52.000Z
-33036293804,Thomas,Wagner,thomas.wagner@redhill-resorts-group.example,Head of IT,30093803395,salesqualifiedlead,2023-10-29T13:47:45.000Z
-11805716510,Chris,Laine,chris.laine@redhill-resorts-group.example,Head of IT,30093803395,salesqualifiedlead,2023-11-06T13:47:45.000Z
-26300912382,Mikko,Clarke,mikko.clarke@brightwater-hospitality.example,CIO,14927763878,salesqualifiedlead,2023-11-07T15:29:11.000Z
-30160553622,Mark,Rossi,mark.rossi@brightwater-hospitality.example,Director of IT Infrastructure,14927763878,salesqualifiedlead,2023-11-10T15:29:11.000Z
-15724358751,Emma,Virtanen,emma.virtanen@brightwater-hospitality.example,VP of IT,14927763878,salesqualifiedlead,2023-11-16T15:29:11.000Z
-32789526721,Emma,Fischer,emma.fischer@brightwater-hospitality.example,Network Operations Lead,14927763878,salesqualifiedlead,2023-11-24T15:29:11.000Z
-36173319556,Anna,Lindgren,anna.lindgren@ashford-retail-group.example,Network Architect,25686233106,salesqualifiedlead,2024-01-16T17:41:41.000Z
+36450597204,Julia,Smith,julia.smith@oakmont-hotels.example,Head of IT,29439633748,salesqualifiedlead,2023-09-25T16:28:17.000Z
+32899232187,Hanna,Wagner,hanna.wagner@oakmont-hotels.example,Director of IT Infrastructure,29439633748,salesqualifiedlead,2023-09-27T16:28:17.000Z
+25040727737,Elena,Jensen,elena.jensen@oakmont-hotels.example,Wireless Engineer,29439633748,salesqualifiedlead,2023-09-30T16:28:17.000Z
+26164928642,James,Clarke,james.clarke@stonebridge-airport-authority.example,CIO,33427786634,salesqualifiedlead,2023-10-08T15:18:02.000Z
+34971905284,James,Fischer,james.fischer@crestmark-hotels.example,Procurement Manager,18488054230,salesqualifiedlead,2023-12-11T15:36:49.000Z
+19897959076,Eric,White,eric.white@crestmark-hotels.example,IT Director,18488054230,salesqualifiedlead,2023-12-16T15:36:49.000Z
+18421644384,James,Rossi,james.rossi@westbrook-stadium-group.example,VP of IT,34856057084,salesqualifiedlead,2024-01-24T10:01:01.000Z
+29272924421,Chris,Rossi,chris.rossi@westbrook-stadium-group.example,Wireless Engineer,34856057084,salesqualifiedlead,2024-01-27T10:01:01.000Z
+29762893387,Sara,Wagner,sara.wagner@westbrook-stadium-group.example,Network Operations Lead,34856057084,salesqualifiedlead,2024-01-29T10:01:01.000Z
+24215264368,David,Clarke,david.clarke@westbrook-stadium-group.example,Head of Network Engineering,34856057084,salesqualifiedlead,2024-02-07T10:01:01.000Z
+39739405839,Elena,Turner,elena.turner@oakmont-convention-center.example,Head of Network Engineering,25559511593,salesqualifiedlead,2024-02-10T11:16:24.000Z
 24313665045,David,Becker,david.becker@costa-lucera-hotels--resorts.example,Head of Network Engineering,20536895418,salesqualifiedlead,2024-02-24T02:26:45.000Z
 16729960581,Javier,Montalbán,javier.montalban@costa-lucera-hotels--resorts.example,Group IT Director,20536895418,salesqualifiedlead,2024-02-27T02:26:45.000Z
 37223817052,Hanna,Fischer,hanna.fischer@costa-lucera-hotels--resorts.example,Head of Network Engineering,20536895418,salesqualifiedlead,2024-03-06T02:26:45.000Z
 15023725271,Sanna,Rossi,sanna.rossi@costa-lucera-hotels--resorts.example,CIO,20536895418,salesqualifiedlead,2024-03-08T02:26:45.000Z
 16880226913,Julia,Clarke,julia.clarke@costa-lucera-hotels--resorts.example,Director of IT Infrastructure,20536895418,salesqualifiedlead,2024-03-09T02:26:45.000Z
-16799645804,Mikko,Smith,mikko.smith@harborview-retail-group.example,CIO,33709492897,salesqualifiedlead,2024-03-23T08:58:57.000Z
-19975706498,Sara,Turner,sara.turner@harborview-distribution-centers.example,Head of IT,11973987618,salesqualifiedlead,2024-04-21T17:31:20.000Z
-33460042538,David,Rossi,david.rossi@cedarpoint-technology-group.example,IT Manager,28196173395,salesqualifiedlead,2024-04-25T13:56:53.000Z
-10720434483,Peter,Kelly,peter.kelly@harborview-distribution-centers.example,VP of IT,11973987618,salesqualifiedlead,2024-04-26T17:31:20.000Z
-38138080026,Tom,Martin,tom.martin@cedarpoint-technology-group.example,Mobility Team Lead,28196173395,salesqualifiedlead,2024-04-29T13:56:53.000Z
-29638600028,Thomas,Rossi,thomas.rossi@cedarpoint-technology-group.example,Procurement Manager,28196173395,salesqualifiedlead,2024-05-05T13:56:53.000Z
-20669903696,James,Martin,james.martin@northfield-health-system.example,IT Manager,20581191369,salesqualifiedlead,2024-05-22T17:40:58.000Z
-24594791893,Hanna,Virtanen,hanna.virtanen@northfield-health-system.example,Network Architect,20581191369,salesqualifiedlead,2024-05-24T17:40:58.000Z
-20094020538,Chris,Laine,chris.laine@northfield-health-system.example,CIO,20581191369,salesqualifiedlead,2024-06-03T17:40:58.000Z
-14562807514,Thomas,Rossi,thomas.rossi@northfield-health-system.example,Head of IT,20581191369,salesqualifiedlead,2024-06-04T17:40:58.000Z
+36774108347,Chris,Clarke,chris.clarke@riverside-resorts-group.example,IT Manager,39578234261,salesqualifiedlead,2024-03-29T08:49:07.000Z
+36821355418,Sara,Turner,sara.turner@riverside-resorts-group.example,Network Architect,39578234261,salesqualifiedlead,2024-04-02T08:49:07.000Z
+25325356038,Sanna,Becker,sanna.becker@redhill-stores.example,CIO,26222632011,salesqualifiedlead,2024-04-08T08:02:38.000Z
+13931038137,Sara,Martin,sara.martin@redhill-stores.example,Network Architect,26222632011,salesqualifiedlead,2024-04-08T08:02:38.000Z
+22862890427,Lukas,Novak,lukas.novak@riverside-resorts-group.example,Director of IT Infrastructure,39578234261,salesqualifiedlead,2024-04-08T08:49:07.000Z
+13605718604,Sara,Clarke,sara.clarke@brightwater-university.example,Head of Network Engineering,33297211040,salesqualifiedlead,2024-05-26T16:34:41.000Z
 24164582698,Peter,Wagner,peter.wagner@halden-ridge-state-university.example,Wireless Engineer,36412077230,salesqualifiedlead,2024-06-16T08:11:21.000Z
 37334232371,Elena,Moreau,elena.moreau@halden-ridge-state-university.example,Network Architect,36412077230,salesqualifiedlead,2024-06-21T08:11:21.000Z
 16004378927,Rebecca,Lindholm,rebecca.lindholm@halden-ridge-state-university.example,"Associate CIO, Network Services",36412077230,salesqualifiedlead,2024-07-02T08:11:21.000Z
-20393571506,Michael,Hughes,michael.hughes@university-of-bay.example,Procurement Manager,22609766943,salesqualifiedlead,2024-07-04T08:33:09.000Z
-17067907292,Thomas,Moreau,thomas.moreau@university-of-bay.example,VP of IT,22609766943,salesqualifiedlead,2024-07-09T08:33:09.000Z
-39995601209,Michael,Kelly,michael.kelly@university-of-bay.example,Director of IT Infrastructure,22609766943,salesqualifiedlead,2024-07-22T08:33:09.000Z
-33770165209,Anna,Jensen,anna.jensen@granitegate-telecom.example,VP of IT,15308068557,salesqualifiedlead,2024-08-08T08:09:53.000Z
-18926744759,James,Wagner,james.wagner@granitegate-telecom.example,Head of Network Engineering,15308068557,salesqualifiedlead,2024-08-09T08:09:53.000Z
-16273965799,Lauri,Lahtinen,lauri.lahtinen@granitegate-telecom.example,Wireless Architect,15308068557,salesqualifiedlead,2024-08-13T08:09:53.000Z
-27810588156,Peter,Smith,peter.smith@granitegate-telecom.example,Head of IT,15308068557,salesqualifiedlead,2024-08-13T08:09:53.000Z
-22730796293,Lukas,Lindgren,lukas.lindgren@stonebridge-logistics.example,VP of IT,27139889392,salesqualifiedlead,2024-10-10T17:20:24.000Z
-22917388921,James,Smith,james.smith@stonebridge-logistics.example,CIO,27139889392,salesqualifiedlead,2024-10-15T17:20:24.000Z
-33451267628,Anna,Becker,anna.becker@stonebridge-logistics.example,Network Operations Lead,27139889392,salesqualifiedlead,2024-10-22T17:20:24.000Z
+24285585183,Michael,Young,michael.young@orbitcore-construction.example,IT Infrastructure Manager,19412046526,salesqualifiedlead,2024-07-21T11:16:28.000Z
+16884433297,Emma,Turner,emma.turner@orbitcore-construction.example,CIO,19412046526,salesqualifiedlead,2024-07-23T11:16:28.000Z
+32078265533,Julia,Fischer,julia.fischer@orbitcore-construction.example,Director of IT Infrastructure,19412046526,salesqualifiedlead,2024-07-29T11:16:28.000Z
+26217593546,Peter,Smith,peter.smith@kingsbridge-precision-manufacturing.example,IT Manager,26751129601,salesqualifiedlead,2024-09-10T16:35:32.000Z
+23244121694,Sara,Virtanen,sara.virtanen@northfield-stadium-group.example,Head of IT,15560955899,salesqualifiedlead,2024-09-15T10:06:44.000Z
+37207754601,James,Novak,james.novak@northfield-stadium-group.example,Head of IT,15560955899,salesqualifiedlead,2024-09-16T10:06:44.000Z
+32943678404,Hanna,Becker,hanna.becker@northfield-stadium-group.example,Head of Network Engineering,15560955899,salesqualifiedlead,2024-09-22T10:06:44.000Z
+21313347982,Anna,Lindgren,anna.lindgren@northfield-stadium-group.example,IT Manager,15560955899,salesqualifiedlead,2024-10-01T10:06:44.000Z
+15978147450,Chris,Novak,chris.novak@signalgate-wireless-engineering.example,Head of Network Engineering,13723558798,salesqualifiedlead,2024-10-09T15:02:24.000Z
+38229344836,Kristian,Olsen,kristian.olsen@signalgate-wireless-engineering.example,Head of Wireless,13723558798,salesqualifiedlead,2024-10-11T15:02:24.000Z
 37603381624,Pekka,Vuorinen,pekka.vuorinen@kivimet-paper--packaging.example,Head of OT & Plant Networks,25888065056,salesqualifiedlead,2024-11-13T11:00:27.000Z
-29456273369,Anna,Kelly,anna.kelly@riverside-hospitality.example,Head of Network Engineering,25144241599,salesqualifiedlead,2024-11-15T15:22:56.000Z
-30999492544,James,Lindgren,james.lindgren@riverside-hospitality.example,Network Architect,25144241599,salesqualifiedlead,2024-11-20T15:22:56.000Z
-15758506209,Emma,Smith,emma.smith@riverside-hospitality.example,Procurement Manager,25144241599,salesqualifiedlead,2024-11-21T15:22:56.000Z
 22898435921,Chris,Lindgren,chris.lindgren@kivimet-paper--packaging.example,Network Operations Lead,25888065056,salesqualifiedlead,2024-11-24T11:00:27.000Z
-17386988019,Mikko,Jensen,mikko.jensen@bay-regional-hospital.example,CIO,33923525526,salesqualifiedlead,2024-11-26T15:23:05.000Z
 15126081908,Lukas,Lindgren,lukas.lindgren@kivimet-paper--packaging.example,Network Architect,25888065056,salesqualifiedlead,2024-11-28T11:00:27.000Z
-16236007792,James,Moreau,james.moreau@eastgate-state-college.example,CIO,14629560903,salesqualifiedlead,2024-11-30T13:03:01.000Z
 10067243720,Mikko,Turner,mikko.turner@kivimet-paper--packaging.example,VP of IT,25888065056,salesqualifiedlead,2024-12-01T11:00:27.000Z
-15700026910,James,Hughes,james.hughes@eastgate-state-college.example,Director of IT Infrastructure,14629560903,salesqualifiedlead,2024-12-01T13:03:01.000Z
-29402222264,Peter,Kelly,peter.kelly@riverside-hospitality.example,IT Manager,25144241599,salesqualifiedlead,2024-12-01T15:22:56.000Z
-26158002928,Anna,Becker,anna.becker@bay-regional-hospital.example,Head of IT,33923525526,salesqualifiedlead,2024-12-05T15:23:05.000Z
-14510686620,Michael,Turner,michael.turner@bay-regional-hospital.example,IT Manager,33923525526,salesqualifiedlead,2024-12-06T15:23:05.000Z
-18413542061,Mikko,Rossi,mikko.rossi@bay-regional-hospital.example,Head of IT,33923525526,salesqualifiedlead,2024-12-07T15:23:05.000Z
-28025785530,Michael,Moreau,michael.moreau@eastgate-state-college.example,Director of IT Infrastructure,14629560903,salesqualifiedlead,2024-12-09T13:03:01.000Z
 23059902178,Anna,Moreau,anna.moreau@marlowe-valley-university-hospital.example,CIO,18983739667,salesqualifiedlead,2024-12-12T22:42:07.000Z
 11463381772,Imogen,Hartley,imogen.hartley@marlowe-valley-university-hospital.example,Head of Digital Infrastructure,18983739667,salesqualifiedlead,2024-12-14T22:42:07.000Z
 33067435157,Elena,Moreau,elena.moreau@marlowe-valley-university-hospital.example,Director of IT Infrastructure,18983739667,salesqualifiedlead,2024-12-15T22:42:07.000Z
-10994691578,Anna,Moreau,anna.moreau@elmstead-health-system.example,CIO,36196415680,salesqualifiedlead,2024-12-23T15:38:40.000Z
-27025762193,Emma,Smith,emma.smith@elmstead-health-system.example,IT Manager,36196415680,salesqualifiedlead,2025-01-02T15:38:40.000Z
-24041455166,James,Fischer,james.fischer@clearwater-medical-center.example,CIO,17135913795,salesqualifiedlead,2025-01-18T15:23:41.000Z
-26703483493,Laura,Jensen,laura.jensen@clearwater-medical-center.example,CIO,17135913795,salesqualifiedlead,2025-01-23T15:23:41.000Z
-20900251637,Julia,Wagner,julia.wagner@clearwater-medical-center.example,Wireless Engineer,17135913795,salesqualifiedlead,2025-01-25T15:23:41.000Z
-29753034448,Anna,Smith,anna.smith@maplewood-distribution-centers.example,Director of IT Infrastructure,22913834201,salesqualifiedlead,2025-02-06T15:46:51.000Z
-25458282875,Michael,Novak,michael.novak@maplewood-distribution-centers.example,Wireless Engineer,22913834201,salesqualifiedlead,2025-02-07T15:46:51.000Z
-31340625699,Sanna,Novak,sanna.novak@fairhaven-hotels.example,Network Architect,10082797914,salesqualifiedlead,2025-02-10T16:52:19.000Z
-36215155935,Anna,Smith,anna.smith@fairhaven-hotels.example,Network Architect,10082797914,salesqualifiedlead,2025-02-11T16:52:19.000Z
-17925258694,Lukas,Jensen,lukas.jensen@maplewood-retail-group.example,CIO,26225116477,salesqualifiedlead,2025-02-13T08:07:43.000Z
-37085860005,Anna,Turner,anna.turner@fairhaven-hotels.example,Director of IT Infrastructure,10082797914,salesqualifiedlead,2025-02-15T16:52:19.000Z
-14100264536,Thomas,Turner,thomas.turner@bay-hotels.example,Network Operations Lead,14700438978,salesqualifiedlead,2025-02-19T17:31:03.000Z
-22683949253,Sanna,Laine,sanna.laine@maplewood-retail-group.example,VP of IT,26225116477,salesqualifiedlead,2025-02-27T08:07:43.000Z
-37395919316,Michael,Fischer,michael.fischer@bay-hotels.example,Head of IT,14700438978,salesqualifiedlead,2025-02-28T17:31:03.000Z
-11396730763,Michael,Wagner,michael.wagner@riverside-hotels.example,Network Architect,13789558984,salesqualifiedlead,2025-03-09T14:51:23.000Z
-25965265609,Chris,Laine,chris.laine@harborview-state-college.example,Wireless Engineer,31600060106,salesqualifiedlead,2025-03-14T09:22:50.000Z
-32577186807,Anna,Hughes,anna.hughes@riverside-hotels.example,VP of IT,13789558984,salesqualifiedlead,2025-03-16T14:51:23.000Z
-14506476794,Pieter,Vos,pieter.vos@maplepoint-wireless-engineering.example,Wireless Architect,16388759668,salesqualifiedlead,2025-03-16T15:12:20.000Z
-20543557040,Thomas,Rossi,thomas.rossi@riverside-hotels.example,Network Operations Lead,13789558984,salesqualifiedlead,2025-03-18T14:51:23.000Z
-12807024179,Hanna,Turner,hanna.turner@harborview-state-college.example,VP of IT,31600060106,salesqualifiedlead,2025-03-19T09:22:50.000Z
-16080290104,Sara,Moreau,sara.moreau@riverside-hotels.example,Wireless Engineer,13789558984,salesqualifiedlead,2025-03-21T14:51:23.000Z
-10784559676,Olivia,Rossi,olivia.rossi@harborview-state-college.example,IT Manager,31600060106,salesqualifiedlead,2025-03-22T09:22:50.000Z
-19265728104,David,Fischer,david.fischer@stonebridge-freight-terminals.example,Head of IT,32760328050,salesqualifiedlead,2025-04-04T17:05:01.000Z
-16075676881,Emma,Lindgren,emma.lindgren@stonebridge-resorts-group.example,Network Architect,36746508586,salesqualifiedlead,2025-04-05T15:57:07.000Z
-39726189565,Sanna,Martin,sanna.martin@highland-outlets.example,Network Architect,32943622362,salesqualifiedlead,2025-04-11T10:48:34.000Z
-33571721247,Chris,Clarke,chris.clarke@stonebridge-resorts-group.example,CIO,36746508586,salesqualifiedlead,2025-04-14T15:57:07.000Z
-30776736128,Sara,Rossi,sara.rossi@eastgate-hospitality.example,Head of IT,25856571668,salesqualifiedlead,2025-04-16T11:37:30.000Z
-22743134226,Lukas,Wagner,lukas.wagner@stonebridge-resorts-group.example,CIO,36746508586,salesqualifiedlead,2025-04-17T15:57:07.000Z
-31690674336,Mikko,Martin,mikko.martin@highland-outlets.example,IT Manager,32943622362,salesqualifiedlead,2025-04-20T10:48:34.000Z
-31702062304,Hanna,Turner,hanna.turner@stonebridge-resorts-group.example,Procurement Manager,36746508586,salesqualifiedlead,2025-04-21T15:57:07.000Z
-24911945845,Michael,Jensen,michael.jensen@highland-outlets.example,CIO,32943622362,salesqualifiedlead,2025-04-24T10:48:34.000Z
-24867718905,Elena,Becker,elena.becker@highland-outlets.example,Head of IT,32943622362,salesqualifiedlead,2025-04-26T10:48:34.000Z
-22105249669,Chris,Novak,chris.novak@eastgate-hospitality.example,VP of IT,25856571668,salesqualifiedlead,2025-05-05T11:37:30.000Z
-13966410185,Mark,Lewis,mark.lewis@summitmark-managed-services.example,Director of Wireless Engineering,11902925256,salesqualifiedlead,2025-05-10T15:51:34.000Z
-32584385466,Sanna,Martin,sanna.martin@summitmark-managed-services.example,Director of IT Infrastructure,11902925256,salesqualifiedlead,2025-05-11T15:51:34.000Z
+36368837087,Elena,Clarke,elena.clarke@ashford-international-airport.example,CIO,24504753375,salesqualifiedlead,2024-12-20T15:55:34.000Z
+15725666378,Lukas,Jensen,lukas.jensen@ashford-international-airport.example,VP of IT,24504753375,salesqualifiedlead,2024-12-22T15:55:34.000Z
+39588504340,Chris,Hughes,chris.hughes@ashford-international-airport.example,Director of IT Infrastructure,24504753375,salesqualifiedlead,2024-12-25T15:55:34.000Z
+36685087512,David,Wagner,david.wagner@ashford-international-airport.example,Procurement Manager,24504753375,salesqualifiedlead,2024-12-27T15:55:34.000Z
+26896559808,Lukas,Lindgren,lukas.lindgren@granite-regional-hospital.example,Head of IT,13004627483,salesqualifiedlead,2025-01-26T09:59:32.000Z
+32452789677,Lukas,Clarke,lukas.clarke@granite-regional-hospital.example,Head of IT,13004627483,salesqualifiedlead,2025-01-29T09:59:32.000Z
+14613867046,Mark,Laine,mark.laine@granite-regional-hospital.example,Wireless Engineer,13004627483,salesqualifiedlead,2025-02-05T09:59:32.000Z
+36582731217,Olivia,Wagner,olivia.wagner@granite-regional-hospital.example,VP of IT,13004627483,salesqualifiedlead,2025-02-08T09:59:32.000Z
+21863034283,Laura,Thomas,laura.thomas@brightmark-it-solutions.example,Head of Network Engineering,29058548278,salesqualifiedlead,2025-02-15T14:18:04.000Z
+24249386804,Peter,Hughes,peter.hughes@brightmark-it-solutions.example,IT Manager,29058548278,salesqualifiedlead,2025-02-24T14:18:04.000Z
+27511744470,Thomas,Becker,thomas.becker@brightmark-it-solutions.example,VP of IT,29058548278,salesqualifiedlead,2025-03-02T14:18:04.000Z
+23285568797,Laura,Moreau,laura.moreau@brightmark-it-solutions.example,Procurement Manager,29058548278,salesqualifiedlead,2025-03-06T14:18:04.000Z
+27652249401,Rasmus,Dahl,rasmus.dahl@deltaport-it-solutions.example,Director of Wireless Engineering,23527561909,salesqualifiedlead,2025-04-23T09:19:21.000Z
 12950452527,Laura,Moreau,laura.moreau@aurelia-grand-hotels-group.example,Director of IT Infrastructure,26512314436,salesqualifiedlead,2025-05-12T00:33:06.000Z
-20802201777,Chris,Novak,chris.novak@lumenview-telecom.example,Network Architect,35624125567,salesqualifiedlead,2025-05-13T15:17:31.000Z
 28050524940,Emma,Fischer,emma.fischer@aurelia-grand-hotels-group.example,Wireless Engineer,26512314436,salesqualifiedlead,2025-05-19T00:33:06.000Z
 21388854898,David,Wagner,david.wagner@aurelia-grand-hotels-group.example,Procurement Manager,26512314436,salesqualifiedlead,2025-05-21T00:33:06.000Z
-37459273386,David,Smith,david.smith@summitmark-managed-services.example,Director of IT Infrastructure,11902925256,salesqualifiedlead,2025-05-21T15:51:34.000Z
+13892562408,Julia,Jensen,julia.jensen@westbrook-medical-center.example,CIO,31411119503,salesqualifiedlead,2025-05-22T13:00:15.000Z
 35789706234,Willem,Verhoeven,willem.verhoeven@aurelia-grand-hotels-group.example,Director of Hotel Technology,26512314436,salesqualifiedlead,2025-05-23T00:33:06.000Z
 14137197488,Mikko,Novak,mikko.novak@aurelia-grand-hotels-group.example,Head of Network Engineering,26512314436,salesqualifiedlead,2025-05-24T00:33:06.000Z
-32851348190,James,Lindgren,james.lindgren@highland-industries.example,Network Architect,31681981552,salesqualifiedlead,2025-05-28T09:04:51.000Z
-25393162972,Anna,Mäkinen,anna.makinen@lumenview-telecom.example,Wireless Practice Lead,35624125567,salesqualifiedlead,2025-05-30T15:17:31.000Z
-11721658878,Emma,Virtanen,emma.virtanen@highland-industries.example,Network Architect,31681981552,salesqualifiedlead,2025-06-05T09:04:51.000Z
-26121198366,Peter,Fischer,peter.fischer@highland-industries.example,VP of IT,31681981552,salesqualifiedlead,2025-06-05T09:04:51.000Z
-13073957506,Anna,Fischer,anna.fischer@pinecrest-steelworks.example,Network Operations Lead,12513034613,salesqualifiedlead,2025-07-09T17:22:58.000Z
-21265958607,Lukas,Hughes,lukas.hughes@harborview-industries.example,Procurement Manager,37490541567,salesqualifiedlead,2025-07-24T13:15:30.000Z
-31212783132,Julia,Laine,julia.laine@deltaport-logistics.example,Head of Network Engineering,32211097091,salesqualifiedlead,2025-08-13T14:10:41.000Z
-27601588035,Ryan,Miller,ryan.miller@deltaport-logistics.example,IT Lead,32211097091,salesqualifiedlead,2025-08-16T14:10:41.000Z
+25718628076,Thomas,Jensen,thomas.jensen@westbrook-medical-center.example,CIO,31411119503,salesqualifiedlead,2025-05-27T13:00:15.000Z
+11574145537,Mark,Lindgren,mark.lindgren@westbrook-medical-center.example,Head of IT,31411119503,salesqualifiedlead,2025-05-30T13:00:15.000Z
+22004485542,Anna,Laine,anna.laine@maplewood-granite-convention-center.example,Wireless Engineer,32114864457,salesqualifiedlead,2025-05-31T12:29:31.000Z
+14890501563,Erik,Strand,erik.strand@granitelink-logistics.example,IT Director,13066173106,salesqualifiedlead,2025-06-03T12:07:59.000Z
+32256040133,Olivia,Wagner,olivia.wagner@maplewood-granite-convention-center.example,VP of IT,32114864457,salesqualifiedlead,2025-06-04T12:29:31.000Z
+13833306054,Chris,Martin,chris.martin@westbrook-medical-center.example,Procurement Manager,31411119503,salesqualifiedlead,2025-06-05T13:00:15.000Z
+14815899228,Sanna,Becker,sanna.becker@lakeview-industries.example,VP of IT,13064642768,salesqualifiedlead,2025-06-09T16:04:49.000Z
+31267702319,David,Kelly,david.kelly@lakeview-industries.example,Head of Network Engineering,13064642768,salesqualifiedlead,2025-06-09T16:04:49.000Z
+21557346927,Laura,Turner,laura.turner@maplewood-granite-convention-center.example,Head of IT,32114864457,salesqualifiedlead,2025-06-13T12:29:31.000Z
+23490589904,Anna,Clarke,anna.clarke@redhill-institute-of-technology.example,CIO,18461468248,salesqualifiedlead,2025-06-15T16:45:07.000Z
+36850537897,Wei,Collins,wei.collins@greenstream-systems-integration.example,Wireless Architect,24442834356,salesqualifiedlead,2025-06-27T11:36:40.000Z
+14312795149,Elena,Clarke,elena.clarke@auroracore-wireless-engineering.example,IT Manager,30623652398,salesqualifiedlead,2025-07-14T09:58:04.000Z
+20802201777,Chris,Novak,chris.novak@brightwater-redhill-industries.example,Network Architect,20733050035,salesqualifiedlead,2025-07-15T11:01:57.000Z
+34859059056,Laura,Virtanen,laura.virtanen@auroracore-wireless-engineering.example,IT Manager,30623652398,salesqualifiedlead,2025-07-20T09:58:04.000Z
+26754326545,James,Turner,james.turner@auroracore-wireless-engineering.example,Head of Network Engineering,30623652398,salesqualifiedlead,2025-07-30T09:58:04.000Z
+25393162972,Julia,Hughes,julia.hughes@brightwater-redhill-industries.example,CIO,20733050035,salesqualifiedlead,2025-08-01T11:01:57.000Z
+39673398771,Paolo,Rossi,paolo.rossi@auroracore-wireless-engineering.example,Wireless Architect,30623652398,salesqualifiedlead,2025-08-02T09:58:04.000Z
 33231541871,Mette,Kjærgaard,mette.kjrgaard@nordhavn-port-authority.example,Head of Digital Operations,29880684626,salesqualifiedlead,2025-08-29T08:23:19.000Z
 14202468638,Thomas,Hughes,thomas.hughes@nordhavn-port-authority.example,Network Operations Lead,29880684626,salesqualifiedlead,2025-08-31T08:23:19.000Z
-26450012191,Michael,Virtanen,michael.virtanen@deltaport-logistics.example,Head of IT,32211097091,salesqualifiedlead,2025-08-31T14:10:41.000Z
-22063373130,Mark,Smith,mark.smith@northfield-state-college.example,Network Architect,39449970294,salesqualifiedlead,2025-09-03T17:01:47.000Z
 35686346422,Anna,Novak,anna.novak@nordhavn-port-authority.example,Head of Network Engineering,29880684626,salesqualifiedlead,2025-09-05T08:23:19.000Z
 19938642252,Sanna,Smith,sanna.smith@nordhavn-port-authority.example,IT Manager,29880684626,salesqualifiedlead,2025-09-06T08:23:19.000Z
-18449190654,Emma,Rossi,emma.rossi@northfield-state-college.example,Network Architect,39449970294,salesqualifiedlead,2025-09-06T17:01:47.000Z
-39052374557,Olivia,Novak,olivia.novak@northfield-state-college.example,Head of Network Engineering,39449970294,salesqualifiedlead,2025-09-13T17:01:47.000Z
-39538060063,Mikko,Fischer,mikko.fischer@alpinemark-systems-integration.example,Director of IT Infrastructure,35810065647,salesqualifiedlead,2025-09-15T17:19:16.000Z
-30922239739,Lena,Koch,lena.koch@alpinemark-systems-integration.example,Wireless Architect,35810065647,salesqualifiedlead,2025-09-17T17:19:16.000Z
-10527442077,Matthias,Hoffmann,matthias.hoffmann@orbitstream-it-solutions.example,Director of Wireless Engineering,21393062588,salesqualifiedlead,2025-09-18T11:09:40.000Z
-36559270474,Thomas,Rossi,thomas.rossi@alpinemark-systems-integration.example,CIO,35810065647,salesqualifiedlead,2025-09-21T17:19:16.000Z
-36940564550,Laura,Martin,laura.martin@alpinemark-systems-integration.example,CIO,35810065647,salesqualifiedlead,2025-09-22T17:19:16.000Z
-21083852193,Sara,Fischer,sara.fischer@fairhaven-state-college.example,CIO,21924517411,salesqualifiedlead,2025-09-27T16:04:00.000Z
-32451568942,Laura,Virtanen,laura.virtanen@fairhaven-state-college.example,IT Manager,21924517411,salesqualifiedlead,2025-09-27T16:04:00.000Z
-26593900766,Olivia,Clarke,olivia.clarke@fairhaven-state-college.example,CIO,21924517411,salesqualifiedlead,2025-09-28T16:04:00.000Z
-17733862393,Julia,Becker,julia.becker@kingsbridge-regional-hospital.example,Network Architect,15842640172,salesqualifiedlead,2025-10-03T16:04:29.000Z
-12319655998,David,Novak,david.novak@kingsbridge-regional-hospital.example,Director of IT Infrastructure,15842640172,salesqualifiedlead,2025-10-03T16:04:29.000Z
-33918777968,Michael,Jensen,michael.jensen@kingsbridge-regional-hospital.example,CIO,15842640172,salesqualifiedlead,2025-10-07T16:04:29.000Z
-32731327329,Josh,Jones,josh.jones@novamark-it-solutions.example,Wireless Practice Lead,36224831171,salesqualifiedlead,2025-10-10T08:34:48.000Z
-31395482195,Lukas,Virtanen,lukas.virtanen@novamark-it-solutions.example,Network Architect,36224831171,salesqualifiedlead,2025-10-11T08:34:48.000Z
-23305363629,Anna,Moreau,anna.moreau@kingsbridge-regional-hospital.example,CIO,15842640172,salesqualifiedlead,2025-10-11T16:04:29.000Z
-36290227040,Mark,Moreau,mark.moreau@fairhaven-state-college.example,Network Operations Lead,21924517411,salesqualifiedlead,2025-10-12T16:04:00.000Z
-16589928744,Peter,Martin,peter.martin@novamark-it-solutions.example,CIO,36224831171,salesqualifiedlead,2025-10-13T08:34:48.000Z
-10837406293,Elena,Novak,elena.novak@university-of-highland.example,Network Architect,15100588760,salesqualifiedlead,2025-11-20T17:32:08.000Z
-17655411276,Peter,Virtanen,peter.virtanen@northpath-wireless-engineering.example,Wireless Engineer,35734182157,salesqualifiedlead,2025-11-27T09:41:36.000Z
+25337774259,Mikko,Turner,mikko.turner@clearwater-health-system.example,Wireless Engineer,11619773935,salesqualifiedlead,2025-10-14T13:04:25.000Z
+35717153447,David,Laine,david.laine@stonebridge-regional-hospital.example,Wireless Engineer,12438909399,salesqualifiedlead,2025-10-16T15:30:17.000Z
+20016737591,Peter,Hughes,peter.hughes@stonebridge-regional-hospital.example,CIO,12438909399,salesqualifiedlead,2025-10-16T15:30:17.000Z
+37723121830,Thomas,Wagner,thomas.wagner@stonebridge-regional-hospital.example,VP of IT,12438909399,salesqualifiedlead,2025-10-21T15:30:17.000Z
+26367878172,Peter,Clarke,peter.clarke@harborview-regional-hospital.example,Network Operations Lead,38474289992,salesqualifiedlead,2025-11-12T08:40:31.000Z
+36327921587,Mikko,Laine,mikko.laine@harborview-regional-hospital.example,IT Manager,38474289992,salesqualifiedlead,2025-11-14T08:40:31.000Z
+34800815946,Thomas,Leroy,thomas.leroy@northstream-warehousing.example,Head of IT,16090568177,salesqualifiedlead,2025-11-15T11:55:45.000Z
 35810708967,Emma,Becker,emma.becker@northgate-retail.example,VP of IT,39987926322,salesqualifiedlead,2025-11-28T12:21:52.000Z
-34853402603,Michael,Laine,michael.laine@university-of-highland.example,Head of Network Engineering,15100588760,salesqualifiedlead,2025-11-28T17:32:08.000Z
 12040162789,Sanna,Fischer,sanna.fischer@northgate-retail.example,Network Architect,39987926322,salesqualifiedlead,2025-11-29T12:21:52.000Z
-33290083553,Jonas,Strand,jonas.strand@northpath-wireless-engineering.example,Mobility Team Lead,35734182157,salesqualifiedlead,2025-11-30T09:41:36.000Z
-13377829612,Chris,Lindgren,chris.lindgren@northpath-wireless-engineering.example,VP of IT,35734182157,salesqualifiedlead,2025-12-04T09:41:36.000Z
 21012608270,Julia,Wagner,julia.wagner@northgate-retail.example,CIO,39987926322,salesqualifiedlead,2025-12-04T12:21:52.000Z
-15566177645,Emma,Clarke,emma.clarke@university-of-highland.example,Head of IT,15100588760,salesqualifiedlead,2025-12-06T17:32:08.000Z
-17659980785,Elena,Wagner,elena.wagner@university-of-highland.example,Director of IT Infrastructure,15100588760,salesqualifiedlead,2025-12-07T17:32:08.000Z
 27930798416,Jürgen,Albrecht,jurgen.albrecht@rheinfeld-automotive-systems.example,Leiter IT-Infrastruktur,30966107916,salesqualifiedlead,2025-12-08T22:17:52.000Z
-35664308739,Olivia,Moreau,olivia.moreau@northpath-wireless-engineering.example,VP of IT,35734182157,salesqualifiedlead,2025-12-10T09:41:36.000Z
+30776366316,Mark,Novak,mark.novak@silverpoint-managed-services.example,VP of IT,11875396030,salesqualifiedlead,2025-12-09T09:09:26.000Z
+15907348343,Mikko,Moreau,mikko.moreau@silverpoint-managed-services.example,Director of IT Infrastructure,11875396030,salesqualifiedlead,2025-12-11T09:09:26.000Z
 22407583303,Oliver,Pennington,oliver.pennington@northgate-retail.example,Head of Store Technology,39987926322,salesqualifiedlead,2025-12-12T12:21:52.000Z
-15361823249,Nils,Holm,nils.holm@stonecore-telecom.example,Director of Wireless Engineering,10963920772,salesqualifiedlead,2025-12-13T08:54:08.000Z
+38378676882,Dirk,Fischer,dirk.fischer@silverpoint-managed-services.example,Wireless Practice Lead,11875396030,salesqualifiedlead,2025-12-20T09:09:26.000Z
+30860969026,James,Lindgren,james.lindgren@silverpoint-managed-services.example,Procurement Manager,11875396030,salesqualifiedlead,2025-12-20T09:09:26.000Z
 30578688994,Sanna,Lindgren,sanna.lindgren@rheinfeld-automotive-systems.example,Head of IT,30966107916,salesqualifiedlead,2025-12-22T22:17:52.000Z
+19268887642,Mark,Smith,mark.smith@ashford-institute-of-technology.example,IT Manager,35429091594,salesqualifiedlead,2025-12-23T10:16:50.000Z
+12116143825,Olivia,Lindgren,olivia.lindgren@ashford-institute-of-technology.example,CIO,35429091594,salesqualifiedlead,2025-12-26T10:16:50.000Z
 36170462877,Thomas,Clarke,thomas.clarke@rheinfeld-automotive-systems.example,VP of IT,30966107916,salesqualifiedlead,2025-12-26T22:17:52.000Z
-23915729107,Hanna,Hughes,hanna.hughes@bluefield-hotels.example,IT Manager,28690696518,salesqualifiedlead,2025-12-27T16:17:25.000Z
-11582705584,Laura,Clark,laura.clark@greenlink-industries.example,Network Administrator,39467857934,salesqualifiedlead,2025-12-28T11:07:33.000Z
-21999744604,Bram,de Boer,bram.deboer@bluefield-hotels.example,IT Director,28690696518,salesqualifiedlead,2025-12-30T16:17:25.000Z
 39119469861,Elena,Becker,elena.becker@lakeshore-community-college-district.example,VP of IT,10464219358,salesqualifiedlead,2026-01-05T12:09:19.000Z
 13963489922,Emma,Wagner,emma.wagner@lakeshore-community-college-district.example,Director of IT Infrastructure,10464219358,salesqualifiedlead,2026-01-05T12:09:19.000Z
-17735690080,Mikko,Moreau,mikko.moreau@pinecrest-state-college.example,Head of IT,28363507970,salesqualifiedlead,2026-01-08T09:23:34.000Z
-31522671114,Michael,Wagner,michael.wagner@oakmont-institute-of-technology.example,VP of IT,20712497131,salesqualifiedlead,2026-01-09T09:21:32.000Z
-16841809421,Sara,Laine,sara.laine@pinecrest-state-college.example,Network Operations Lead,28363507970,salesqualifiedlead,2026-01-09T09:23:34.000Z
+26922819608,Mikko,Hughes,mikko.hughes@fairhaven-regional-hospital.example,Procurement Manager,24870214394,salesqualifiedlead,2026-01-09T08:50:35.000Z
+29763177332,Sara,Lindgren,sara.lindgren@fairhaven-regional-hospital.example,VP of IT,24870214394,salesqualifiedlead,2026-01-09T08:50:35.000Z
 39081994817,Denise,Okafor,denise.okafor@lakeshore-community-college-district.example,Director of Network Services,10464219358,salesqualifiedlead,2026-01-10T12:09:19.000Z
-11156646017,Chris,Smith,chris.smith@pinecrest-state-college.example,Network Operations Lead,28363507970,salesqualifiedlead,2026-01-17T09:23:34.000Z
+30749141305,Laura,Jensen,laura.jensen@eastgate-industries.example,CIO,20269390499,salesqualifiedlead,2026-01-13T14:38:04.000Z
+35069710188,Chris,Jensen,chris.jensen@stonebridge-hospitality.example,CIO,14124974643,salesqualifiedlead,2026-01-15T11:48:32.000Z
+35107288151,Lukas,Fischer,lukas.fischer@stonebridge-hospitality.example,VP of IT,14124974643,salesqualifiedlead,2026-01-16T11:48:32.000Z
+19466746752,Elena,Fischer,elena.fischer@stonebridge-hospitality.example,Wireless Engineer,14124974643,salesqualifiedlead,2026-01-16T11:48:32.000Z
 30604744749,Olivia,Smith,olivia.smith@lakeshore-community-college-district.example,Procurement Manager,10464219358,salesqualifiedlead,2026-01-17T12:09:19.000Z
-36073822671,Peter,Turner,peter.turner@pinecrest-state-college.example,Director of IT Infrastructure,28363507970,salesqualifiedlead,2026-01-20T09:23:34.000Z
-10246064616,Chris,Smith,chris.smith@pinecrest-hotels.example,Director of IT Infrastructure,12333669518,salesqualifiedlead,2026-01-20T12:00:14.000Z
-33905818189,Anna,Clarke,anna.clarke@brightstream-it-solutions.example,Head of Network Engineering,21178356688,salesqualifiedlead,2026-01-20T12:21:36.000Z
-22714232816,Mark,Fischer,mark.fischer@pinecrest-hotels.example,Procurement Manager,12333669518,salesqualifiedlead,2026-01-25T12:00:14.000Z
-15135311291,Lukas,Turner,lukas.turner@pinecrest-hotels.example,Head of IT,12333669518,salesqualifiedlead,2026-01-25T12:00:14.000Z
-13056825163,Lukas,Laine,lukas.laine@highland-medical-center.example,Director of IT Infrastructure,16607460096,salesqualifiedlead,2026-01-25T12:48:41.000Z
-10014608088,David,Virtanen,david.virtanen@brightwater-health-system.example,Procurement Manager,39179526936,salesqualifiedlead,2026-01-25T13:57:21.000Z
-30947183456,Laura,Novak,laura.novak@highland-medical-center.example,VP of IT,16607460096,salesqualifiedlead,2026-01-26T12:48:41.000Z
-39104494756,Chris,Rossi,chris.rossi@brightwater-health-system.example,CIO,39179526936,salesqualifiedlead,2026-01-28T13:57:21.000Z
-31146259657,Michael,Novak,michael.novak@pinecrest-hotels.example,IT Manager,12333669518,salesqualifiedlead,2026-01-29T12:00:14.000Z
-24697635673,Thomas,Smith,thomas.smith@brightwater-health-system.example,CIO,39179526936,salesqualifiedlead,2026-01-29T13:57:21.000Z
-18029170644,Peter,Fischer,peter.fischer@brightstream-it-solutions.example,Procurement Manager,21178356688,salesqualifiedlead,2026-01-30T12:21:36.000Z
-35785767569,Julie,Girard,julie.girard@brightstream-it-solutions.example,Wireless Architect,21178356688,salesqualifiedlead,2026-01-31T12:21:36.000Z
-37605171102,Thomas,Wagner,thomas.wagner@riverside-arena.example,Director of IT Infrastructure,19078242505,salesqualifiedlead,2026-02-03T09:16:08.000Z
-30560043671,Peter,Smith,peter.smith@highland-medical-center.example,Procurement Manager,16607460096,salesqualifiedlead,2026-02-06T12:48:41.000Z
-37356747439,Tom,Hall,tom.hall@apexbridge-systems-integration.example,Wireless Practice Lead,29175502999,salesqualifiedlead,2026-02-08T15:08:05.000Z
-26098560253,Peter,Smith,peter.smith@riverside-arena.example,CIO,19078242505,salesqualifiedlead,2026-02-09T09:16:08.000Z
-37181589254,James,Smith,james.smith@brightwater-hotels.example,Director of IT Infrastructure,17043777633,salesqualifiedlead,2026-02-09T13:11:47.000Z
-17130319186,Mark,Wagner,mark.wagner@fairhaven-health-system.example,Director of IT Infrastructure,15735315381,salesqualifiedlead,2026-02-10T17:24:08.000Z
-28095612944,Anna,Wagner,anna.wagner@fairhaven-health-system.example,Wireless Engineer,15735315381,salesqualifiedlead,2026-02-13T17:24:08.000Z
-37118742085,Julia,Fischer,julia.fischer@fairhaven-convention-center.example,Director of IT Infrastructure,31946333348,salesqualifiedlead,2026-02-15T09:34:28.000Z
-10192383305,Hanna,Laine,hanna.laine@fairhaven-health-system.example,VP of IT,15735315381,salesqualifiedlead,2026-02-17T17:24:08.000Z
-18403021537,Laura,Martin,laura.martin@clearwater-components.example,Wireless Engineer,16144474120,salesqualifiedlead,2026-02-28T08:56:51.000Z
-15197324128,James,Turner,james.turner@fairhaven-distribution-centers.example,Network Architect,33621781337,salesqualifiedlead,2026-03-04T09:31:46.000Z
-29400258745,Emma,Smith,emma.smith@eastgate-steelworks.example,Network Operations Lead,35604584708,salesqualifiedlead,2026-03-05T10:58:50.000Z
-22247568792,Mikko,Kelly,mikko.kelly@elmstead-steelworks.example,Network Architect,23103141274,salesqualifiedlead,2026-03-05T11:14:59.000Z
-16398636697,Anna,Novak,anna.novak@fairhaven-distribution-centers.example,CIO,33621781337,salesqualifiedlead,2026-03-06T09:31:46.000Z
-30778168253,Anna,Turner,anna.turner@ironport-retail-group.example,Head of Network Engineering,25429495101,salesqualifiedlead,2026-03-07T09:52:51.000Z
-39855549054,James,Turner,james.turner@fairhaven-distribution-centers.example,Network Operations Lead,33621781337,salesqualifiedlead,2026-03-08T09:31:46.000Z
-23933695613,Michael,Thomas,michael.thomas@ironport-retail-group.example,Network Administrator,25429495101,salesqualifiedlead,2026-03-09T09:52:51.000Z
-26876705236,Mikko,Smith,mikko.smith@elmstead-steelworks.example,Network Architect,23103141274,salesqualifiedlead,2026-03-10T11:14:59.000Z
-26604675901,Thomas,Moreau,thomas.moreau@ironport-retail-group.example,Director of IT Infrastructure,25429495101,salesqualifiedlead,2026-03-12T09:52:51.000Z
-35990794285,Chris,Wagner,chris.wagner@ironport-retail-group.example,Head of Network Engineering,25429495101,salesqualifiedlead,2026-03-12T09:52:51.000Z
-33831494854,Emma,Turner,emma.turner@riverside-state-college.example,Head of IT,20825099286,salesqualifiedlead,2026-03-12T17:51:52.000Z
-35922992614,James,Martin,james.martin@riverside-state-college.example,Head of IT,20825099286,salesqualifiedlead,2026-03-13T17:51:52.000Z
-31619966057,Lukas,Wagner,lukas.wagner@elmstead-riverside-resorts-group.example,CIO,28863717484,salesqualifiedlead,2026-03-15T10:34:57.000Z
-23468880163,Mikko,Lindgren,mikko.lindgren@granite-state-college.example,Head of Network Engineering,11235772583,salesqualifiedlead,2026-03-16T11:14:56.000Z
-14555431671,Mark,Fischer,mark.fischer@fairhaven-distribution-centers.example,Procurement Manager,33621781337,salesqualifiedlead,2026-03-17T09:31:46.000Z
-29764090058,David,Wagner,david.wagner@pinecrest-stadium-group.example,Wireless Engineer,38075727075,salesqualifiedlead,2026-03-17T17:58:55.000Z
-10427072904,Laura,Novak,laura.novak@stonebridge-institute-of-technology.example,Director of IT Infrastructure,28178772819,salesqualifiedlead,2026-03-19T16:33:04.000Z
-33307945338,Emma,Becker,emma.becker@westbrook-regional-hospital.example,Network Architect,12095877911,salesqualifiedlead,2026-03-20T12:42:32.000Z
-30280775927,Lukas,Novak,lukas.novak@stonebridge-institute-of-technology.example,Network Architect,28178772819,salesqualifiedlead,2026-03-22T16:33:04.000Z
-39661750861,Sara,Lindgren,sara.lindgren@westbrook-regional-hospital.example,Procurement Manager,12095877911,salesqualifiedlead,2026-03-23T12:42:32.000Z
-21467164257,Mark,Clarke,mark.clarke@elmstead-steelworks.example,Procurement Manager,23103141274,salesqualifiedlead,2026-03-24T11:14:59.000Z
-11659895284,Chris,Moreau,chris.moreau@northfield-university.example,Network Architect,10745975819,salesqualifiedlead,2026-03-27T11:20:59.000Z
-30432349276,Thomas,Laine,thomas.laine@westbrook-regional-hospital.example,Network Architect,12095877911,salesqualifiedlead,2026-03-27T12:42:32.000Z
-38197353314,Sara,Moreau,sara.moreau@northfield-university.example,Head of IT,10745975819,salesqualifiedlead,2026-04-07T11:20:59.000Z
-16787084746,Julia,Moreau,julia.moreau@northfield-university.example,Wireless Engineer,10745975819,salesqualifiedlead,2026-04-09T11:20:59.000Z
-13735868420,Chris,Becker,chris.becker@polarpoint-managed-services.example,Wireless Engineer,15246468095,salesqualifiedlead,2026-04-11T08:50:44.000Z
-39534219276,Jason,Davis,jason.davis@polarpoint-managed-services.example,Wireless Practice Lead,15246468095,salesqualifiedlead,2026-04-12T08:50:44.000Z
-32850950381,Thomas,Novak,thomas.novak@northfield-university.example,Wireless Engineer,10745975819,salesqualifiedlead,2026-04-14T11:20:59.000Z
-26212376058,Laura,Martin,laura.martin@pinecrest-children-s-hospital.example,Procurement Manager,31087431341,salesqualifiedlead,2026-04-15T09:15:00.000Z
-31247490752,Elena,Novak,elena.novak@apexport-schools.example,Network Operations Lead,28311763769,salesqualifiedlead,2026-04-17T15:04:25.000Z
+33408374753,David,Moreau,david.moreau@highland-arena.example,Network Architect,28880545800,salesqualifiedlead,2026-01-19T15:16:24.000Z
+34490580857,Michael,Turner,michael.turner@riverside-steelworks.example,Head of IT,33232038937,salesqualifiedlead,2026-01-20T09:23:59.000Z
+23418428174,Michael,Laine,michael.laine@pinecrest-resorts-group.example,Director of IT Infrastructure,16207849313,salesqualifiedlead,2026-01-23T13:34:19.000Z
+27354021229,Michael,Virtanen,michael.virtanen@riverside-steelworks.example,Network Operations Lead,33232038937,salesqualifiedlead,2026-01-24T09:23:59.000Z
+33994069928,Olivia,Jensen,olivia.jensen@riverside-steelworks.example,CIO,33232038937,salesqualifiedlead,2026-01-24T09:23:59.000Z
+35693876619,Sara,Martin,sara.martin@highland-airport-authority.example,Head of Network Engineering,38852352727,salesqualifiedlead,2026-01-26T15:02:56.000Z
+18896074739,Emma,Hughes,emma.hughes@highland-airport-authority.example,Network Operations Lead,38852352727,salesqualifiedlead,2026-01-26T15:02:56.000Z
+32967724912,Sanna,Clarke,sanna.clarke@highland-airport-authority.example,Head of Network Engineering,38852352727,salesqualifiedlead,2026-01-30T15:02:56.000Z
+26099324830,James,Jensen,james.jensen@highland-arena.example,IT Manager,28880545800,salesqualifiedlead,2026-01-30T15:16:24.000Z
+19271171101,Julia,Kelly,julia.kelly@pinecrest-resorts-group.example,Head of Network Engineering,16207849313,salesqualifiedlead,2026-01-31T13:34:19.000Z
+21492861242,Hanna,Hughes,hanna.hughes@brightwater-components.example,Procurement Manager,31039008553,salesqualifiedlead,2026-02-01T13:22:14.000Z
+31463634060,Laura,Wagner,laura.wagner@highland-arena.example,IT Manager,28880545800,salesqualifiedlead,2026-02-04T15:16:24.000Z
+34338990775,Julia,Fischer,julia.fischer@highland-arena.example,Procurement Manager,28880545800,salesqualifiedlead,2026-02-05T15:16:24.000Z
+38956145083,Anna,Martin,anna.martin@pinecrest-resorts-group.example,VP of IT,16207849313,salesqualifiedlead,2026-02-06T13:34:19.000Z
+22971683231,Sara,Novak,sara.novak@riverside-steelworks.example,CIO,33232038937,salesqualifiedlead,2026-02-07T09:23:59.000Z
+32216429911,Hanna,Turner,hanna.turner@highland-airport-authority.example,Wireless Engineer,38852352727,salesqualifiedlead,2026-02-07T15:02:56.000Z
+10266792745,Peter,Laine,peter.laine@redhill-redhill-components.example,Head of Network Engineering,13149005316,salesqualifiedlead,2026-02-09T16:46:18.000Z
+17140186354,Lukas,Wagner,lukas.wagner@oakmont-logistics.example,Director of IT Infrastructure,27979755368,salesqualifiedlead,2026-02-12T12:54:14.000Z
+32468982028,Olivia,Smith,olivia.smith@redhill-redhill-components.example,IT Manager,13149005316,salesqualifiedlead,2026-02-15T16:46:18.000Z
+33045388288,Elena,Smith,elena.smith@oakmont-logistics.example,Procurement Manager,27979755368,salesqualifiedlead,2026-02-17T12:54:14.000Z
+27149267249,Emma,Laine,emma.laine@oakmont-logistics.example,Director of IT Infrastructure,27979755368,salesqualifiedlead,2026-02-21T12:54:14.000Z
+18085911807,Hanna,Becker,hanna.becker@oakmont-logistics.example,Network Architect,27979755368,salesqualifiedlead,2026-02-22T12:54:14.000Z
+27457700619,Laura,Moreau,laura.moreau@oakmont-distribution-centers.example,VP of IT,36694712114,salesqualifiedlead,2026-02-27T08:07:35.000Z
+11815249777,Mark,Becker,mark.becker@kingsbridge-children-s-hospital.example,Head of Network Engineering,37901730923,salesqualifiedlead,2026-02-28T14:51:00.000Z
+19238395092,Anna,Fischer,anna.fischer@highland-institute-of-technology.example,Director of IT Infrastructure,19227017783,salesqualifiedlead,2026-03-05T15:17:19.000Z
+10556814006,Sara,Clarke,sara.clarke@highland-institute-of-technology.example,Director of IT Infrastructure,19227017783,salesqualifiedlead,2026-03-08T15:17:19.000Z
+28843439923,James,Novak,james.novak@highland-institute-of-technology.example,Network Architect,19227017783,salesqualifiedlead,2026-03-09T15:17:19.000Z
+30703646554,Olivia,Fischer,olivia.fischer@kingsbridge-children-s-hospital.example,Head of Network Engineering,37901730923,salesqualifiedlead,2026-03-12T14:51:00.000Z
+11203058622,David,Rossi,david.rossi@kingsbridge-children-s-hospital.example,Network Operations Lead,37901730923,salesqualifiedlead,2026-03-12T14:51:00.000Z
+13901682780,Laura,Becker,laura.becker@kingsbridge-children-s-hospital.example,Head of Network Engineering,37901730923,salesqualifiedlead,2026-03-14T14:51:00.000Z
+35641153523,Erik,Halvorsen,erik.halvorsen@cedarpeak-it-solutions.example,Mobility Team Lead,18668600275,salesqualifiedlead,2026-03-15T08:22:43.000Z
+37329435256,Anna,Novak,anna.novak@redhill-state-college.example,CIO,18196978582,salesqualifiedlead,2026-03-20T09:47:53.000Z
+39011030386,Julia,Jensen,julia.jensen@crestbridge-it-solutions.example,CIO,16115522710,salesqualifiedlead,2026-03-25T09:28:06.000Z
+30335452634,Hanna,Hughes,hanna.hughes@redhill-state-college.example,Procurement Manager,18196978582,salesqualifiedlead,2026-03-25T09:47:53.000Z
+31700745104,David,Becker,david.becker@crestbridge-it-solutions.example,Wireless Engineer,16115522710,salesqualifiedlead,2026-03-26T09:28:06.000Z
+36549830743,Sanna,Becker,sanna.becker@silverstream-foods.example,Head of Network Engineering,16617109171,salesqualifiedlead,2026-03-27T13:12:17.000Z
+15135311291,Mark,Hughes,mark.hughes@riverside-hotels.example,Wireless Engineer,27241859869,salesqualifiedlead,2026-03-28T08:17:47.000Z
+15087398012,Olivia,Rossi,olivia.rossi@stonebridge-retail-group.example,Wireless Engineer,29745454632,salesqualifiedlead,2026-03-28T15:12:01.000Z
+38433745103,Laura,Smith,laura.smith@stonebridge-retail-group.example,IT Manager,29745454632,salesqualifiedlead,2026-03-31T15:12:01.000Z
+18979554710,Michael,Hughes,michael.hughes@lakeview-stores.example,Procurement Manager,37840372051,salesqualifiedlead,2026-04-03T08:18:33.000Z
+25652099335,Sara,Virtanen,sara.virtanen@highland-resorts-group.example,Network Architect,18010852750,salesqualifiedlead,2026-04-03T09:22:54.000Z
+32378974334,Matt,Baker,matt.baker@crestbridge-it-solutions.example,Head of Wireless,16115522710,salesqualifiedlead,2026-04-04T09:28:06.000Z
+28965767305,Peter,Becker,peter.becker@stonebridge-retail-group.example,Wireless Engineer,29745454632,salesqualifiedlead,2026-04-04T15:12:01.000Z
+37429531480,Sabine,Weber,sabine.weber@silverstream-foods.example,IT Lead,16617109171,salesqualifiedlead,2026-04-05T13:12:17.000Z
+27867172127,Laura,Fischer,laura.fischer@stonebridge-retail-group.example,Procurement Manager,29745454632,salesqualifiedlead,2026-04-05T15:12:01.000Z
+29378839072,Olivia,Rossi,olivia.rossi@lakeview-stores.example,IT Manager,37840372051,salesqualifiedlead,2026-04-06T08:18:33.000Z
+11178657118,Emma,Lindgren,emma.lindgren@elmstead-freight-terminals.example,Procurement Manager,25103080527,salesqualifiedlead,2026-04-06T10:16:37.000Z
+39336263492,Laura,Clarke,laura.clarke@highland-resorts-group.example,CIO,18010852750,salesqualifiedlead,2026-04-11T09:22:54.000Z
+34543496927,Mark,Lindgren,mark.lindgren@lakeview-stores.example,Head of IT,37840372051,salesqualifiedlead,2026-04-12T08:18:33.000Z
+10288027004,Emma,Fischer,emma.fischer@elmstead-freight-terminals.example,Network Operations Lead,25103080527,salesqualifiedlead,2026-04-12T10:16:37.000Z
+34105322446,Olivia,Becker,olivia.becker@stonebridge-precision-manufacturing.example,Wireless Engineer,16331679652,salesqualifiedlead,2026-04-13T08:56:28.000Z
+31060094335,Mikko,Smith,mikko.smith@highland-resorts-group.example,Network Architect,18010852750,salesqualifiedlead,2026-04-13T09:22:54.000Z
+15907167879,Emma,Kelly,emma.kelly@highland-resorts-group.example,VP of IT,18010852750,salesqualifiedlead,2026-04-14T09:22:54.000Z
+11121929630,Mark,Kelly,mark.kelly@elmstead-freight-terminals.example,Director of IT Infrastructure,25103080527,salesqualifiedlead,2026-04-16T10:16:37.000Z
 21802305874,Ilkka,Peltola,ilkka.peltola@pshp.example,ICT Infrastructure Manager,10459769760,salesqualifiedlead,2026-04-17T21:32:27.000Z
 24793102389,Emma,Laine,emma.laine@pshp.example,CIO,10459769760,salesqualifiedlead,2026-04-17T21:32:27.000Z
-38147430124,Chris,Clarke,chris.clarke@polarpoint-managed-services.example,IT Manager,15246468095,salesqualifiedlead,2026-04-18T08:50:44.000Z
-10750520755,Sanna,Turner,sanna.turner@pinecrest-children-s-hospital.example,Director of IT Infrastructure,31087431341,salesqualifiedlead,2026-04-19T09:15:00.000Z
-28243220776,Hanna,Fischer,hanna.fischer@granite-components.example,Wireless Engineer,28196897278,salesqualifiedlead,2026-04-21T12:36:22.000Z
+38948488253,Sara,Smith,sara.smith@redhill-medical-center.example,Head of Network Engineering,19543298522,salesqualifiedlead,2026-04-20T14:09:11.000Z
+17738278943,Sara,Fischer,sara.fischer@maplewood-outlets.example,Procurement Manager,28333802354,salesqualifiedlead,2026-04-21T08:59:49.000Z
 14341930885,Sara,Kelly,sara.kelly@pshp.example,IT Manager,10459769760,salesqualifiedlead,2026-04-21T21:32:27.000Z
-14882196943,Sanna,Turner,sanna.turner@polarpoint-managed-services.example,VP of IT,15246468095,salesqualifiedlead,2026-04-22T08:50:44.000Z
-19954842836,Sanna,Kelly,sanna.kelly@granite-components.example,Network Architect,28196897278,salesqualifiedlead,2026-04-23T12:36:22.000Z
+35485938761,Sanna,Turner,sanna.turner@northfield-elmstead-children-s-hospital.example,Network Architect,18324688381,salesqualifiedlead,2026-04-23T16:36:31.000Z
+22411777568,Lukas,Jensen,lukas.jensen@northfield-elmstead-children-s-hospital.example,Network Architect,18324688381,salesqualifiedlead,2026-04-23T16:36:31.000Z
 10512346592,Tasha,Whitfield,tasha.whitfield@grand-meridian-resorts.example,VP of IT,20371504428,salesqualifiedlead,2026-04-24T07:31:14.000Z
-16808209637,Sanna,Jensen,sanna.jensen@pinecrest-children-s-hospital.example,CIO,31087431341,salesqualifiedlead,2026-04-24T09:15:00.000Z
-13821460808,Mark,Jensen,mark.jensen@granite-components.example,Network Architect,28196897278,salesqualifiedlead,2026-04-24T12:36:22.000Z
 36185815275,Laura,Rossi,laura.rossi@pshp.example,Wireless Engineer,10459769760,salesqualifiedlead,2026-04-24T21:32:27.000Z
-16491960053,Raj,Wilson,raj.wilson@apexport-schools.example,IT Infrastructure Manager,28311763769,salesqualifiedlead,2026-04-26T15:04:25.000Z
-12099115882,Julia,Clarke,julia.clarke@pinecrest-children-s-hospital.example,Network Operations Lead,31087431341,salesqualifiedlead,2026-04-30T09:15:00.000Z
-24727193652,Sanna,Kelly,sanna.kelly@granite-components.example,IT Manager,28196897278,salesqualifiedlead,2026-05-01T12:36:22.000Z
+21069332560,James,Laine,james.laine@redhill-medical-center.example,Network Operations Lead,19543298522,salesqualifiedlead,2026-04-27T14:09:11.000Z
+13934085590,Julia,Wagner,julia.wagner@ashford-stores.example,Procurement Manager,37338400578,salesqualifiedlead,2026-04-28T10:13:48.000Z
+25185804302,Mark,Lindgren,mark.lindgren@northfield-elmstead-children-s-hospital.example,Network Operations Lead,18324688381,salesqualifiedlead,2026-04-28T16:36:31.000Z
+22469521329,Anna,Fischer,anna.fischer@elmstead-health-system.example,VP of IT,11166450303,salesqualifiedlead,2026-05-01T12:46:35.000Z
+10134168276,Anna,Wagner,anna.wagner@ashford-stores.example,CIO,37338400578,salesqualifiedlead,2026-05-02T10:13:48.000Z
 25105086662,Hanna,Fischer,hanna.fischer@grand-meridian-resorts.example,Procurement Manager,20371504428,salesqualifiedlead,2026-05-03T07:31:14.000Z
 26271192369,Peter,Clarke,peter.clarke@grand-meridian-resorts.example,Procurement Manager,20371504428,salesqualifiedlead,2026-05-03T07:31:14.000Z
-11368356167,Lukas,Laine,lukas.laine@granite-medical-center.example,VP of IT,37480613258,salesqualifiedlead,2026-05-04T10:06:59.000Z
+20839069350,Mark,Martin,mark.martin@ashford-stores.example,Director of IT Infrastructure,37338400578,salesqualifiedlead,2026-05-07T10:13:48.000Z
+13142727699,Peter,Kelly,peter.kelly@redhill-medical-center.example,Director of IT Infrastructure,19543298522,salesqualifiedlead,2026-05-07T14:09:11.000Z
 36664336405,Laura,Hughes,laura.hughes@grand-meridian-resorts.example,Network Operations Lead,20371504428,salesqualifiedlead,2026-05-08T07:31:14.000Z
-29041459947,David,Becker,david.becker@granite-medical-center.example,Wireless Engineer,37480613258,salesqualifiedlead,2026-05-09T10:06:59.000Z
+15764879846,Laura,Nelson,laura.nelson@lumenstream-communications.example,Mobility Team Lead,31822474946,salesqualifiedlead,2026-05-08T11:38:12.000Z
+36281442363,Laura,Becker,laura.becker@redhill-medical-center.example,Network Architect,19543298522,salesqualifiedlead,2026-05-08T14:09:11.000Z
 14439475813,Hanna,Fischer,hanna.fischer@grand-meridian-resorts.example,Director of IT Infrastructure,20371504428,salesqualifiedlead,2026-05-12T07:31:14.000Z
-17292206403,James,Wagner,james.wagner@brightwater-freight-terminals.example,Procurement Manager,19509448115,salesqualifiedlead,2026-05-12T15:44:17.000Z
-34448429102,Bram,de Jong,bram.dejong@harborlink-systems-integration.example,Director of Wireless Engineering,25979871042,salesqualifiedlead,2026-05-13T08:48:03.000Z
-39501429185,Peter,Laine,peter.laine@brightwater-freight-terminals.example,Head of Network Engineering,19509448115,salesqualifiedlead,2026-05-18T15:44:17.000Z
-39757698250,Mark,Smith,mark.smith@riverside-stores.example,Head of Network Engineering,27102231250,salesqualifiedlead,2026-05-19T17:06:21.000Z
-26450631674,Emma,Jensen,emma.jensen@granite-medical-center.example,Head of Network Engineering,37480613258,salesqualifiedlead,2026-05-20T10:06:59.000Z
-26107281428,Laura,Rossi,laura.rossi@granite-medical-center.example,IT Manager,37480613258,salesqualifiedlead,2026-05-22T10:06:59.000Z
-36106041261,Sara,Moreau,sara.moreau@riverside-stores.example,Head of Network Engineering,27102231250,salesqualifiedlead,2026-05-27T17:06:21.000Z
-27184978237,Laura,Wagner,laura.wagner@westbrook-logistics.example,Network Operations Lead,10209340543,salesqualifiedlead,2026-05-29T12:10:41.000Z
-23613571564,Elena,Virtanen,elena.virtanen@westbrook-logistics.example,Director of IT Infrastructure,10209340543,salesqualifiedlead,2026-06-02T12:10:41.000Z
-17315714525,Lukas,Turner,lukas.turner@kingsbridge-elmstead-hotels.example,VP of IT,11168254464,salesqualifiedlead,2026-06-03T08:38:21.000Z
-12427837325,Thomas,Becker,thomas.becker@westbrook-logistics.example,Head of Network Engineering,10209340543,salesqualifiedlead,2026-06-03T12:10:41.000Z
-35335886933,Lukas,Kelly,lukas.kelly@westbrook-outlets.example,Head of IT,17580578334,salesqualifiedlead,2026-06-03T15:07:46.000Z
-37673540034,Anna,Martin,anna.martin@clearwater-institute-of-technology.example,IT Manager,30922894304,salesqualifiedlead,2026-06-05T13:31:26.000Z
-15575871682,Thomas,Smith,thomas.smith@clearwater-institute-of-technology.example,Director of IT Infrastructure,30922894304,salesqualifiedlead,2026-06-05T13:31:26.000Z
-10832626676,Chris,Hughes,chris.hughes@university-of-riverside.example,Procurement Manager,17324812061,salesqualifiedlead,2026-06-07T12:21:07.000Z
-25399901134,Mark,Lindgren,mark.lindgren@westbrook-outlets.example,Network Operations Lead,17580578334,salesqualifiedlead,2026-06-07T15:07:46.000Z
-36966129546,Thomas,Rossi,thomas.rossi@university-of-riverside.example,VP of IT,17324812061,salesqualifiedlead,2026-06-08T12:21:07.000Z
-37660874632,Sara,Jensen,sara.jensen@university-of-fairhaven-harborview.example,CIO,27367137405,salesqualifiedlead,2026-06-10T09:44:57.000Z
-26697486457,Niels,van Dijk,niels.vandijk@westview-wireless-engineering.example,Mobility Team Lead,21906295705,salesqualifiedlead,2026-06-12T10:25:42.000Z
-17417316831,Thomas,Smith,thomas.smith@westbrook-logistics.example,Network Operations Lead,10209340543,salesqualifiedlead,2026-06-13T12:10:41.000Z
-29603972205,Sara,Becker,sara.becker@kingsbridge-elmstead-hotels.example,VP of IT,11168254464,salesqualifiedlead,2026-06-14T08:38:21.000Z
-20685827511,Julia,Laine,julia.laine@university-of-riverside.example,Network Architect,17324812061,salesqualifiedlead,2026-06-14T12:21:07.000Z
-24148056506,John,Scott,john.scott@auroraworks-it-solutions.example,Wireless Architect,30347997122,salesqualifiedlead,2026-06-14T12:59:15.000Z
-25776289680,Sara,Rossi,sara.rossi@university-of-riverside.example,Director of IT Infrastructure,17324812061,salesqualifiedlead,2026-06-15T12:21:07.000Z
-37642447875,David,Smith,david.smith@westview-wireless-engineering.example,VP of IT,21906295705,salesqualifiedlead,2026-06-21T10:25:42.000Z
-25126387267,Julia,Wagner,julia.wagner@lakeview-outlets.example,Director of IT Infrastructure,15638102471,salesqualifiedlead,2026-06-21T15:18:48.000Z
-10964524259,Lukas,Smith,lukas.smith@lakeview-outlets.example,IT Manager,15638102471,salesqualifiedlead,2026-06-25T15:18:48.000Z
-39717418684,Sanna,Smith,sanna.smith@westview-wireless-engineering.example,CIO,21906295705,salesqualifiedlead,2026-06-30T10:25:42.000Z
-20503848656,Mark,Moreau,mark.moreau@nordicpoint-industries.example,Procurement Manager,13961062206,salesqualifiedlead,2026-07-06T12:10:58.000Z
-29776775422,Peter,Virtanen,peter.virtanen@nordicpoint-industries.example,VP of IT,13961062206,salesqualifiedlead,2026-07-13T12:10:58.000Z
-36550846861,Anders,Johansson,anders.johansson@nordicpoint-industries.example,IT Director,13961062206,salesqualifiedlead,2026-07-21T12:10:58.000Z
-22216514110,Emma,Turner,emma.turner@nordicpoint-industries.example,CIO,13961062206,salesqualifiedlead,2026-07-24T12:10:58.000Z
-27096095433,James,Rossi,james.rossi@westbrook-institute-of-technology.example,Head of Network Engineering,29333237324,salesqualifiedlead,2026-07-26T17:36:17.000Z
-17283432664,Thomas,Laine,thomas.laine@westbrook-institute-of-technology.example,Wireless Engineer,29333237324,salesqualifiedlead,2026-07-26T17:36:17.000Z
-29653079955,Lukas,Fischer,lukas.fischer@beaconport-communications.example,Head of Network Engineering,22167116917,salesqualifiedlead,2026-07-27T11:49:32.000Z
-25755240070,Olivia,Martin,olivia.martin@westbrook-institute-of-technology.example,Director of IT Infrastructure,29333237324,salesqualifiedlead,2026-07-28T17:36:17.000Z
-25788162063,Chris,Wagner,chris.wagner@silverlake-outlets.example,Wireless Engineer,29549460761,salesqualifiedlead,2026-08-05T14:35:07.000Z
-19410246590,Daniel,Weber,daniel.weber@beaconport-communications.example,Head of Wireless,22167116917,salesqualifiedlead,2026-08-06T11:49:32.000Z
-22728655401,Chris,Clarke,chris.clarke@fairhaven-steelworks.example,Procurement Manager,20594202532,salesqualifiedlead,2026-08-09T10:43:39.000Z
-25259912467,Emma,Novak,emma.novak@fairhaven-steelworks.example,Head of Network Engineering,20594202532,salesqualifiedlead,2026-08-09T10:43:39.000Z
-36129441056,Mikko,Martin,mikko.martin@fairhaven-steelworks.example,CIO,20594202532,salesqualifiedlead,2026-08-09T10:43:39.000Z
-16954828436,James,Moreau,james.moreau@fairhaven-steelworks.example,Network Architect,20594202532,salesqualifiedlead,2026-08-11T10:43:39.000Z
-22457364200,Michael,Hughes,michael.hughes@riverside-precision-manufacturing.example,Procurement Manager,18350823710,salesqualifiedlead,2026-08-11T17:19:28.000Z
-34419704307,Sanna,Virtanen,sanna.virtanen@westbrook-institute-of-technology.example,IT Manager,29333237324,salesqualifiedlead,2026-08-11T17:36:17.000Z
-20460976347,Elena,Turner,elena.turner@highland-regional-hospital.example,Wireless Engineer,23989845654,salesqualifiedlead,2026-08-14T08:53:06.000Z
-23041551366,Julia,Jensen,julia.jensen@silverlake-outlets.example,CIO,29549460761,salesqualifiedlead,2026-08-18T14:35:07.000Z
-17798760773,Sanna,Lindgren,sanna.lindgren@silverlake-outlets.example,Director of IT Infrastructure,29549460761,salesqualifiedlead,2026-08-19T14:35:07.000Z
-28221504312,Hanna,Jensen,hanna.jensen@silverlake-outlets.example,Wireless Engineer,29549460761,salesqualifiedlead,2026-08-20T14:35:07.000Z
-17304210668,Mikko,Martin,mikko.martin@harborview-harborview-regional-hospital.example,Network Operations Lead,29247193945,salesqualifiedlead,2026-08-21T14:32:01.000Z
-28437085385,Laura,Becker,laura.becker@riverside-precision-manufacturing.example,Head of IT,18350823710,salesqualifiedlead,2026-08-23T17:19:28.000Z
-24980837162,David,Smith,david.smith@harborview-harborview-regional-hospital.example,VP of IT,29247193945,salesqualifiedlead,2026-08-26T14:32:01.000Z
-15850094842,Mark,Fischer,mark.fischer@oakmont-medical-center.example,Network Operations Lead,36245371281,salesqualifiedlead,2026-08-27T15:24:05.000Z
-13208468190,Laura,Wagner,laura.wagner@university-of-stonebridge.example,IT Manager,26463975507,salesqualifiedlead,2026-09-01T12:40:56.000Z
-12979212598,James,Jensen,james.jensen@harborview-harborview-regional-hospital.example,Head of IT,29247193945,salesqualifiedlead,2026-09-02T14:32:01.000Z
-29142325157,Lukas,Martin,lukas.martin@elmstead-retail-group.example,IT Manager,36407473069,salesqualifiedlead,2026-09-03T17:03:12.000Z
-14686488969,Michael,Turner,michael.turner@eastgate-freight-terminals.example,Wireless Engineer,33939192710,salesqualifiedlead,2026-09-05T08:39:30.000Z
-22620325363,Hanna,Rossi,hanna.rossi@bay-state-college.example,CIO,33118259970,salesqualifiedlead,2026-09-06T08:38:54.000Z
-37683759342,Hanna,Jensen,hanna.jensen@riverside-steelworks.example,IT Manager,25271508031,salesqualifiedlead,2026-09-07T13:50:02.000Z
-16238383649,James,Jensen,james.jensen@university-of-stonebridge.example,Director of IT Infrastructure,26463975507,salesqualifiedlead,2026-09-08T12:40:56.000Z
-24485508711,Thomas,Smith,thomas.smith@riverside-airport-authority.example,VP of IT,36927509596,salesqualifiedlead,2026-09-09T10:22:13.000Z
-10738074834,Chris,Lindgren,chris.lindgren@riverside-steelworks.example,Head of IT,25271508031,salesqualifiedlead,2026-09-14T13:50:02.000Z
-38263302199,Elena,Virtanen,elena.virtanen@riverside-institute-of-technology.example,CIO,27361157295,salesqualifiedlead,2026-09-15T08:47:42.000Z
-12059320269,Mark,Hughes,mark.hughes@riverside-airport-authority.example,CIO,36927509596,salesqualifiedlead,2026-09-15T10:22:13.000Z
-23907328147,Hanna,Fischer,hanna.fischer@bay-state-college.example,IT Manager,33118259970,salesqualifiedlead,2026-09-16T08:38:54.000Z
-32712682476,Emma,Kelly,emma.kelly@riverside-steelworks.example,IT Manager,25271508031,salesqualifiedlead,2026-09-16T13:50:02.000Z
-18045540109,Emma,Virtanen,emma.virtanen@bay-state-college.example,Network Operations Lead,33118259970,salesqualifiedlead,2026-09-17T08:38:54.000Z
-39140691124,Peter,Lindgren,peter.lindgren@riverside-airport-authority.example,Procurement Manager,36927509596,salesqualifiedlead,2026-09-17T10:22:13.000Z
-19364263830,David,Virtanen,david.virtanen@bay-state-college.example,IT Manager,33118259970,salesqualifiedlead,2026-09-19T08:38:54.000Z
-37490786867,Mikko,Rossi,mikko.rossi@eastgate-freight-terminals.example,CIO,33939192710,salesqualifiedlead,2026-09-21T08:39:30.000Z
-12141843155,Emma,Becker,emma.becker@riverside-airport-authority.example,Network Architect,36927509596,salesqualifiedlead,2026-09-21T10:22:13.000Z
-13929899897,Mark,Martin,mark.martin@oakmont-stores.example,Head of Network Engineering,18053250609,salesqualifiedlead,2026-09-21T15:15:09.000Z
-25713926516,David,Martin,david.martin@redhill-retail-group.example,IT Manager,22078595201,salesqualifiedlead,2026-09-23T09:17:00.000Z
-16859444160,Michael,Lindgren,michael.lindgren@redhill-retail-group.example,IT Manager,22078595201,salesqualifiedlead,2026-09-30T09:17:00.000Z
-24036339345,Mark,Becker,mark.becker@redhill-retail-group.example,VP of IT,22078595201,salesqualifiedlead,2026-10-02T09:17:00.000Z
-26844369870,Hanna,Fischer,hanna.fischer@redhill-retail-group.example,Head of Network Engineering,22078595201,salesqualifiedlead,2026-10-04T09:17:00.000Z
-37440292820,Sanna,Rossi,sanna.rossi@redhill-steelworks.example,CIO,28324973988,salesqualifiedlead,2026-10-18T12:37:35.000Z
+32821600633,Kristian,Lindqvist,kristian.lindqvist@pinepath-telecom.example,Head of Wireless,19794846007,salesqualifiedlead,2026-05-13T08:43:03.000Z
+24642135039,David,Jensen,david.jensen@westbrook-steelworks.example,IT Manager,10158352024,salesqualifiedlead,2026-05-20T09:19:55.000Z
+36951931581,Chris,Virtanen,chris.virtanen@silverlake-airport-authority.example,Network Operations Lead,13358646178,salesqualifiedlead,2026-05-21T15:53:14.000Z
+31624625001,Anna,Rossi,anna.rossi@lakeview-institute-of-technology.example,Network Operations Lead,32533921978,salesqualifiedlead,2026-05-23T08:25:00.000Z
+20744322170,Thomas,Hughes,thomas.hughes@lakeview-institute-of-technology.example,Network Architect,32533921978,salesqualifiedlead,2026-05-26T08:25:00.000Z
+28400235928,Chris,Becker,chris.becker@lakeview-children-s-hospital.example,Procurement Manager,29871393780,salesqualifiedlead,2026-05-26T16:32:35.000Z
+33011602773,Julia,Lindgren,julia.lindgren@silverlake-airport-authority.example,VP of IT,13358646178,salesqualifiedlead,2026-05-27T15:53:14.000Z
+30166640507,Olivia,Laine,olivia.laine@lakeview-children-s-hospital.example,CIO,29871393780,salesqualifiedlead,2026-05-28T16:32:35.000Z
+22616263880,Sanna,Fischer,sanna.fischer@lakeview-children-s-hospital.example,CIO,29871393780,salesqualifiedlead,2026-05-29T16:32:35.000Z
+18721443946,Peter,Virtanen,peter.virtanen@lakeview-children-s-hospital.example,VP of IT,29871393780,salesqualifiedlead,2026-06-01T16:32:35.000Z
+39360573170,Emma,Clarke,emma.clarke@lakeview-institute-of-technology.example,VP of IT,32533921978,salesqualifiedlead,2026-06-02T08:25:00.000Z
+39566548660,Chris,Moreau,chris.moreau@silverlake-airport-authority.example,Network Architect,13358646178,salesqualifiedlead,2026-06-05T15:53:14.000Z
+13605725218,Julia,Moreau,julia.moreau@lakeview-freight-terminals.example,Director of IT Infrastructure,21805746011,salesqualifiedlead,2026-06-05T15:55:41.000Z
+25067305082,James,Turner,james.turner@silverlake-airport-authority.example,Procurement Manager,13358646178,salesqualifiedlead,2026-06-06T15:53:14.000Z
+27995489164,Michael,Jensen,michael.jensen@pinecrest-industries.example,Procurement Manager,39130101219,salesqualifiedlead,2026-06-07T10:28:18.000Z
+16218983448,Lukas,Lindgren,lukas.lindgren@granite-logistics.example,Wireless Engineer,39543962433,salesqualifiedlead,2026-06-07T13:38:31.000Z
+23880561416,James,Hughes,james.hughes@granite-logistics.example,Network Operations Lead,39543962433,salesqualifiedlead,2026-06-08T13:38:31.000Z
+35091420918,Hanna,Becker,hanna.becker@granite-logistics.example,Network Operations Lead,39543962433,salesqualifiedlead,2026-06-08T13:38:31.000Z
+33146985017,Anna,Laine,anna.laine@lakeview-freight-terminals.example,Network Operations Lead,21805746011,salesqualifiedlead,2026-06-08T15:55:41.000Z
+39551571818,Lukas,Rossi,lukas.rossi@lakeview-freight-terminals.example,Wireless Engineer,21805746011,salesqualifiedlead,2026-06-08T15:55:41.000Z
+23512902141,Lukas,Wagner,lukas.wagner@lakeview-health-system.example,CIO,39880343794,salesqualifiedlead,2026-06-11T16:52:57.000Z
+16986269242,Laura,Turner,laura.turner@pinecrest-industries.example,Wireless Engineer,39130101219,salesqualifiedlead,2026-06-12T10:28:18.000Z
+37646861942,Thomas,Hughes,thomas.hughes@lakeview-health-system.example,Director of IT Infrastructure,39880343794,salesqualifiedlead,2026-06-13T16:52:57.000Z
+33377349928,Olivia,Jensen,olivia.jensen@harborview-medical-center.example,Network Operations Lead,34891470422,salesqualifiedlead,2026-06-13T16:58:56.000Z
+29604699331,Sara,Martin,sara.martin@lakeview-freight-terminals.example,VP of IT,21805746011,salesqualifiedlead,2026-06-14T15:55:41.000Z
+39063361543,David,Wagner,david.wagner@harborview-medical-center.example,IT Manager,34891470422,salesqualifiedlead,2026-06-15T16:58:56.000Z
+21618083066,David,Martin,david.martin@lakeview-health-system.example,VP of IT,39880343794,salesqualifiedlead,2026-06-16T16:52:57.000Z
+38812793546,Laura,Rossi,laura.rossi@lakeview-health-system.example,Head of Network Engineering,39880343794,salesqualifiedlead,2026-06-16T16:52:57.000Z
+27289524518,Anna,Clarke,anna.clarke@granite-logistics.example,Procurement Manager,39543962433,salesqualifiedlead,2026-06-17T13:38:31.000Z
+29929684561,Mikko,Novak,mikko.novak@northfield-hotels.example,CIO,24619123224,salesqualifiedlead,2026-06-18T10:20:55.000Z
+17533807923,Anna,Wagner,anna.wagner@pinecrest-logistics.example,Head of IT,35984357822,salesqualifiedlead,2026-06-18T13:13:33.000Z
+23223006689,Mark,Becker,mark.becker@northfield-hotels.example,VP of IT,24619123224,salesqualifiedlead,2026-06-20T10:20:55.000Z
+31159439104,Julia,Turner,julia.turner@pinecrest-logistics.example,IT Manager,35984357822,salesqualifiedlead,2026-06-21T13:13:33.000Z
+19299845479,Michael,Clarke,michael.clarke@northfield-hotels.example,IT Manager,24619123224,salesqualifiedlead,2026-06-24T10:20:55.000Z
+23008064400,Elena,Becker,elena.becker@northfield-hotels.example,IT Manager,24619123224,salesqualifiedlead,2026-06-28T10:20:55.000Z
+36433214507,Mikko,Wagner,mikko.wagner@harborview-medical-center.example,Wireless Engineer,34891470422,salesqualifiedlead,2026-06-28T16:58:56.000Z
+30730692690,Hanna,Kelly,hanna.kelly@clearwater-freight-terminals.example,Network Architect,27112661507,salesqualifiedlead,2026-07-02T13:31:08.000Z
+30304164263,Julia,Kelly,julia.kelly@pinecrest-logistics.example,Wireless Engineer,35984357822,salesqualifiedlead,2026-07-06T13:13:33.000Z
+25906498095,Lukas,Smith,lukas.smith@pinecrest-logistics.example,IT Manager,35984357822,salesqualifiedlead,2026-07-08T13:13:33.000Z
+23371531206,Michael,Wagner,michael.wagner@elmstead-children-s-hospital.example,VP of IT,20936774912,salesqualifiedlead,2026-07-16T09:08:35.000Z
+15834463308,Hanna,Virtanen,hanna.virtanen@pineline-communications.example,Procurement Manager,31553586434,salesqualifiedlead,2026-07-29T16:28:39.000Z
+26812412670,Koen,Vos,koen.vos@pineline-communications.example,Wireless Practice Lead,31553586434,salesqualifiedlead,2026-08-02T16:28:39.000Z
+37160711483,Olivia,Becker,olivia.becker@pinecrest-steelworks.example,Wireless Engineer,13189185308,salesqualifiedlead,2026-08-14T13:03:27.000Z
+14065494126,Emma,Laine,emma.laine@granite-state-college.example,Network Operations Lead,33686637197,salesqualifiedlead,2026-08-15T11:23:02.000Z
+27408746611,Thomas,Martin,thomas.martin@pinecrest-steelworks.example,Head of Network Engineering,13189185308,salesqualifiedlead,2026-08-15T13:03:27.000Z
+11978006678,Hanna,Jensen,hanna.jensen@harborview-state-college.example,Head of IT,36141464775,salesqualifiedlead,2026-08-15T15:40:53.000Z
+15630677734,Hanna,Becker,hanna.becker@granite-state-college.example,CIO,33686637197,salesqualifiedlead,2026-08-20T11:23:02.000Z
+31586327437,Sanna,Martin,sanna.martin@pinecrest-steelworks.example,Network Architect,13189185308,salesqualifiedlead,2026-08-24T13:03:27.000Z
+22547556893,Mikko,Rossi,mikko.rossi@harborview-state-college.example,CIO,36141464775,salesqualifiedlead,2026-08-24T15:40:53.000Z
+17372469431,Julia,Laine,julia.laine@harborview-state-college.example,Network Architect,36141464775,salesqualifiedlead,2026-08-26T15:40:53.000Z
+29604616032,Emma,Kelly,emma.kelly@harborview-state-college.example,CIO,36141464775,salesqualifiedlead,2026-08-30T15:40:53.000Z
+35911594901,Julia,Fischer,julia.fischer@maplewood-regional-hospital.example,VP of IT,23847967008,salesqualifiedlead,2026-08-30T17:17:41.000Z
+26720602299,Laura,Turner,laura.turner@maplewood-regional-hospital.example,VP of IT,23847967008,salesqualifiedlead,2026-09-01T17:17:41.000Z
+39974258735,Elena,Kelly,elena.kelly@pinecrest-steelworks.example,Head of Network Engineering,13189185308,salesqualifiedlead,2026-09-03T13:03:27.000Z
+17619913207,Laura,Becker,laura.becker@maplewood-regional-hospital.example,Network Operations Lead,23847967008,salesqualifiedlead,2026-09-06T17:17:41.000Z
+18561209731,Mikko,Novak,mikko.novak@orbitview-communications.example,Procurement Manager,24402180992,salesqualifiedlead,2026-09-07T16:01:11.000Z
+14353258578,Raj,Murphy,raj.murphy@cedarstream-clinics.example,Head of IT,14512547754,salesqualifiedlead,2026-09-10T08:23:40.000Z
+38448577172,Nicole,Nelson,nicole.nelson@orbitview-communications.example,Director of Wireless Engineering,24402180992,salesqualifiedlead,2026-09-10T16:01:11.000Z
+25424845418,Lukas,Rossi,lukas.rossi@cedarstream-clinics.example,VP of IT,14512547754,salesqualifiedlead,2026-09-16T08:23:40.000Z
+24720304602,Peter,Novak,peter.novak@brightwater-logistics.example,Head of IT,19346609870,salesqualifiedlead,2026-09-16T10:26:58.000Z
+13181215831,Michael,Wagner,michael.wagner@highland-logistics.example,VP of IT,36688210207,salesqualifiedlead,2026-09-19T16:21:04.000Z
+22255836969,Laura,Hughes,laura.hughes@cedarstream-clinics.example,Head of IT,14512547754,salesqualifiedlead,2026-09-21T08:23:40.000Z
+11643824966,Emma,Laine,emma.laine@brightwater-logistics.example,Network Operations Lead,19346609870,salesqualifiedlead,2026-09-21T10:26:58.000Z
+14239561197,Hanna,Hughes,hanna.hughes@oakmont-university.example,Wireless Engineer,37824725996,salesqualifiedlead,2026-09-24T17:59:32.000Z
+27512610584,Julia,Kelly,julia.kelly@westbrook-components.example,Head of Network Engineering,12683801456,salesqualifiedlead,2026-09-27T15:26:29.000Z
+26871160353,Lukas,Wagner,lukas.wagner@cedarstream-clinics.example,Network Architect,14512547754,salesqualifiedlead,2026-09-28T08:23:40.000Z
+25970311936,Peter,Turner,peter.turner@brightwater-northfield-children-s-hospital.example,Wireless Engineer,23953735979,salesqualifiedlead,2026-10-03T08:28:01.000Z
+27328161457,James,Moreau,james.moreau@westbrook-components.example,IT Manager,12683801456,salesqualifiedlead,2026-10-03T15:26:29.000Z
+12226262979,Emma,Virtanen,emma.virtanen@stonebridge-components.example,Network Operations Lead,35834751289,salesqualifiedlead,2026-10-04T08:25:29.000Z
+30475808967,Chris,Rossi,chris.rossi@brightwater-northfield-children-s-hospital.example,IT Manager,23953735979,salesqualifiedlead,2026-10-04T08:28:01.000Z
+26444838475,Sanna,Smith,sanna.smith@brightwater-logistics.example,VP of IT,19346609870,salesqualifiedlead,2026-10-04T10:26:58.000Z
+31194746235,Julia,Hughes,julia.hughes@stonebridge-components.example,Head of IT,35834751289,salesqualifiedlead,2026-10-06T08:25:29.000Z
+30185113543,Mikko,Turner,mikko.turner@brightwater-northfield-children-s-hospital.example,CIO,23953735979,salesqualifiedlead,2026-10-07T08:28:01.000Z
+16566368579,Michael,Wagner,michael.wagner@highland-children-s-hospital.example,IT Manager,34339351719,salesqualifiedlead,2026-10-07T12:57:24.000Z
+33594824349,Mark,Fischer,mark.fischer@stonebridge-components.example,Network Architect,35834751289,salesqualifiedlead,2026-10-08T08:25:29.000Z
+32195636813,Thomas,Kelly,thomas.kelly@brightwater-northfield-children-s-hospital.example,VP of IT,23953735979,salesqualifiedlead,2026-10-10T08:28:01.000Z
+39538246401,Hanna,Kelly,hanna.kelly@stonebridge-components.example,IT Manager,35834751289,salesqualifiedlead,2026-10-11T08:25:29.000Z
+39838504749,Sara,Jensen,sara.jensen@oakmont-university.example,Wireless Engineer,37824725996,salesqualifiedlead,2026-10-11T17:59:32.000Z

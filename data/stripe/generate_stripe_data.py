@@ -20,6 +20,10 @@ import unicodedata
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "marketing"))
+from marketing_index import SELF_SERVE_EFFECT, monthly_index  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -667,6 +671,20 @@ def month_range():
         y, m = (y + 1, 1) if m == 12 else (y, m + 1)
 
 
+# Paid marketing shifts *when* in the year self-serve customers arrive (adstock, half-life ≈ 1 month);
+# yearly totals stay calibrated to the revenue targets.
+AD_LIFT_STRENGTH = 0.6
+_AD_INDEX = monthly_index(SELF_SERVE_EFFECT, decay=0.5, lag=0)
+
+
+def ad_lift(year, month):
+    if not _AD_INDEX or (year, month) > (DATA_END.year, DATA_END.month):
+        return 1.0
+    known = [v for (y, m), v in _AD_INDEX.items() if y == year and (y, m) <= (DATA_END.year, DATA_END.month)]
+    mean = sum(known) / len(known) if known else 0
+    return 1.0 if mean == 0 else 1 + AD_LIFT_STRENGTH * (_AD_INDEX[(year, month)] / mean - 1)
+
+
 def build_self_serve(p6, p12):
     # Self-serve has to deliver whatever the enterprise contracts leave of each year's target.
     ss_target = {y: SELF_SERVE_PLAN[y] * 100 if y in SELF_SERVE_PLAN else t * 100 - net_cash["enterprise"][y]
@@ -675,7 +693,7 @@ def build_self_serve(p6, p12):
     cumulative = {}
     for year in REVENUE_TARGETS:
         ms = list(range(FIRST_SALE_MONTH[1] if year == FIRST_SALE_MONTH[0] else 1, 13))  # full year, even if cut
-        weights = [MONTHLY_GROWTH[year] ** i * SEASONALITY[m] for i, m in enumerate(ms)]
+        weights = [MONTHLY_GROWTH[year] ** i * SEASONALITY[m] * ad_lift(year, m) for i, m in enumerate(ms)]
         running = 0.0
         for m, w in zip(ms, weights):
             running += w
