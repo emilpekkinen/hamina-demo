@@ -16,6 +16,8 @@ Live: https://hamina-revops-demo.vercel.app · Code: https://github.com/emilpekk
 | 7 | Next.js dashboard in Hamina's design system (extracted from hamina.com / eu.hamina.com) | Looks like their product; Vercel hosting |
 | 8 | AI weekly brief (OpenAI Responses API, `OPEN_AI_API_KEY`, default `gpt-5.5`) | "No bandwidth" problem → brief written for the CRO |
 | 9 | **Marketing**: 6 ad platforms, 108 campaigns, weekly stats; spend drives acquisition timing with lag; lag scan + MMM; `/marketing` view; "Paid marketing budget" scenario lever | Connect spend to new revenue, with honest lag handling |
+| 10 | **Remote MCP server** at `/api/mcp` (12 read-only tools, Streamable HTTP via `mcp-handler`) | Demo the model from inside Claude (custom connector) |
+| 11 | **Pitch deck PDF** (`deck/`, Hamina styling, 15 slides) + **5-min script** (`deck/demo-script.md`) | Email follow-up; live demo flow |
 
 ## Key design decisions
 - **Stripe-first**: Stripe = source of truth for revenue/base; HubSpot only for new-logo pipeline. Revenue = cash (charges − refunds), the same definition as Hamina's public chart.
@@ -44,6 +46,7 @@ Live: https://hamina-revops-demo.vercel.app · Code: https://github.com/emilpekk
 - **Detrend before correlating**: spend and revenue both grow, so raw correlation credits ads for growth.
 - **Lag matters**: self-serve responds in 0–1 month, enterprise deals in ~2–3, enterprise revenue ~8. Monthly ROAS on enterprise spend is meaningless.
 - Platform-reported conversions ≠ revenue impact (CPL ranges €90–540 by channel).
+- Deck = local PDF (HTML → Chrome print), not a published page: it uses Hamina branding, so it's labelled as prepared by Emil, synthetic data, not an official Hamina document.
 - Ops gotchas: the Vercel env value picked up quotes from `.env.local` (stripped them); a server component can't import constants from a `"use client"` file.
 
 ## Run

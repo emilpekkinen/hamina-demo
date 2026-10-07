@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hamina Revenue Intelligence (demo deck)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Hamina tokens (design/DESIGN.md) */
+  :root {
+    --blue: #3143E5; --blue-600: #192BC7; --blue-50: #E8EAFC; --blue-100: #D6DAFA;
+    --ink: #1B1B1D; --body: #4E4F55; --muted: #85868E; --line: #DCDDDF; --bg-alt: #F9F9FA; --gray-100: #F0F0F1;
+    --success: #349780; --success-bg: #EDF8F6; --warn: #E58F10; --warn-bg: #FEF5E7; --error: #DF2664; --error-bg: #FDEAF0;
+    --violet: #7A53F8; --dark: #030712;
+  }
+  @page { size: 1280px 720px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; }
+  body { font-family: Inter, system-ui, sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; font-variant-numeric: tabular-nums; }
+  .slide { width: 1280px; height: 720px; position: relative; overflow: hidden; padding: 56px 64px 64px; page-break-after: always; break-after: page; background: #fff; }
+  .slide:last-child { page-break-after: auto; }
+  .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  h1 { font-size: 64px; line-height: 1.02; font-weight: 800; letter-spacing: -0.03em; }
+  h2 { font-size: 38px; line-height: 1.12; font-weight: 700; letter-spacing: -0.025em; margin-top: 8px; }
+  h2 em, h1 em { font-style: normal; color: var(--blue); }
+  .lead { font-size: 18px; line-height: 1.55; color: var(--body); margin-top: 14px; max-width: 980px; }
+  p, li { font-size: 16px; line-height: 1.5; color: var(--body); }
+  b { color: var(--ink); font-weight: 600; }
+  .foot { position: absolute; left: 64px; right: 64px; bottom: 22px; display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: var(--muted); }
+  .foot img { height: 15px; }
+  .foot .l { display: flex; align-items: center; gap: 10px; }
+  .row { display: flex; gap: 24px; }
+  .col { flex: 1; min-width: 0; }
+  .card { border: 1px solid var(--gray-100); border-radius: 12px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.04); padding: 20px 22px; }
+  .shot { border: 1px solid var(--gray-100); border-radius: 12px; box-shadow: 0 6px 24px rgba(27,27,29,.06); overflow: hidden; background: #fff; }
+  .shot img { display: block; width: 100%; }
+  .kpi .label { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .kpi .val { font-size: 34px; font-weight: 700; letter-spacing: -0.02em; margin-top: 6px; color: var(--ink); }
+  .kpi .sub { font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.4; }
+  .pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 999px; }
+  .pill.blue { background: var(--blue-50); color: var(--blue); } .pill.red { background: var(--error-bg); color: var(--error); }
+  .pill.green { background: var(--success-bg); color: var(--success); } .pill.orange { background: var(--warn-bg); color: #B36A00; }
+  ul.ticks { list-style: none; margin-top: 14px; }
+  ul.ticks li { padding-left: 26px; position: relative; margin-bottom: 10px; }
+  ul.ticks li::before { content: ""; position: absolute; left: 2px; top: 8px; width: 12px; height: 7px; border-left: 2.5px solid var(--blue); border-bottom: 2.5px solid var(--blue); transform: rotate(-45deg); }
+  .take { background: var(--blue-50); border-radius: 12px; padding: 16px 20px; color: var(--ink); font-size: 16px; line-height: 1.5; }
+  .take b { color: var(--blue-600); }
+  table.t { width: 100%; border-collapse: collapse; font-size: 14px; }
+  table.t th { text-align: left; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  table.t td { padding: 9px 10px; border-bottom: 1px solid var(--gray-100); color: var(--body); }
+  table.t td.n, table.t th.n { text-align: right; }
+  .bar { height: 8px; border-radius: 4px; background: var(--gray-100); position: relative; }
+  .bar > span { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; }
+  /* dark slides */
+  .dark { background: var(--dark); color: #fff; }
+  .dark p, .dark li { color: #9D9EA4; }
+  .dark .eyebrow { color: #ADB5F5; }
+  .dark .foot { color: #696A72; }
+  .grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 48px 48px; }
+  .glow { position: absolute; width: 720px; height: 720px; right: -200px; top: -260px; background: radial-gradient(circle, rgba(49,67,229,.55), rgba(49,67,229,0) 65%); }
+  .fn { border-radius: 12px; padding: 18px 18px 16px; background: var(--bg-alt); border: 1px solid var(--gray-100); }
+  .fn h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+  .fn h3 span { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+  .fn li { font-size: 13.5px; line-height: 1.45; margin-bottom: 6px; }
+  .fn ul { padding-left: 16px; }
+  .chat { border-radius: 12px; padding: 14px 16px; font-size: 14.5px; line-height: 1.5; }
+  .chat.q { background: var(--gray-100); color: var(--ink); align-self: flex-end; max-width: 80%; }
+  .chat.a { background: #fff; border: 1px solid var(--gray-100); color: var(--body); }
+  .step { display: flex; gap: 14px; }
+  .step .num { width: 30px; height: 30px; border-radius: 8px; background: var(--blue); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<!-- 1 · Title -->
+<section class="slide dark">
+  <div class="grid-bg"></div><div class="glow"></div>
+  <div style="position:relative;height:100%;display:flex;flex-direction:column;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:14px"><img src="hamina-logo-white.svg" style="height:30px"><span class="pill" style="background:rgba(173,181,245,.15);color:#ADB5F5">Demo for Hamina Wireless</span></div>
+    <div>
+      <p class="eyebrow">Revenue intelligence · RevOps / GTM engineering</p>
+      <h1 style="margin-top:14px;max-width:1000px">Turning Stripe, HubSpot and ad data into a forecast you can <em style="color:#858FF0">act on</em>.</h1>
+      <p style="font-size:20px;margin-top:22px;max-width:860px">A working, Stripe-first revenue forecast with pipeline, retention, cash and marketing analytics, an AI weekly brief, and a Claude connector.</p>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end">
+      <p style="font-size:15px">Prepared by <b style="color:#fff">Emil Pekkinen</b> · October 2026<br>Live demo: <b style="color:#fff">hamina-revops-demo.vercel.app</b></p>
+      <p style="font-size:12px;color:#696A72;text-align:right">All customers, deals, payments and campaigns are synthetic.<br>Not an official Hamina document.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · Problem -->
+<section class="slide">
+  <p class="eyebrow">The starting point</p>
+  <h2>Lots of revenue data. <em>No bandwidth</em> to use it.</h2>
+  <div class="row" style="margin-top:34px">
+    <div class="col card"><p class="pill blue">Stripe</p><p style="margin-top:12px"><b>Who actually pays.</b> Subscriptions, invoices, failed and late payments. It's the most honest signal Hamina has, and it isn't used for forecasting.</p></div>
+    <div class="col card"><p class="pill blue">HubSpot</p><p style="margin-top:12px"><b>Who is being sold to.</b> Deals, stages, close dates. The forecast relies on stage percentages that nobody has checked against outcomes.</p></div>
+    <div class="col card"><p class="pill blue">Ad platforms</p><p style="margin-top:12px"><b>What we spend to grow.</b> Google, LinkedIn, Meta, YouTube, G2. Each reports its own conversions; none of it is tied to revenue.</p></div>
+  </div>
+  <div class="take" style="margin-top:28px">Three systems with three versions of the truth. The questions the CRO, CFO and COO ask (<b>"Will we hit plan?"</b>, <b>"Which deals are real?"</b>, <b>"Is marketing working?"</b>) need all three joined, modelled and kept fresh. That is a RevOps engineering job, not a spreadsheet.</div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>2</span></div>
+</section>
+
+<!-- 3 · What I built -->
+<section class="slide">
+  <p class="eyebrow">What I built</p>
+  <h2>One pipeline from raw data to <em>decisions</em></h2>
+  <div class="shot" style="margin:18px auto 0;width:960px"><img src="shots/data-arch.png"></div>
+  <div class="row" style="margin-top:16px">
+    <div class="col"><p><b>Unify.</b> Stripe ↔ HubSpot identity resolution (domain → contact email → fuzzy name). All 14 enterprise customers matched; 19 CRM companies already pay via self-serve.</p></div>
+    <div class="col"><p><b>Model.</b> Renewal model, deal win/close-date model, marketing mix model. Everything is computed as of a date, so it can be backtested.</p></div>
+    <div class="col"><p><b>Deliver.</b> Dashboard in Hamina's design system, AI weekly brief, and an MCP connector to ask Claude directly.</p></div>
+  </div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>3</span></div>
+</section>
+
+<!-- 4 · Forecast -->
+<section class="slide">
+  <p class="eyebrow">Forecast</p>
+  <h2>FY2026 forecast <em>€3.33M</em> vs a €3.42M plan</h2>
+  <div class="row" style="margin-top:24px;align-items:flex-start">
+    <div class="shot" style="flex:1.45"><img src="shots/home-fan.png"></div>
+    <div class="col">
+      <ul class="ticks" style="margin-top:4px">
+        <li><b>4,000 Monte Carlo runs</b> combine renewals, new self-serve, enterprise renewals, open deals and not-yet-created pipeline.</li>
+        <li>FY2026 P10–P90 <b>€3.16M–€3.55M</b>: about a <b>29%</b> chance of hitting plan.</li>
+        <li>FY2027 P50 <b>€5.86M</b> (+76%); ARR <b>€6.1M</b> by Dec 2027.</li>
+        <li>A range instead of one number, so finance can plan for P10 and sales can push for P90.</li>
+        <li>Today: ARR <b>€3.17M</b> (+66% YoY), NRR <b>84%</b>, cash next 90 days <b>€988k</b>.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>4</span></div>
+</section>
+
+<!-- 5 · Bridge -->
+<section class="slide">
+  <p class="eyebrow">Where growth comes from</p>
+  <h2>ARR €3.2M → <em>€6.1M</em>: half of it still has to be sold</h2>
+  <div class="row" style="margin-top:24px;align-items:flex-start">
+    <div class="shot" style="flex:1.2"><img src="shots/home-bridge.png"></div>
+    <div class="col">
+      <table class="t">
+        <tr><th>Driver (Sep 2026 → Dec 2027)</th><th class="n">ARR</th></tr>
+        <tr><td>New self-serve customers</td><td class="n"><b>+€1.41M</b></td></tr>
+        <tr><td>New logos from deals not yet created</td><td class="n"><b>+€1.40M</b></td></tr>
+        <tr><td>New logos from today's open pipeline</td><td class="n">+€0.64M</td></tr>
+        <tr><td>Enterprise renewal uplift</td><td class="n">+€0.19M</td></tr>
+        <tr><td>Self-serve expansion</td><td class="n">+€0.09M</td></tr>
+        <tr><td>Self-serve churn</td><td class="n" style="color:var(--error)">−€0.54M</td></tr>
+        <tr><td>Enterprise churn</td><td class="n" style="color:var(--error)">−€0.21M</td></tr>
+      </table>
+      <div class="take" style="margin-top:18px"><b>Self-serve churn is the single biggest leak</b>, at €0.54M of ARR. Every point of renewal rate is worth ~€21k of FY2027 revenue.</div>
+    </div>
+  </div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>5</span></div>
+</section>
+
+<!-- 6 · Pipeline -->
+<section class="slide">
+  <p class="eyebrow">Pipeline reality check</p>
+  <h2>HubSpot says "Contract sent" = 80%. History says <em>27%</em>.</h2>
+  <div class="row" style="margin-top:24px;align-items:flex-start">
+    <div class="col" style="flex:.85">
+      <div class="card">
+        <table class="t">
+          <tr><th>Stage</th><th class="n">HubSpot</th><th class="n">Actual win rate</th></tr>
+          <tr><td>Discovery</td><td class="n">10%</td><td class="n"><b>8%</b></td></tr>
+          <tr><td>Qualified</td><td class="n">20%</td><td class="n"><b>15%</b></td></tr>
+          <tr><td>Technical evaluation</td><td class="n">40%</td><td class="n"><b>36%</b></td></tr>
+          <tr><td>Business case</td><td class="n">60%</td><td class="n"><b>41%</b></td></tr>
+          <tr><td>Contract sent</td><td class="n">80%</td><td class="n"><b style="color:var(--error)">27%</b></td></tr>
+        </table>
+      </div>
+      <ul class="ticks">
+        <li>Deal model on rebuilt HubSpot history: <b>AUC 0.86</b>, Brier <b>0.11 vs 0.18</b> for stage %.</li>
+        <li>Open pipeline €3.2M: HubSpot-weighted <b>€788k</b>, model-expected <b>€640k</b>.</li>
+        <li>Won deals close <b>35 days</b> after the rep's date (median). Flags: pushed close dates, no activity, stuck in stage.</li>
+      </ul>
+    </div>
+    <div class="shot" style="flex:1"><img src="shots/pipeline.png"></div>
+  </div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>6</span></div>
+</section>
+
+<!-- 7 · Retention -->
+<section class="slide">
+  <p class="eyebrow">Retention &amp; renewal risk</p>
+  <h2>Stripe sees churn <em>before</em> it happens</h2>
+  <div class="row" style="margin-top:22px;align-items:flex-start">
+    <div class="col">
+      <div class="shot"><img src="shots/retention-model.png"></div>
+      <div class="row" style="margin-top:16px;gap:16px">
+        <div class="card kpi col"><p class="label">NRR / GRR</p><p class="val">84% / 78%</p><p class="sub">Trailing 12 months</p></div>
+        <div class="card kpi col"><p class="label">Already cancelling</p><p class="val">58</p><p class="sub">Scheduled in Stripe, €109k ARR next 180 days</p></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="shot"><img src="shots/retention-renewals.png"></div>
+      <div class="take" style="margin-top:16px"><b>Aurelia Grand Hotels (€115k)</b> renews on 6 Oct and paid its current term 31 days late. Late payers renew 57% of the time vs 93%. That's a CSM call this week, not a surprise next month.</div>
+    </div>
+  </div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>7</span></div>
+</section>
+
+<!-- 8 · Cash -->
+<section class="slide">
+  <p class="eyebrow">Cash</p>
+  <h2><em>€988k</em> expected in the next 90 days, week by week</h2>
+  <div class="row" style="margin-top:22px;align-items:flex-start">
+    <div class="shot" style="flex:1.6"><img src="shots/cash-weekly.png"></div>
+    <div class="col">
+      <div class="card kpi"><p class="label">Next 90 days</p><p class="val">€988k</p><p class="sub">P10–P90 €826k – €1.20M</p></div>
+      <div class="card kpi" style="margin-top:14px"><p class="label">Overdue receivables</p><p class="val" style="color:var(--error)">€88k</p><p class="sub">Grand Meridian Resorts, a new logo, 28 days late on €85k</p></div>
+      <p style="margin-top:14px;font-size:14px">Each open invoice gets an expected pay date from that customer's own payment history; renewals and new deals flow in from the same simulation.</p>
+    </div>
+  </div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>8</span></div>
+</section>
+
+<!-- 9 · Marketing -->
+<section class="slide">
+  <p class="eyebrow">Marketing</p>
+  <h2>Paid media drives <em>41%</em> of self-serve bookings, with a lag</h2>
+  <div class="shot" style="margin-top:18px"><img src="shots/mkt-kpis.png"></div>
+  <div class="row" style="margin-top:14px;align-items:flex-start">
+    <div class="shot" style="flex:1.35"><img src="shots/mkt-spend.png"></div>
+    <div class="col">
+      <ul class="ticks" style="margin-top:0">
+        <li>6 platforms, 108 campaigns; paid ≈ <b>6–7% of revenue</b>, in line with B2B SaaS benchmarks.</li>
+        <li><b>Lag matters:</b> self-serve responds in 0–1 month; enterprise deals ~3 months later; revenue ~8 months.</li>
+        <li>Marketing mix model: <b>€1.15</b> first-invoice bookings per €1 before renewals; carry-over half-life 1.6 months.</li>
+        <li>Honest limit: channel-level credit needs holdout tests; platform-reported CPLs are not revenue.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>9</span></div>
+</section>
+
+<!-- 10 · Scenarios -->
+<section class="slide">
+  <p class="eyebrow">Scenarios</p>
+  <h2>What if we <em>change the inputs</em>?</h2>
+  <div class="row" style="margin-top:22px;align-items:flex-start">
+    <div class="shot" style="flex:1.3"><img src="shots/scenarios.png"></div>
+    <div class="col">
+      <p>Six levers, each sized by the Monte Carlo model. Examples for FY2027 revenue:</p>
+      <table class="t" style="margin-top:12px">
+        <tr><th>Lever</th><th class="n">Impact</th></tr>
+        <tr><td>Enterprise win rate +5 pp</td><td class="n"><b>+€0.56M</b></td></tr>
+        <tr><td>Paid marketing +20%</td><td class="n"><b>+€0.29M</b></td></tr>
+        <tr><td>Self-serve renewal +5 pp</td><td class="n"><b>+€0.10M</b></td></tr>
+        <tr><td>Average deal size +10%</td><td class="n"><b>+€0.19M</b></td></tr>
+      </table>
+      <div class="take" style="margin-top:18px">Board prep in minutes: <b>"what do we need to believe"</b> to hit a number, lever by lever.</div>
+    </div>
+  </div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>10</span></div>
+</section>
+
+<!-- 11 · Trust -->
+<section class="slide">
+  <p class="eyebrow">Model trust</p>
+  <h2>Would it have been right? <em>Backtested</em>, not assumed.</h2>
+  <div class="row" style="margin-top:24px;align-items:flex-start">
+    <div class="shot" style="flex:1"><img src="shots/trust-chart.png"></div>
+    <div class="col">
+      <ul class="ticks" style="margin-top:0">
+        <li>The model is re-run as of 5 past dates using <b>only data known then</b>, then compared with what happened.</li>
+        <li>Average error <b>14%</b> vs <b>28%</b> for a naive run-rate; actuals inside the P10–P90 band <b>4 of 5</b> times.</li>
+        <li>The miss (mid-2025, −37%) is shown, not tuned away: two large wins the pipeline underrated. That's the next model improvement.</li>
+        <li>Component models: renewal <b>AUC 0.63</b> (Stripe signals only), deal <b>AUC 0.86</b>.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>11</span></div>
+</section>
+
+<!-- 12 · AI + Claude -->
+<section class="slide">
+  <p class="eyebrow">AI on top</p>
+  <h2>A weekly brief, and the whole model <em>inside Claude</em></h2>
+  <div class="row" style="margin-top:24px;align-items:flex-start">
+    <div class="col card">
+      <p class="pill blue">AI weekly brief</p>
+      <p style="margin-top:12px">One click (or a Monday Slack post): headline vs plan, the 3–4 accounts to act on with an owner and the euros at stake, pipeline reality check, cash.</p>
+      <div class="chat a" style="margin-top:14px;font-size:13.5px"><b>Act this week:</b> Aurelia Grand Hotels: €115k renewal on 6 Oct, 57% likely. Elina to secure a signed renewal and payment commitment. …</div>
+    </div>
+    <div class="col card">
+      <p class="pill blue">MCP connector for Claude</p>
+      <p style="margin-top:12px">12 read-only tools (forecast, deals, accounts, renewals, cash, marketing, scenarios, model trust). Add one URL as a custom connector, then ask in plain language:</p>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px">
+        <div class="chat q">Where will FY2026 land vs plan, and which three accounts should Mia call this week?</div>
+        <div class="chat q">What happens to FY2027 if we raise paid spend 30% and win rate 3 points?</div>
+      </div>
+    </div>
+  </div>
+  <p style="margin-top:18px;font-size:14px;color:var(--muted)">Connector: hamina-revops-demo.vercel.app/api/mcp · Claude.ai / Desktop → Settings → Connectors → Add custom connector</p>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>12</span></div>
+</section>
+
+<!-- 13 · Value by function -->
+<section class="slide">
+  <p class="eyebrow">Who it helps</p>
+  <h2>One model, <em>every function</em> reads from it</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px">
+    <div class="fn"><h3><span style="background:var(--blue)"></span>Finance / CFO</h3><ul><li>Forecast with ranges for budget and board</li><li>13-week cash view, overdue risk per payer</li><li>Plan vs P50 gap visible months early</li></ul></div>
+    <div class="fn"><h3><span style="background:var(--violet)"></span>Sales / CRO</h3><ul><li>Calibrated deal odds instead of stage %</li><li>Slipping and stalled deals flagged weekly</li><li>Paying self-serve accounts → expansion targets</li></ul></div>
+    <div class="fn"><h3><span style="background:var(--success)"></span>Marketing</h3><ul><li>Spend tied to bookings and pipeline, with lag</li><li>Budget conversations in € of revenue, not CPL</li><li>Clear next step: holdout tests per channel</li></ul></div>
+    <div class="fn"><h3><span style="background:var(--warn)"></span>RevOps / GTM</h3><ul><li>Stripe ↔ HubSpot identity resolved</li><li>Data-quality signals (missing domains, pushes)</li><li>Write-back of scores into HubSpot</li></ul></div>
+    <div class="fn"><h3><span style="background:var(--error)"></span>Customer success</h3><ul><li>Renewal risk list with reasons, 180 days ahead</li><li>Late-payment and failed-card early warnings</li><li>Prioritise by ARR at risk</li></ul></div>
+    <div class="fn"><h3><span style="background:var(--ink)"></span>COO / company ops</h3><ul><li>One shared number across teams</li><li>Hiring and spend decisions from scenarios</li><li>Less manual reporting: brief and Claude answer</li></ul></div>
+  </div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>13</span></div>
+</section>
+
+<!-- 14 · Rollout -->
+<section class="slide">
+  <p class="eyebrow">From demo to production</p>
+  <h2>What this looks like with <em>Hamina's real data</em></h2>
+  <div class="row" style="margin-top:30px">
+    <div class="col card"><div class="step"><div class="num">30</div><div><p><b>Days 1–30: connect &amp; validate</b></p><ul style="padding-left:16px;margin-top:8px"><li>Read-only Stripe, HubSpot, ad APIs into a warehouse</li><li>Identity resolution on real accounts</li><li>Reconcile revenue to the finance books</li></ul></div></div></div>
+    <div class="col card"><div class="step"><div class="num">60</div><div><p><b>Days 31–60: models live</b></p><ul style="padding-left:16px;margin-top:8px"><li>Retrain deal and renewal models on real history</li><li>Backtest; agree definitions with finance</li><li>Weekly brief to Slack; Claude connector for the team</li></ul></div></div></div>
+    <div class="col card"><div class="step"><div class="num">90</div><div><p><b>Days 61–90: close the loop</b></p><ul style="padding-left:16px;margin-top:8px"><li>Write deal and renewal scores into HubSpot</li><li>Add product usage to the churn model</li><li>First channel holdout test with marketing</li></ul></div></div></div>
+  </div>
+  <div class="take" style="margin-top:26px">The schemas in this demo mirror the <b>Stripe and HubSpot APIs</b>. Swapping the synthetic generators for API pulls is the only change needed to run on real data. Stack: Python, SQLite/DuckDB, scikit-learn, Next.js on Vercel.</div>
+  <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>14</span></div>
+</section>
+
+<!-- 15 · Close -->
+<section class="slide dark">
+  <div class="grid-bg"></div><div class="glow"></div>
+  <div style="position:relative;height:100%;display:flex;flex-direction:column;justify-content:center">
+    <p class="eyebrow">Try it</p>
+    <h1 style="margin-top:14px">Thank you.</h1>
+    <div style="margin-top:36px;display:grid;grid-template-columns:auto 1fr;gap:12px 28px;font-size:18px">
+      <span style="color:#9D9EA4">Live demo</span><b style="color:#fff">hamina-revops-demo.vercel.app</b>
+      <span style="color:#9D9EA4">Claude connector</span><b style="color:#fff">hamina-revops-demo.vercel.app/api/mcp</b>
+      <span style="color:#9D9EA4">Code</span><b style="color:#fff">github.com/emilpekkinen/hamina-demo</b>
+    </div>
+    <p style="margin-top:40px;font-size:15px">Emil Pekkinen</p>
+  </div>
+  <div class="foot"><div class="l"><img src="hamina-logo-white.svg" style="opacity:.5">Synthetic data · not an official Hamina document</div><span>15</span></div>
+</section>
+
+</body>
+</html>

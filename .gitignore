@@ -6,3 +6,6 @@ node_modules/
 !.env.example
 .DS_Store
 .vercel
+
+# Full-page screenshots used for cropping deck images
+deck/shots/full-*.png
