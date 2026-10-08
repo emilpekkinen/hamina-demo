@@ -20,6 +20,7 @@ import simulate as sm
 from data import ROOT, cash_by_month, customer_mrr_at, load, month_ends, mrr_at, terms_as_of
 from identity import resolve
 from marketing import analyse as analyse_marketing
+from datasets import previews
 
 warnings.filterwarnings("ignore")
 
@@ -339,7 +340,7 @@ def main():
                kpis=kpis, monthly=monthly, bridge=bridge, mrrMovements=movements, cohorts=cohorts, renewalModel=renewal_model,
                renewals=renewals, deals=deals_out, dealModel=deal_model,
                cash=dict(weekly=weekly, openInvoices=open_list), backtest=backtest, identity=identity, scenarios=scenarios,
-               marketing=mkt)
+               marketing=mkt, datasets=previews())
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1, ensure_ascii=False, default=lambda o: o.item() if hasattr(o, "item") else str(o)))
     print(f"wrote {OUT} in {time.time() - t0:.1f}s")

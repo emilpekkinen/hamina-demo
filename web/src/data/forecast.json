@@ -1,7 +1,7 @@
 {
  "meta": {
   "asOf": "2026-09-30",
-  "generatedAt": "2026-10-07T21:05:18+00:00",
+  "generatedAt": "2026-10-08T18:46:48+00:00",
   "currency": "EUR",
   "simulations": 4000,
   "horizonEnd": "2027-12"
@@ -5875,5 +5875,642 @@
    "expectedArrPer10k": 38929,
    "revenueLagMonths": 8
   }
- }
+ },
+ "datasets": [
+  {
+   "id": "stripe",
+   "name": "Stripe",
+   "description": "Billing: who pays, how much, and how reliably.",
+   "dateRange": [
+    "2022-03-04",
+    "2026-09-30"
+   ],
+   "totalRows": 7406,
+   "tables": [
+    {
+     "name": "customers",
+     "rows": 1297,
+     "columns": [
+      "id",
+      "name",
+      "company",
+      "segment",
+      "country",
+      "created"
+     ],
+     "sample": [
+      [
+       "cus_r4zxAvnVrFUw4M",
+       "Jeroen Dekker",
+       "Dekker Network Services BV",
+       "self_serve",
+       "BE",
+       "2026-09-30"
+      ],
+      [
+       "cus_6zz3pi7L5xz1iJ",
+       "Amanda Lewis",
+       "Maplewave Managed Services",
+       "self_serve",
+       "US",
+       "2026-09-29"
+      ],
+      [
+       "cus_DBYMxtlngpZH1I",
+       "Anna Koskinen",
+       "–",
+       "self_serve",
+       "FI",
+       "2026-09-28"
+      ],
+      [
+       "cus_EpxIv9Qd2d8zA5",
+       "Josh Collins",
+       "Collins Network Services Ltd",
+       "self_serve",
+       "GB",
+       "2026-09-28"
+      ],
+      [
+       "cus_mlHx7m5Mafhsm3",
+       "Ben King",
+       "Greenworks Wi-Fi Solutions",
+       "self_serve",
+       "NZ",
+       "2026-09-25"
+      ],
+      [
+       "cus_lIEuFbOUkrfalb",
+       "Markus Schneider",
+       "Granitepath Technology Group GmbH",
+       "self_serve",
+       "AT",
+       "2026-09-25"
+      ]
+     ]
+    },
+    {
+     "name": "subscriptions",
+     "rows": 1297,
+     "columns": [
+      "id",
+      "customer",
+      "plan",
+      "seats",
+      "status",
+      "period_end"
+     ],
+     "sample": [
+      [
+       "sub_1TOYz1ZV5f6Y2C6QegWEJy5H",
+       "Rachel Carter",
+       "12_month",
+       1,
+       "active",
+       "2027-09-30"
+      ],
+      [
+       "sub_1wB7Cq8zZEveHYwS504UWcND",
+       "Jeroen Dekker",
+       "6_month",
+       1,
+       "active",
+       "2027-03-30"
+      ],
+      [
+       "sub_1YJPKRIWS2fFB3wjBBr2zIbN",
+       "Wei Edwards",
+       "12_month",
+       1,
+       "active",
+       "2027-09-30"
+      ],
+      [
+       "sub_1VQ704N8hCTBcDunhpI4jXk5",
+       "Amanda Evans",
+       "12_month",
+       1,
+       "active",
+       "2027-09-30"
+      ],
+      [
+       "sub_1viMiA5T7GsZLKpzlgNtr9Ex",
+       "Laura Murphy",
+       "12_month",
+       1,
+       "past_due",
+       "2027-09-29"
+      ],
+      [
+       "sub_1nQtMQbUQZaqNcYuQeCKOtZn",
+       "Amanda Lewis",
+       "12_month",
+       2,
+       "active",
+       "2027-09-29"
+      ]
+     ]
+    },
+    {
+     "name": "invoices",
+     "rows": 2302,
+     "columns": [
+      "number",
+      "customer",
+      "total",
+      "status",
+      "collection",
+      "due",
+      "paid"
+     ],
+     "sample": [
+      [
+       "QR1QJ4PF-0002",
+       "Rachel Carter",
+       "€1,000",
+       "paid",
+       "charge_automatically",
+       "–",
+       "2026-09-30"
+      ],
+      [
+       "P9KARKWG-0001",
+       "Jeroen Dekker",
+       "€599",
+       "paid",
+       "charge_automatically",
+       "–",
+       "2026-09-30"
+      ],
+      [
+       "I1LPQ84S-0003",
+       "Wei Edwards",
+       "€1,000",
+       "paid",
+       "charge_automatically",
+       "–",
+       "2026-09-30"
+      ],
+      [
+       "A1C0UBNV-0002",
+       "Amanda Evans",
+       "€1,000",
+       "paid",
+       "charge_automatically",
+       "–",
+       "2026-09-30"
+      ],
+      [
+       "AA4XLR9Y-0002",
+       "Laura Murphy",
+       "€1,000",
+       "open",
+       "charge_automatically",
+       "–",
+       "unpaid"
+      ],
+      [
+       "OXAG90LO-0001",
+       "Amanda Lewis",
+       "€2,000",
+       "paid",
+       "charge_automatically",
+       "–",
+       "2026-09-29"
+      ]
+     ]
+    },
+    {
+     "name": "charges",
+     "rows": 2510,
+     "columns": [
+      "id",
+      "amount",
+      "status",
+      "failure",
+      "method",
+      "created"
+     ],
+     "sample": [
+      [
+       "py_39yOUTGH0ZxbVROQBxUoi54B",
+       "€3,000",
+       "succeeded",
+       "–",
+       "bank_transfer",
+       "2026-09-30 18:31:01"
+      ],
+      [
+       "ch_3lhJsYBB57lInXgOBCmr6G5a",
+       "€1,000",
+       "succeeded",
+       "–",
+       "card",
+       "2026-09-30 16:16:23"
+      ],
+      [
+       "ch_3KOIcYGTQHheuBohQCaOTMy5",
+       "€599",
+       "succeeded",
+       "–",
+       "sepa_debit",
+       "2026-09-30 11:57:59"
+      ],
+      [
+       "ch_3f8TB9JQlrQJabKa8TQ2Iggp",
+       "€1,000",
+       "succeeded",
+       "–",
+       "card",
+       "2026-09-30 08:50:57"
+      ],
+      [
+       "ch_3Jq6FKolAbqaNNJBVeFTlf0j",
+       "€1,000",
+       "succeeded",
+       "–",
+       "card",
+       "2026-09-30 08:03:38"
+      ],
+      [
+       "ch_3jDJnYqLqCZHW2ZeJXRlRW5k",
+       "€599",
+       "failed",
+       "expired_card",
+       "card",
+       "2026-09-30 07:31:32"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hubspot",
+   "name": "HubSpot",
+   "description": "CRM: who is being sold to, and how deals move.",
+   "dateRange": [
+    "2022-11-23",
+    "2026-09-25"
+   ],
+   "totalRows": 6013,
+   "tables": [
+    {
+     "name": "deals",
+     "rows": 107,
+     "columns": [
+      "deal",
+      "stage",
+      "amount",
+      "close_date",
+      "owner",
+      "source"
+     ],
+     "sample": [
+      [
+       "Stonebridge Components – Hamina Enterprise",
+       "Discovery",
+       "USD 130,000",
+       "2027-03-09",
+       "Ryan Calloway",
+       "outbound_sdr"
+      ],
+      [
+       "Brightwater Northfield Children's Hospital – Hamina Enterprise",
+       "Discovery",
+       "EUR 90,000",
+       "2027-03-06",
+       "Elina Saarela",
+       "outbound_sdr"
+      ],
+      [
+       "Oakmont University – Hamina Enterprise",
+       "Discovery",
+       "USD 120,000",
+       "2026-12-05",
+       "Ryan Calloway",
+       "inbound_demo"
+      ],
+      [
+       "Highland Children's Hospital – Hamina Enterprise",
+       "Discovery",
+       "EUR 160,000",
+       "2026-12-10",
+       "Sofia Lindqvist",
+       "inbound_demo"
+      ],
+      [
+       "Westbrook Components – Hamina Enterprise",
+       "Discovery",
+       "EUR 175,000",
+       "2027-03-26",
+       "Sofia Lindqvist",
+       "partner_referral"
+      ],
+      [
+       "Brightwater Logistics – Hamina Enterprise",
+       "Discovery",
+       "USD 115,000",
+       "2026-12-02",
+       "Ryan Calloway",
+       "outbound_sdr"
+      ]
+     ]
+    },
+    {
+     "name": "deal_property_history",
+     "rows": 624,
+     "columns": [
+      "deal",
+      "property",
+      "value",
+      "changed_at",
+      "source"
+     ],
+     "sample": [
+      [
+       "Granite State College – Hamina Enterprise",
+       "dealstage",
+       "qualifiedtobuy",
+       "2026-09-27T18:20",
+       "CRM_UI"
+      ],
+      [
+       "Stonebridge Components – Hamina Enterprise",
+       "dealstage",
+       "appointmentscheduled",
+       "2026-09-25T08:25",
+       "CRM_UI"
+      ],
+      [
+       "Stonebridge Components – Hamina Enterprise",
+       "closedate",
+       "2027-03-09T22:10:39.000Z",
+       "2026-09-25T08:25",
+       "CRM_UI"
+      ],
+      [
+       "Brightwater Northfield Children's Hospital – Hamina Enterprise",
+       "dealstage",
+       "appointmentscheduled",
+       "2026-09-24T08:28",
+       "CRM_UI"
+      ],
+      [
+       "Brightwater Northfield Children's Hospital – Hamina Enterprise",
+       "closedate",
+       "2027-03-06T21:33:12.000Z",
+       "2026-09-24T08:28",
+       "CRM_UI"
+      ],
+      [
+       "Oakmont University – Hamina Enterprise",
+       "dealstage",
+       "appointmentscheduled",
+       "2026-09-23T17:59",
+       "CRM_UI"
+      ]
+     ]
+    },
+    {
+     "name": "engagements",
+     "rows": 5175,
+     "columns": [
+      "type",
+      "timestamp",
+      "deal",
+      "direction"
+     ],
+     "sample": [
+      [
+       "EMAIL",
+       "2026-09-30T17:57",
+       "Brightwater Northfield Children's Hospital – Hamina Enterprise",
+       "OUTBOUND"
+      ],
+      [
+       "NOTE",
+       "2026-09-30T17:52",
+       "Maplewood Regional Hospital – Hamina Enterprise",
+       "–"
+      ],
+      [
+       "NOTE",
+       "2026-09-30T17:36",
+       "Highland Children's Hospital – Hamina Enterprise",
+       "–"
+      ],
+      [
+       "MEETING",
+       "2026-09-30T17:17",
+       "Highland Children's Hospital – Hamina Enterprise",
+       "–"
+      ],
+      [
+       "EMAIL",
+       "2026-09-30T16:38",
+       "Cedarstream Clinics LLC – Hamina Enterprise",
+       "INBOUND"
+      ],
+      [
+       "EMAIL",
+       "2026-09-30T16:28",
+       "Orbitview Communications Ltd – Hamina Enterprise",
+       "OUTBOUND"
+      ]
+     ]
+    },
+    {
+     "name": "companies",
+     "rows": 107,
+     "columns": [
+      "name",
+      "domain",
+      "industry",
+      "country",
+      "lifecycle"
+     ],
+     "sample": [
+      [
+       "Stonebridge Components",
+       "stonebridge-components.example",
+       "manufacturing",
+       "US",
+       "opportunity"
+      ],
+      [
+       "Highland Children's Hospital",
+       "highland-children-s-hospital.example",
+       "hospital",
+       "SE",
+       "opportunity"
+      ],
+      [
+       "Brightwater Northfield Children's Hospital",
+       "brightwater-northfield-children-s-hospital.example",
+       "hospital",
+       "AU",
+       "opportunity"
+      ],
+      [
+       "Oakmont University",
+       "oakmont-university.example",
+       "university",
+       "US",
+       "opportunity"
+      ],
+      [
+       "Orbitview Communications Ltd",
+       "orbitview-communications.example",
+       "airport",
+       "GB",
+       "opportunity"
+      ],
+      [
+       "Brightwater Logistics",
+       "brightwater-logistics.example",
+       "logistics",
+       "US",
+       "opportunity"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ads",
+   "name": "Ad platforms",
+   "description": "Marketing: what was spent where, and what the platforms report.",
+   "dateRange": [
+    "2022-07-04",
+    "2026-09-28"
+   ],
+   "totalRows": 2229,
+   "tables": [
+    {
+     "name": "campaigns",
+     "rows": 108,
+     "columns": [
+      "name",
+      "platform",
+      "kind",
+      "segment",
+      "start",
+      "end"
+     ],
+     "sample": [
+      [
+       "ABM – Universities – 2026 (Sep)",
+       "linkedin_ads",
+       "burst",
+       "enterprise",
+       "2026-09-16",
+       "2026-10-04"
+      ],
+      [
+       "Lookalike – trial users – 2026 (Sep)",
+       "meta_ads",
+       "burst",
+       "self_serve",
+       "2026-09-16",
+       "2026-10-04"
+      ],
+      [
+       "Webinar promo – Wi-Fi 7 design – 2026 (Sep)",
+       "linkedin_ads",
+       "burst",
+       "self_serve",
+       "2026-09-08",
+       "2026-10-04"
+      ],
+      [
+       "Thought leadership – Predictive design – 2026 (Sep)",
+       "linkedin_ads",
+       "burst",
+       "enterprise",
+       "2026-09-05",
+       "2026-10-03"
+      ],
+      [
+       "Product launch – Hamina Onsite – 2026 (Jun)",
+       "youtube_ads",
+       "burst",
+       "self_serve",
+       "2026-06-15",
+       "2026-07-27"
+      ],
+      [
+       "Lookalike – trial users – 2026 (Jun)",
+       "meta_ads",
+       "burst",
+       "self_serve",
+       "2026-06-03",
+       "2026-07-22"
+      ]
+     ]
+    },
+    {
+     "name": "campaign_weekly_stats",
+     "rows": 2121,
+     "columns": [
+      "week",
+      "platform",
+      "spend",
+      "impressions",
+      "clicks",
+      "conversions"
+     ],
+     "sample": [
+      [
+       "2026-09-28",
+       "linkedin_ads",
+       "€1,120",
+       18768,
+       87,
+       6
+      ],
+      [
+       "2026-09-28",
+       "google_ads",
+       "€909",
+       2471,
+       127,
+       7
+      ],
+      [
+       "2026-09-28",
+       "linkedin_ads",
+       "€810",
+       13878,
+       57,
+       3
+      ],
+      [
+       "2026-09-28",
+       "linkedin_ads",
+       "€606",
+       7943,
+       44,
+       4
+      ],
+      [
+       "2026-09-28",
+       "google_ads",
+       "€408",
+       1372,
+       69,
+       5
+      ],
+      [
+       "2026-09-28",
+       "linkedin_ads",
+       "€391",
+       6857,
+       39,
+       4
+      ]
+     ]
+    }
+   ]
+  }
+ ]
 }

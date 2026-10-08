@@ -198,3 +198,15 @@ input[type="range"].hm-range:focus-visible {
   border-radius: 4px;
 }
 .hm-prose > :first-child { margin-top: 0; }
+
+/* Data room: shimmering "slide to run" label */
+.shimmer-text {
+  background: linear-gradient(90deg, rgba(255,255,255,.45) 0%, #fff 45%, rgba(255,255,255,.45) 90%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 2.4s linear infinite;
+}
+@keyframes shimmer { from { background-position: 100% 0; } to { background-position: -100% 0; } }
+@media (prefers-reduced-motion: reduce) { .shimmer-text { animation: none; color: #fff; } }

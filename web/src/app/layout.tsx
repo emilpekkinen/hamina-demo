@@ -3,8 +3,9 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Suspense } from "react";
 import { MobileNav, Sidebar } from "@/components/Sidebar";
+import { AnalysisGate, ReplayAnalysisButton, type GateStep } from "@/components/AnalysisGate";
 import { data } from "@/lib/data";
-import { dateLabel, num } from "@/lib/format";
+import { dateLabel, eur, num } from "@/lib/format";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -15,11 +16,29 @@ export const metadata: Metadata = {
     "Demo revenue-forecasting workspace built on synthetic Stripe + HubSpot data, prepared for Hamina Wireless.",
 };
 
+function gateSteps(): GateStep[] {
+  const ds = data.datasets ?? [];
+  const rows = ds.reduce((s, d) => s + d.totalRows, 0);
+  const mk = data.marketing;
+  return [
+    { label: "Loading source tables", detail: `${ds.map((d) => d.name).join(", ")}`, count: rows },
+    { label: "Resolving identities", detail: "Stripe customers ↔ HubSpot companies by domain, contact email, fuzzy name", count: data.identity.matched },
+    { label: "Training renewal model", detail: `Historical renewals · AUC ${data.renewalModel.aucTest.toFixed(2)} out of time`, count: data.renewalModel.trainingRows },
+    { label: "Training deal model", detail: `Deal snapshots rebuilt from HubSpot history · AUC ${data.dealModel.aucModel.toFixed(2)}`, count: data.dealModel.trainingSnapshots },
+    ...(mk ? [{ label: "Fitting marketing mix model", detail: `Campaigns with lagged, carried-over spend · ${Math.round(mk.mmm.paidShare12m * 100)}% of self-serve bookings from paid`, count: mk.campaigns.length }] : []),
+    { label: "Running Monte Carlo simulations", detail: "Renewals, wins, close dates and payment timing, drawn together", count: data.meta.simulations },
+    { label: "Backtesting past forecasts", detail: `Actual inside P10–P90 in ${data.backtest.filter((b) => b.inBand).length} of ${data.backtest.length}`, count: data.backtest.length },
+  ];
+}
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   const { meta } = data;
+  const k = data.kpis;
+  const result = `FY2026 P50 ${eur(k.fy2026.p50)} vs plan ${eur(k.fy2026.plan)} · FY2027 P50 ${eur(k.fy2027.p50)}. Opening the dashboard…`;
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full">
+        {data.datasets?.length ? <AnalysisGate datasets={data.datasets} steps={gateSteps()} result={result} /> : null}
         <div className="flex min-h-screen">
           <Suspense fallback={<div className="hidden w-60 shrink-0 lg:block" />}>
             <Sidebar />
@@ -43,6 +62,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                   <span className="rounded-full bg-warning-bg px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-warning-text sm:hidden">
                     Demo
                   </span>
+                  <ReplayAnalysisButton />
                   <span className="flex items-center gap-1.5 rounded-full border border-gray-100 bg-white px-2.5 py-1 text-xs text-gray-600">
                     <span className="h-1.5 w-1.5 rounded-full bg-success" aria-hidden />
                     Data as of <strong className="font-semibold text-gray-900">{dateLabel(meta.asOf)}</strong>

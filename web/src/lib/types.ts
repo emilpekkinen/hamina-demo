@@ -188,6 +188,7 @@ export interface ForecastData {
   };
 
   marketing?: Marketing;
+  datasets?: Dataset[];
 }
 
 export type ChannelId = "google_ads" | "linkedin_ads" | "meta_ads" | "review_sites" | "youtube_ads" | "reddit_ads";
@@ -209,4 +210,14 @@ export interface Marketing {
          paidBookings12m: number; spend12m: number; roas12m: number };
   enterprise: { lagMonths: number; dealsPer10k: number; winRate: number; avgDeal: number; cycleDays: number;
                 paidShareDeals12m: number; expectedArrPer10k: number; revenueLagMonths: number };
+}
+
+// Raw-table previews for the data room (pipeline/datasets.py).
+export interface Dataset {
+  id: string;
+  name: string;
+  description: string;
+  dateRange: [string, string];
+  totalRows: number;
+  tables: Array<{ name: string; rows: number; columns: string[]; sample: (string | number | null)[][] }>;
 }
