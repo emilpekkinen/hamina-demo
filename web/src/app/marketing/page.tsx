@@ -55,9 +55,9 @@ export default function MarketingPage() {
           sub={`${eur(m.mmm.paidBookings12m)} of first-invoice bookings · €${m.mmm.roas12m.toFixed(2)} per €1 before renewals`}
         />
         <KpiCard
-          label="Enterprise deals from paid"
-          value={pct(e.paidShareDeals12m)}
-          sub={`≈${e.dealsPer10k.toFixed(1)} deals per €10k LinkedIn/search, ${e.lagMonths} months later`}
+          label="Enterprise deals per €10k"
+          value={e.dealsPer10k.toFixed(1)}
+          sub={`LinkedIn/search spend → deals ${e.lagMonths} months later · ≈${eur(e.expectedArrPer10k)} expected ARR`}
         />
         <KpiCard
           label="Ad → revenue lag"
