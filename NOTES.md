@@ -7,10 +7,10 @@ Live: https://hamina-revops-demo.vercel.app · Code: https://github.com/emilpekk
 
 | Step | What | Why |
 |---|---|---|
-| 1 | Extended the existing synthetic Stripe data from 2025-12 to **2026-09-30** | Demo is in Oct 2026; the forecast must look forward from "today" |
+| 1 | Extended the existing synthetic Stripe data (licences: 6-month €599, 12-month €980 per seat) from 2025-12 to **2026-09-30** | Demo is in Oct 2026; the forecast must look forward from "today" |
 | 2 | Hidden customer **health score** → renewal, visible beforehand as failed payments, seat cuts, late invoices | Real churn has leading signals; the model needs something to find |
 | 3 | Invoice-billed self-serve teams + enterprise net 30/45/60 terms + late payers | Enables cash forecast and payment-behaviour risk |
-| 4 | **HubSpot generator**: 107 deals (€50–300k), stage + close-date history, engagements, owners | Pipeline forecast needs point-in-time history, not just current state |
+| 4 | **HubSpot generator**: ~100 deals (€50–300k), stage + close-date history, engagements, owners | Pipeline forecast needs point-in-time history, not just current state |
 | 5 | Stripe↔HubSpot link: every Stripe enterprise customer = a closed-won deal; some names/domains differ on purpose | Shows identity resolution, a real RevOps pain |
 | 6 | Python pipeline (`pipeline/`): renewal model, deal model, Monte Carlo (4,000 runs), backtests | Probabilistic forecast (P10/P50/P90) + proof it works |
 | 7 | Next.js dashboard in Hamina's design system (extracted from hamina.com / eu.hamina.com) | Looks like their product; Vercel hosting |
@@ -29,12 +29,12 @@ Live: https://hamina-revops-demo.vercel.app · Code: https://github.com/emilpekk
 - AI brief cached per deployment (keyed on snapshot) → instant and free on repeat clicks.
 
 ## Results (current snapshot)
-- ARR €3.17M (+66% YoY), NRR ~84%, GRR ~78%.
-- FY2026 P50 ≈ €3.3M vs plan €3.42M → plan at the optimistic end. FY2027 P50 ≈ €5.9M.
-- Deal model AUC 0.86, Brier 0.11 vs HubSpot stage % 0.18. "Contract sent" closes ~27%, not 80%.
-- Renewal model AUC 0.63 (Stripe-only), top-decile churn 45% vs 27% average (1.65×).
-- Backtests: 4/5 inside P10–P90 (mid-2025 missed −37%: two large H2 wins underrated), avg abs error 14% vs naive run-rate 28%.
-- Marketing: ~41% of self-serve new bookings attributable to paid; €1.15 first-invoice bookings per €1 (before renewals); carry-over half-life ~1.6 months. Enterprise deals respond ~2–3 months after LinkedIn/search spend, revenue ~8 months after.
+- ARR €3.15M (+66% YoY), NRR ~86%, GRR ~80%.
+- FY2026 P50 €3.35M vs plan €3.42M → 29% chance of hitting plan. FY2027 P50 €5.35M (+60%).
+- Deal model AUC 0.84, Brier 0.11 vs HubSpot stage % 0.18. "Contract sent" closes ~26%, not 80%.
+- Renewal model AUC 0.66 (Stripe-only), top-decile churn 45% vs 26% average (1.7×).
+- Backtests: 4/5 inside P10–P90 (mid-2025 missed −37%: two large H2 wins underrated), avg abs error 13% vs naive run-rate 28%.
+- Marketing: ~65% of self-serve new bookings attributable to paid; €1.73 first-invoice bookings per €1 (before renewals); carry-over half-life ~1 month. Enterprise: ~2 deals per €10k LinkedIn/search, ~2 months later; revenue ~7 months after.
 
 ## Learnings
 - **Point-in-time history is the hard part.** HubSpot property history (stage, close date) is what makes deal models and backtests possible. Without it, no honest backtest.
@@ -47,6 +47,7 @@ Live: https://hamina-revops-demo.vercel.app · Code: https://github.com/emilpekk
 - **Lag matters**: self-serve responds in 0–1 month, enterprise deals in ~2–3, enterprise revenue ~8. Monthly ROAS on enterprise spend is meaningless.
 - Platform-reported conversions ≠ revenue impact (CPL ranges €90–540 by channel).
 - Deck = local PDF (HTML → Chrome print), not a published page: it uses Hamina branding, so it's labelled as prepared by Emil, synthetic data, not an official Hamina document.
+- **Synthetic-data estimates move between data draws** (e.g. paid share of self-serve bookings 41% → 65% after changing the 12-month price to €980; enterprise "paid share of deals" hit 95% because ad spend and the 2026 hiring-driven deal surge grew together). Only robust measures are shown: deals per €10k, not share of deals.
 - Ops gotchas: the Vercel env value picked up quotes from `.env.local` (stripped them); a server component can't import constants from a `"use client"` file.
 
 ## Run

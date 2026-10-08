@@ -108,7 +108,7 @@
   <h2>One pipeline from raw data to <em>decisions</em></h2>
   <div class="shot" style="margin:18px auto 0;width:960px"><img src="shots/data-arch.png"></div>
   <div class="row" style="margin-top:16px">
-    <div class="col"><p><b>Unify.</b> Stripe ↔ HubSpot identity resolution (domain → contact email → fuzzy name). All 14 enterprise customers matched; 19 CRM companies already pay via self-serve.</p></div>
+    <div class="col"><p><b>Unify.</b> Stripe ↔ HubSpot identity resolution (domain → contact email → fuzzy name). All 14 enterprise customers matched; 20 CRM companies already pay via self-serve.</p></div>
     <div class="col"><p><b>Model.</b> Renewal model, deal win/close-date model, marketing mix model. Everything is computed as of a date, so it can be backtested.</p></div>
     <div class="col"><p><b>Deliver.</b> Dashboard in Hamina's design system, AI weekly brief, and an MCP connector to ask Claude directly.</p></div>
   </div>
@@ -118,16 +118,16 @@
 <!-- 4 · Forecast -->
 <section class="slide">
   <p class="eyebrow">Forecast</p>
-  <h2>FY2026 forecast <em>€3.33M</em> vs a €3.42M plan</h2>
+  <h2>FY2026 forecast <em>€3.35M</em> vs a €3.42M plan</h2>
   <div class="row" style="margin-top:24px;align-items:flex-start">
     <div class="shot" style="flex:1.45"><img src="shots/home-fan.png"></div>
     <div class="col">
       <ul class="ticks" style="margin-top:4px">
         <li><b>4,000 Monte Carlo runs</b> combine renewals, new self-serve, enterprise renewals, open deals and not-yet-created pipeline.</li>
-        <li>FY2026 P10–P90 <b>€3.16M–€3.55M</b>: about a <b>29%</b> chance of hitting plan.</li>
-        <li>FY2027 P50 <b>€5.86M</b> (+76%); ARR <b>€6.1M</b> by Dec 2027.</li>
+        <li>FY2026 P10–P90 <b>€3.20M–€3.53M</b>: about a <b>29%</b> chance of hitting plan.</li>
+        <li>FY2027 P50 <b>€5.35M</b> (+60%); ARR <b>€5.6M</b> by Dec 2027.</li>
         <li>A range instead of one number, so finance can plan for P10 and sales can push for P90.</li>
-        <li>Today: ARR <b>€3.17M</b> (+66% YoY), NRR <b>84%</b>, cash next 90 days <b>€988k</b>.</li>
+        <li>Today: ARR <b>€3.15M</b> (+66% YoY), NRR <b>86%</b>, cash next 90 days <b>€1.01M</b>.</li>
       </ul>
     </div>
   </div>
@@ -137,21 +137,21 @@
 <!-- 5 · Bridge -->
 <section class="slide">
   <p class="eyebrow">Where growth comes from</p>
-  <h2>ARR €3.2M → <em>€6.1M</em>: half of it still has to be sold</h2>
+  <h2>ARR €3.1M → <em>€5.6M</em>: most of the growth still has to be sold</h2>
   <div class="row" style="margin-top:24px;align-items:flex-start">
     <div class="shot" style="flex:1.2"><img src="shots/home-bridge.png"></div>
     <div class="col">
       <table class="t">
         <tr><th>Driver (Sep 2026 → Dec 2027)</th><th class="n">ARR</th></tr>
-        <tr><td>New self-serve customers</td><td class="n"><b>+€1.41M</b></td></tr>
-        <tr><td>New logos from deals not yet created</td><td class="n"><b>+€1.40M</b></td></tr>
-        <tr><td>New logos from today's open pipeline</td><td class="n">+€0.64M</td></tr>
+        <tr><td>New self-serve customers</td><td class="n"><b>+€1.35M</b></td></tr>
+        <tr><td>New logos from deals not yet created</td><td class="n"><b>+€1.12M</b></td></tr>
+        <tr><td>New logos from today's open pipeline</td><td class="n">+€0.40M</td></tr>
         <tr><td>Enterprise renewal uplift</td><td class="n">+€0.19M</td></tr>
-        <tr><td>Self-serve expansion</td><td class="n">+€0.09M</td></tr>
-        <tr><td>Self-serve churn</td><td class="n" style="color:var(--error)">−€0.54M</td></tr>
-        <tr><td>Enterprise churn</td><td class="n" style="color:var(--error)">−€0.21M</td></tr>
+        <tr><td>Self-serve expansion</td><td class="n">+€0.07M</td></tr>
+        <tr><td>Self-serve churn</td><td class="n" style="color:var(--error)">−€0.47M</td></tr>
+        <tr><td>Enterprise churn</td><td class="n" style="color:var(--error)">−€0.20M</td></tr>
       </table>
-      <div class="take" style="margin-top:18px"><b>Self-serve churn is the single biggest leak</b>, at €0.54M of ARR. Every point of renewal rate is worth ~€21k of FY2027 revenue.</div>
+      <div class="take" style="margin-top:18px"><b>Self-serve churn is the single biggest leak</b>, at €0.47M of ARR. Every point of renewal rate is worth ~€21k of FY2027 revenue.</div>
     </div>
   </div>
   <div class="foot"><div class="l"><img src="hamina-logo.svg">Revenue intelligence demo · synthetic data</div><span>5</span></div>
@@ -160,22 +160,22 @@
 <!-- 6 · Pipeline -->
 <section class="slide">
   <p class="eyebrow">Pipeline reality check</p>
-  <h2>HubSpot says "Contract sent" = 80%. History says <em>27%</em>.</h2>
+  <h2>HubSpot says "Contract sent" = 80%. History says <em>26%</em>.</h2>
   <div class="row" style="margin-top:24px;align-items:flex-start">
     <div class="col" style="flex:.85">
       <div class="card">
         <table class="t">
           <tr><th>Stage</th><th class="n">HubSpot</th><th class="n">Actual win rate</th></tr>
-          <tr><td>Discovery</td><td class="n">10%</td><td class="n"><b>8%</b></td></tr>
-          <tr><td>Qualified</td><td class="n">20%</td><td class="n"><b>15%</b></td></tr>
-          <tr><td>Technical evaluation</td><td class="n">40%</td><td class="n"><b>36%</b></td></tr>
-          <tr><td>Business case</td><td class="n">60%</td><td class="n"><b>41%</b></td></tr>
-          <tr><td>Contract sent</td><td class="n">80%</td><td class="n"><b style="color:var(--error)">27%</b></td></tr>
+          <tr><td>Discovery</td><td class="n">10%</td><td class="n"><b>7%</b></td></tr>
+          <tr><td>Qualified</td><td class="n">20%</td><td class="n"><b>17%</b></td></tr>
+          <tr><td>Technical evaluation</td><td class="n">40%</td><td class="n"><b>33%</b></td></tr>
+          <tr><td>Business case</td><td class="n">60%</td><td class="n"><b>30%</b></td></tr>
+          <tr><td>Contract sent</td><td class="n">80%</td><td class="n"><b style="color:var(--error)">26%</b></td></tr>
         </table>
       </div>
       <ul class="ticks">
-        <li>Deal model on rebuilt HubSpot history: <b>AUC 0.86</b>, Brier <b>0.11 vs 0.18</b> for stage %.</li>
-        <li>Open pipeline €3.2M: HubSpot-weighted <b>€788k</b>, model-expected <b>€640k</b>.</li>
+        <li>Deal model on rebuilt HubSpot history: <b>AUC 0.84</b>, Brier <b>0.11 vs 0.18</b> for stage %.</li>
+        <li>Open pipeline €2.3M: HubSpot-weighted <b>€845k</b>, model-expected <b>€397k</b>.</li>
         <li>Won deals close <b>35 days</b> after the rep's date (median). Flags: pushed close dates, no activity, stuck in stage.</li>
       </ul>
     </div>
@@ -192,8 +192,8 @@
     <div class="col">
       <div class="shot"><img src="shots/retention-model.png"></div>
       <div class="row" style="margin-top:16px;gap:16px">
-        <div class="card kpi col"><p class="label">NRR / GRR</p><p class="val">84% / 78%</p><p class="sub">Trailing 12 months</p></div>
-        <div class="card kpi col"><p class="label">Already cancelling</p><p class="val">58</p><p class="sub">Scheduled in Stripe, €109k ARR next 180 days</p></div>
+        <div class="card kpi col"><p class="label">NRR / GRR</p><p class="val">86% / 80%</p><p class="sub">Trailing 12 months</p></div>
+        <div class="card kpi col"><p class="label">Already cancelling</p><p class="val">60</p><p class="sub">Scheduled in Stripe, €90k ARR next 180 days</p></div>
       </div>
     </div>
     <div class="col">
@@ -207,12 +207,12 @@
 <!-- 8 · Cash -->
 <section class="slide">
   <p class="eyebrow">Cash</p>
-  <h2><em>€988k</em> expected in the next 90 days, week by week</h2>
+  <h2><em>€1.01M</em> expected in the next 90 days, week by week</h2>
   <div class="row" style="margin-top:22px;align-items:flex-start">
     <div class="shot" style="flex:1.6"><img src="shots/cash-weekly.png"></div>
     <div class="col">
-      <div class="card kpi"><p class="label">Next 90 days</p><p class="val">€988k</p><p class="sub">P10–P90 €826k – €1.20M</p></div>
-      <div class="card kpi" style="margin-top:14px"><p class="label">Overdue receivables</p><p class="val" style="color:var(--error)">€88k</p><p class="sub">Grand Meridian Resorts, a new logo, 28 days late on €85k</p></div>
+      <div class="card kpi"><p class="label">Next 90 days</p><p class="val">€1.01M</p><p class="sub">P10–P90 €859k – €1.19M</p></div>
+      <div class="card kpi" style="margin-top:14px"><p class="label">Overdue receivables</p><p class="val" style="color:var(--error)">€85k</p><p class="sub">Grand Meridian Resorts, a new logo, 28 days late on €85k</p></div>
       <p style="margin-top:14px;font-size:14px">Each open invoice gets an expected pay date from that customer's own payment history; renewals and new deals flow in from the same simulation.</p>
     </div>
   </div>
@@ -222,15 +222,15 @@
 <!-- 9 · Marketing -->
 <section class="slide">
   <p class="eyebrow">Marketing</p>
-  <h2>Paid media drives <em>41%</em> of self-serve bookings, with a lag</h2>
+  <h2>Paid media drives <em>65%</em> of self-serve bookings, with a lag</h2>
   <div class="shot" style="margin-top:18px"><img src="shots/mkt-kpis.png"></div>
   <div class="row" style="margin-top:14px;align-items:flex-start">
     <div class="shot" style="flex:1.35"><img src="shots/mkt-spend.png"></div>
     <div class="col">
       <ul class="ticks" style="margin-top:0">
         <li>6 platforms, 108 campaigns; paid ≈ <b>6–7% of revenue</b>, in line with B2B SaaS benchmarks <span style="color:var(--muted)">(source: saas-capital.com)</span>.</li>
-        <li><b>Lag matters:</b> self-serve responds in 0–1 month; enterprise deals ~3 months later; revenue ~8 months.</li>
-        <li>Marketing mix model: <b>€1.15</b> first-invoice bookings per €1 before renewals; carry-over half-life 1.6 months.</li>
+        <li><b>Lag matters:</b> self-serve responds in 0–1 month; enterprise deals ~2 months later; revenue ~7 months.</li>
+        <li>Marketing mix model: <b>€1.73</b> first-invoice bookings per €1 before renewals; carry-over half-life 1 month.</li>
         <li>Honest limit: channel-level credit needs holdout tests; platform-reported CPLs are not revenue.</li>
       </ul>
     </div>
@@ -248,10 +248,10 @@
       <p>Six levers, each sized by the Monte Carlo model. Examples for FY2027 revenue:</p>
       <table class="t" style="margin-top:12px">
         <tr><th>Lever</th><th class="n">Impact</th></tr>
-        <tr><td>Enterprise win rate +5 pp</td><td class="n"><b>+€0.56M</b></td></tr>
-        <tr><td>Paid marketing +20%</td><td class="n"><b>+€0.29M</b></td></tr>
+        <tr><td>Enterprise win rate +5 pp</td><td class="n"><b>+€0.45M</b></td></tr>
+        <tr><td>Paid marketing +20%</td><td class="n"><b>+€0.38M</b></td></tr>
         <tr><td>Self-serve renewal +5 pp</td><td class="n"><b>+€0.10M</b></td></tr>
-        <tr><td>Average deal size +10%</td><td class="n"><b>+€0.19M</b></td></tr>
+        <tr><td>Average deal size +10%</td><td class="n"><b>+€0.14M</b></td></tr>
       </table>
       <div class="take" style="margin-top:18px">Board prep in minutes: <b>"what do we need to believe"</b> to hit a number, lever by lever.</div>
     </div>
@@ -268,9 +268,9 @@
     <div class="col">
       <ul class="ticks" style="margin-top:0">
         <li>The model is re-run as of 5 past dates using <b>only data known then</b>, then compared with what happened.</li>
-        <li>Average error <b>14%</b> vs <b>28%</b> for a naive run-rate; actuals inside the P10–P90 band <b>4 of 5</b> times.</li>
-        <li>The miss (mid-2025, −37%) is shown, not tuned away: two large wins the pipeline underrated. That's the next model improvement.</li>
-        <li>Component models: renewal <b>AUC 0.63</b> (Stripe signals only), deal <b>AUC 0.86</b>.</li>
+        <li>Average error <b>13%</b> vs <b>28%</b> for a naive run-rate; actuals inside the P10–P90 band <b>4 of 5</b> times.</li>
+        <li>The miss (mid-2025, −40%) is shown, not tuned away: two large wins the pipeline underrated. That's the next model improvement.</li>
+        <li>Component models: renewal <b>AUC 0.66</b> (Stripe signals only), deal <b>AUC 0.84</b>.</li>
       </ul>
     </div>
   </div>
