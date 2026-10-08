@@ -94,6 +94,38 @@ export function RenewalsTable({ renewals, asOf }: { renewals: Renewal[]; asOf: s
       {rows.length === 0 ? (
         <Empty>No renewals match these filters.</Empty>
       ) : (
+        <>
+        <ul className="space-y-2 md:hidden">
+          {rows.map((r) => (
+            <li key={r.customerId} className="rounded-lg border border-gray-100 p-3">
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0">
+                  <p className="text-sm font-medium text-gray-900">{r.company ?? r.name}</p>
+                  <p className="text-xs text-gray-500">
+                    {r.plan}{r.segment === "self_serve" ? ` · ${num(r.seats)} seats` : ""}{r.owner ? ` · ${r.owner}` : ""}
+                  </p>
+                </div>
+                <div className="shrink-0 text-right">
+                  <p className="tabular text-sm font-semibold text-gray-900">{eur(r.arr)}</p>
+                  <p className="tabular text-xs text-gray-500">{dateLabel(r.renewalDate, true)} · {daysBetween(asOf, r.renewalDate)} d</p>
+                </div>
+              </div>
+              <div className="mt-2 flex items-center gap-2">
+                <Pill tone={riskTone[r.riskLevel] ?? "neutral"}>
+                  <span className="h-1.5 w-1.5 rounded-full bg-current" aria-hidden />
+                  {pct(r.pRenew)} renew
+                </Pill>
+                <span className="tabular text-xs text-gray-500">{eur(r.arr * (1 - r.pRenew))} at risk</span>
+              </div>
+              {r.signals.length > 0 && (
+                <div className="mt-2 flex flex-wrap gap-1">
+                  {r.signals.map((s) => <Chip key={s}>{s}</Chip>)}
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+        <div className="hidden md:block">
         <TableWrap>
           <thead>
             <tr>
@@ -150,6 +182,8 @@ export function RenewalsTable({ renewals, asOf }: { renewals: Renewal[]; asOf: s
             })}
           </tbody>
         </TableWrap>
+        </div>
+        </>
       )}
     </div>
   );

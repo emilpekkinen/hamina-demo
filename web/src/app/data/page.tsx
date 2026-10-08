@@ -30,7 +30,7 @@ export default function DataPage() {
         lead="Stripe knows who pays; HubSpot knows who is being sold to. Joining them is what makes the forecast possible: it avoids double-counting and surfaces enterprise deals at accounts that already pay self-serve."
       />
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 xl:grid-cols-4">
         <KpiCard label="Stripe customers" value={num(id.stripeCustomers)} sub="Self-serve and invoiced" />
         <KpiCard label="HubSpot companies" value={num(id.hubspotCompanies)} sub="Companies in the CRM" />
         <KpiCard

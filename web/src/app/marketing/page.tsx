@@ -42,7 +42,7 @@ export default function MarketingPage() {
         lead="Ad spend from Google, LinkedIn, Meta, YouTube, Capterra/G2 and Reddit, joined to Stripe bookings and HubSpot deals. Ads pay back with a delay: self-serve within weeks, enterprise only after the sales cycle, so every comparison is lagged."
       />
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 xl:grid-cols-4">
         <KpiCard
           label="Paid spend, last 12 months"
           value={eur(m.mmm.spend12m)}

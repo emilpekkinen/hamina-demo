@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 import {
   Banknote,
   ChartNoAxesCombined,
@@ -87,10 +88,16 @@ export function Sidebar() {
 
 export function MobileNav() {
   const isActive = useActive();
+  const ref = useRef<HTMLElement>(null);
+  const path = usePathname();
+  useEffect(() => {
+    ref.current?.querySelector<HTMLElement>('[aria-current="page"]')?.scrollIntoView({ block: "nearest", inline: "center" });
+  }, [path]);
   return (
     <nav
+      ref={ref}
       aria-label="Main"
-      className="flex gap-1 overflow-x-auto border-b border-gray-100 bg-white px-3 py-2 lg:hidden"
+      className="flex snap-x gap-1 overflow-x-auto border-b border-gray-100 bg-white px-3 py-2 [mask-image:linear-gradient(to_right,#000_85%,transparent)] [scrollbar-width:none] lg:hidden [&::-webkit-scrollbar]:hidden"
     >
       {NAV.map(({ href, label }) => (
         <Link
@@ -98,7 +105,7 @@ export function MobileNav() {
           href={href}
           aria-current={isActive(href) ? "page" : undefined}
           className={cx(
-            "whitespace-nowrap rounded-md px-2.5 py-1.5 text-[13px] font-medium",
+            "snap-start whitespace-nowrap rounded-md px-2.5 py-1.5 text-[13px] font-medium last:mr-8",
             isActive(href) ? "bg-[#EAECFC] text-gray-900" : "text-gray-600 hover:bg-gray-100",
           )}
         >

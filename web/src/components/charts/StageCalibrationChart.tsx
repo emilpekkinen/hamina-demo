@@ -2,20 +2,24 @@
 
 import { Bar, BarChart, CartesianGrid, LabelList, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { ForecastData } from "@/lib/types";
+import { useNarrow } from "@/lib/useNarrow";
 import { C, axisProps, yAxisProps } from "@/lib/chart";
 import { asRatio, num, pct } from "@/lib/format";
 import { TipBox, rowOf } from "./Tip";
 
 type Row = ForecastData["dealModel"]["stageCalibration"][number];
 
+const SHORT: Record<string, string> = { Discovery: "Disc.", Qualified: "Qual.", "Technical evaluation": "Tech", "Business case": "Case", "Contract sent": "Contract" };
+
 export function StageCalibrationChart({ rows: input, height = 240 }: { rows: Row[]; height?: number }) {
+  const narrow = useNarrow();
   const rows = input.map((r) => ({ ...r, hubspotProb: asRatio(r.hubspotProb), empiricalProb: asRatio(r.empiricalProb) }));
   return (
     <div style={{ height }} className="w-full">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={rows} margin={{ top: 18, right: 8, bottom: 0, left: 0 }} barGap={2} barCategoryGap="26%">
           <CartesianGrid vertical={false} stroke={C.grid} />
-          <XAxis dataKey="stage" {...axisProps} interval={0} />
+          <XAxis dataKey="stage" {...axisProps} interval={0} tickFormatter={(s: string) => (narrow ? SHORT[s] ?? s : s)} />
           <YAxis {...yAxisProps} width={40} domain={[0, 1]} tickFormatter={(v: number) => pct(v)} />
           <Tooltip
             cursor={{ fill: C.grid, opacity: 0.6 }}

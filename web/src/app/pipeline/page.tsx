@@ -26,7 +26,7 @@ export default function PipelinePage() {
         lead="HubSpot stage probabilities are a guess. A deal model trained on historical HubSpot snapshots estimates win probability and close date per deal, and flags self-serve customers already paying via Stripe."
       />
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 xl:grid-cols-4">
         <KpiCard label="Open pipeline" value={eur(op.amount)} sub={`${num(op.count)} open deals in HubSpot`} />
         <KpiCard
           label="HubSpot-weighted"

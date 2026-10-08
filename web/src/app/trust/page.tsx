@@ -25,7 +25,7 @@ export default function TrustPage() {
         lead="Every number here comes from out-of-time backtests: the model is re-run as if it were an earlier date, using only the data available then, and compared with what actually happened."
       />
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 xl:grid-cols-4">
         <KpiCard
           label="Avg. absolute error · P50"
           highlight

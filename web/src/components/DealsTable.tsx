@@ -135,6 +135,50 @@ export function DealsTable({ deals }: { deals: Deal[] }) {
       {rows.length === 0 ? (
         <Empty>No open deals match these filters.</Empty>
       ) : (
+        <>
+        <ul className="space-y-2 md:hidden">
+          {rows.map((d) => {
+            const flags = d.flags.filter((f) => !(d.stripeLinked && /self-serve/i.test(f)));
+            return (
+              <li key={d.id} className="rounded-lg border border-gray-100 p-3">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-sm font-medium text-gray-900">{d.company}</p>
+                    <p className="mt-0.5 flex items-center gap-1.5 text-xs text-gray-500">
+                      <StageDots order={d.stageOrder} /> {d.stage} · {d.owner}
+                    </p>
+                  </div>
+                  <div className="shrink-0 text-right">
+                    <p className="tabular text-sm font-semibold text-gray-900">{eur(d.amountEur)}</p>
+                    <p className="tabular text-xs text-gray-500">exp. {eur(d.amountEur * d.modelProb)}</p>
+                  </div>
+                </div>
+                <div className="mt-2 flex items-center justify-between gap-2">
+                  <span className="text-xs text-gray-500">Win prob. HubSpot → model</span>
+                  <ProbCell hs={d.hubspotProb} model={d.modelProb} />
+                </div>
+                <p className="tabular mt-1 text-xs text-gray-500">
+                  Close: rep <span className="text-gray-900">{dateLabel(d.closeDateRep, true)}</span> → model{" "}
+                  <span className="font-medium text-gray-900">{dateLabel(d.closeDateModel, true)}</span>
+                </p>
+                {(d.stripeLinked || flags.length > 0) && (
+                  <div className="mt-2 flex flex-wrap gap-1">
+                    {d.stripeLinked && (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-[#F0E9FE] px-2 py-0.5 text-[11px] font-medium text-[#6726F5]">
+                        <CreditCard size={12} strokeWidth={1.75} aria-hidden />
+                        Paying self-serve{d.selfServeSeats ? ` · ${num(d.selfServeSeats)} seats` : ""}
+                      </span>
+                    )}
+                    {flags.map((f) => (
+                      <Chip key={f} tone={/push|no activity|past|stuck/i.test(f) ? "warning" : "neutral"}>{f}</Chip>
+                    ))}
+                  </div>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+        <div className="hidden md:block">
         <TableWrap>
           <thead>
             <tr>
@@ -222,6 +266,8 @@ export function DealsTable({ deals }: { deals: Deal[] }) {
             })}
           </tbody>
         </TableWrap>
+        </div>
+        </>
       )}
     </div>
   );

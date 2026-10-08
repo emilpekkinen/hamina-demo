@@ -108,16 +108,16 @@ export function KpiCard({
   return (
     <div
       className={cx(
-        "flex min-w-0 flex-col rounded-xl border bg-white p-5 shadow-card",
+        "flex min-w-0 flex-col rounded-xl border bg-white p-4 shadow-card sm:p-5",
         highlight ? "border-indigo-100" : "border-gray-100",
       )}
     >
       <p className="text-[11px] font-semibold uppercase tracking-wider text-gray-500">{label}</p>
       <div className="mt-2 flex flex-wrap items-baseline gap-x-2 gap-y-1">
-        <span className="text-[28px] font-bold leading-8 tracking-tight text-gray-900">{value}</span>
+        <span className="text-[22px] font-bold leading-7 tracking-tight text-gray-900 sm:text-[28px] sm:leading-8">{value}</span>
         {delta}
       </div>
-      {sub && <div className="mt-1.5 text-[13px] leading-5 text-gray-500">{sub}</div>}
+      {sub && <div className="mt-1.5 text-xs leading-[18px] text-gray-500 sm:text-[13px] sm:leading-5">{sub}</div>}
       {footer && <div className="mt-auto pt-3">{footer}</div>}
     </div>
   );

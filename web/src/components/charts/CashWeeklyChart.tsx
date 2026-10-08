@@ -2,6 +2,7 @@
 
 import { Bar, CartesianGrid, ComposedChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { ForecastData } from "@/lib/types";
+import { useNarrow } from "@/lib/useNarrow";
 import { C, axisProps, yAxisProps } from "@/lib/chart";
 import { dateLabel, eur, eurTick } from "@/lib/format";
 import { CASH_SERIES } from "@/lib/series";
@@ -45,6 +46,7 @@ function Whisker({ x = 0, y = 0, width = 0, height = 0, payload }: WhiskerProps)
 }
 
 export function CashWeeklyChart({ weekly, height = 300 }: { weekly: Week[]; height?: number }) {
+  const narrow = useNarrow();
   const rows: Row[] = weekly.map((w) => ({
     weekStart: w.weekStart,
     openInvoices: w.components.openInvoices,
@@ -59,7 +61,7 @@ export function CashWeeklyChart({ weekly, height = 300 }: { weekly: Week[]; heig
       <ResponsiveContainer width="100%" height="100%">
         <ComposedChart data={rows} margin={{ top: 12, right: 8, bottom: 0, left: 0 }} barCategoryGap="30%">
           <CartesianGrid vertical={false} stroke={C.grid} />
-          <XAxis dataKey="weekStart" {...axisProps} tickFormatter={(d: string) => dateLabel(d, true)} interval={0} minTickGap={4} />
+          <XAxis dataKey="weekStart" {...axisProps} tickFormatter={(d: string) => dateLabel(d, true)} interval={narrow ? 2 : 0} minTickGap={4} />
           <XAxis dataKey="weekStart" xAxisId="overlay" hide />
           <YAxis {...yAxisProps} tickFormatter={eurTick} domain={[0, niceMax(Math.max(1, ...rows.map((r) => r.p90)))]} />
           <Tooltip

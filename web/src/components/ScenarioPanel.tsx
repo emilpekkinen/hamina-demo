@@ -188,7 +188,7 @@ export function ScenarioPanel({ scenarios }: { scenarios: Scen }) {
           <ul className="space-y-2">
             {contrib.map((c) => (
               <li key={c.lever.id} className="grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)] items-center gap-3">
-                <span className="truncate text-[13px] text-gray-700">{c.lever.label}</span>
+                <span className="text-[13px] leading-4 text-gray-700">{c.lever.label}</span>
                 {[c.fy, c.arr].map((x, i) => (
                   <span key={i} className="relative h-6" title={eur(x, { sign: true })}>
                     <span className="absolute inset-y-0 left-1/2 w-px bg-gray-200" aria-hidden />

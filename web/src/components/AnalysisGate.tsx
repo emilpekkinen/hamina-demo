@@ -186,14 +186,8 @@ export function AnalysisGate({ datasets, steps, result }: { datasets: Dataset[];
     return () => window.removeEventListener(REPLAY_EVENT, replay);
   }, []);
 
-  // Lock page scroll while the gate is open.
-  useEffect(() => {
-    const open = phase === "review" || phase === "running";
-    document.documentElement.style.overflow = open ? "hidden" : "";
-    return () => {
-      document.documentElement.style.overflow = "";
-    };
-  }, [phase]);
+  // No root scroll lock on purpose: toggling overflow on <html> leaves iOS Safari unable to scroll
+  // until the page re-lays out (e.g. rotation). The overlay is opaque and contains its own scrolling.
 
   const stepMs = reduced.current ? 250 : 750;
   const run = useCallback(() => {
@@ -208,7 +202,10 @@ export function AnalysisGate({ datasets, steps, result }: { datasets: Dataset[];
       else {
         writeRun(true);
         setLeaving(true);
-        setTimeout(() => setPhase("done"), reduced.current ? 50 : 650);
+        setTimeout(() => {
+          window.scrollTo({ top: 0 });
+          setPhase("done");
+        }, reduced.current ? 50 : 650);
       }
     }, active < steps.length ? stepMs : reduced.current ? 300 : 1100);
     return () => clearTimeout(t);
@@ -223,14 +220,14 @@ export function AnalysisGate({ datasets, steps, result }: { datasets: Dataset[];
   return (
     <div
       className={cx(
-        "fixed inset-0 z-50 overflow-y-auto bg-white transition-[opacity,transform] duration-[650ms] ease-out",
+        "fixed inset-0 z-50 overflow-y-auto overscroll-contain bg-white transition-[opacity,transform] duration-[650ms] ease-out",
         leaving && "pointer-events-none -translate-y-6 opacity-0",
       )}
       role="dialog"
       aria-modal="true"
       aria-label="Data room: review the datasets and run the analysis"
     >
-      <div className="mx-auto flex min-h-full max-w-[1180px] flex-col px-4 pb-8 pt-6 sm:px-8">
+      <div className="mx-auto flex min-h-full max-w-[1180px] flex-col px-4 pt-5 sm:px-8 sm:pt-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image src="/hamina-logo.svg" alt="Hamina" width={96} height={24} priority />
@@ -245,18 +242,18 @@ export function AnalysisGate({ datasets, steps, result }: { datasets: Dataset[];
 
         {phase !== "running" ? (
           <>
-            <div className="mt-8 max-w-3xl">
+            <div className="mt-6 max-w-3xl sm:mt-8">
               <p className="text-xs font-semibold uppercase tracking-wider text-gray-500">Step 1 of 2 · Data room</p>
-              <h1 className="mt-1 text-3xl font-bold tracking-tight text-gray-900 sm:text-[40px] sm:leading-[48px]">
+              <h1 className="mt-1 text-[26px] font-bold leading-8 tracking-tight text-gray-900 sm:text-[40px] sm:leading-[48px]">
                 Here is the data. <span className="text-blue-500">Have a look first.</span>
               </h1>
-              <p className="mt-3 text-[15px] leading-6 text-gray-500">
+              <p className="mt-3 text-sm leading-6 text-gray-500 sm:text-[15px]">
                 {totalRows.toLocaleString("en-US")} rows from three systems that today live apart. Browse the raw tables,
                 then run the analysis to join them, train the models and simulate the next 15 months.
               </p>
             </div>
 
-            <div className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-3">
+            <div className="mt-5 grid grid-cols-3 gap-2 sm:mt-6 sm:gap-3">
               {datasets.map((d) => {
                 const Icon = ICONS[d.id] ?? CreditCard;
                 const on = d.id === ds?.id;
@@ -270,27 +267,27 @@ export function AnalysisGate({ datasets, steps, result }: { datasets: Dataset[];
                       setSeen((s) => new Set(s).add(d.id));
                     }}
                     className={cx(
-                      "rounded-xl border p-4 text-left transition-all",
+                      "relative rounded-xl border p-3 text-left transition-all sm:p-4",
                       on ? "border-blue-500 bg-blue-50/40 shadow-[0_0_0_3px_rgba(49,67,229,.12)]" : "border-gray-100 bg-white hover:border-gray-200",
                     )}
                   >
-                    <div className="flex items-center justify-between">
-                      <span className="flex items-center gap-2 font-semibold text-gray-900">
+                    <div className="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:justify-between">
+                      <span className="flex items-center gap-2 text-sm font-semibold text-gray-900 sm:text-base">
                         <span className={cx("flex h-7 w-7 items-center justify-center rounded-md", on ? "bg-blue-500 text-white" : "bg-gray-50 text-gray-700")}>
                           <Icon size={15} />
                         </span>
                         {d.name}
                       </span>
                       {seen.has(d.id) && (
-                        <span className="flex items-center gap-1 text-[11px] font-medium text-success">
-                          <Check size={12} strokeWidth={3} /> Reviewed
+                        <span className="absolute right-2 top-2 flex items-center gap-1 text-[11px] font-medium text-success sm:static">
+                          <Check size={12} strokeWidth={3} /> <span className="hidden sm:inline">Reviewed</span>
                         </span>
                       )}
                     </div>
-                    <p className="mt-2 text-[13px] text-gray-500">{d.description}</p>
-                    <p className="tabular mt-3 text-xs text-gray-600">
-                      <b className="text-gray-900">{d.totalRows.toLocaleString("en-US")}</b> rows · {d.tables.length} tables ·{" "}
-                      {d.dateRange[0]?.slice(0, 7)} → {d.dateRange[1]?.slice(0, 7)}
+                    <p className="mt-2 hidden text-[13px] text-gray-500 sm:block">{d.description}</p>
+                    <p className="tabular mt-2 text-[11px] text-gray-600 sm:mt-3 sm:text-xs">
+                      <b className="text-gray-900">{d.totalRows.toLocaleString("en-US")}</b> rows
+                      <span className="hidden sm:inline"> · {d.tables.length} tables · {d.dateRange[0]?.slice(0, 7)} → {d.dateRange[1]?.slice(0, 7)}</span>
                     </p>
                   </button>
                 );
@@ -345,9 +342,9 @@ export function AnalysisGate({ datasets, steps, result }: { datasets: Dataset[];
               </div>
             )}
 
-            <div className="mt-auto pt-8">
+            <div className="sticky bottom-0 z-10 -mx-4 mt-auto bg-gradient-to-t from-white from-75% to-white/0 px-4 pb-[max(16px,env(safe-area-inset-bottom))] pt-8 sm:-mx-8 sm:px-8">
               <div className="mx-auto max-w-[560px]">
-                <p className="mb-3 text-center text-xs font-semibold uppercase tracking-wider text-gray-500">
+                <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-wider text-gray-500 sm:mb-3 sm:text-xs">
                   Step 2 of 2 · {seen.size} of {datasets.length} sources reviewed
                 </p>
                 <SlideToRun onComplete={run} disabled={phase === "checking"} />

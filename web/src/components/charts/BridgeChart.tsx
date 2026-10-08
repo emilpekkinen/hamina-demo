@@ -2,6 +2,7 @@
 
 import { Bar, BarChart, CartesianGrid, Cell, LabelList, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { ForecastData } from "@/lib/types";
+import { useNarrow } from "@/lib/useNarrow";
 import { C, axisProps, yAxisProps } from "@/lib/chart";
 import { eur, eurTick } from "@/lib/format";
 import { BRIDGE_COLORS } from "@/lib/series";
@@ -33,6 +34,7 @@ function bridgeRows(steps: Step[]): Row[] {
 }
 
 export function BridgeChart({ steps, height = 280 }: { steps: Step[]; height?: number }) {
+  const narrow = useNarrow();
   const rows = bridgeRows(steps);
   const max = Math.max(...rows.map((r) => r.base + r.size), 1);
   return (
@@ -44,8 +46,15 @@ export function BridgeChart({ steps, height = 280 }: { steps: Step[]; height?: n
             dataKey="name"
             {...axisProps}
             interval={0}
-            height={44}
+            height={narrow ? 92 : 44}
             tick={({ x, y, payload }) => {
+              if (narrow) {
+                return (
+                  <text x={x} y={Number(y) + 6} textAnchor="end" fill={C.axis} fontSize={10} transform={`rotate(-50 ${x} ${Number(y) + 6})`}>
+                    {String(payload.value).replace("New logos: ", "Logos: ")}
+                  </text>
+                );
+              }
               const words = String(payload.value).split(" ");
               const mid = Math.ceil(words.length / 2);
               const lines = words.length > 1 ? [words.slice(0, mid).join(" "), words.slice(mid).join(" ")] : words;
@@ -85,7 +94,7 @@ export function BridgeChart({ steps, height = 280 }: { steps: Step[]; height?: n
             {rows.map((r) => (
               <Cell key={r.name} fill={r.color} />
             ))}
-            <LabelList dataKey="label" position="top" fill={C.ink} fontSize={11} fontWeight={600} />
+            {!narrow && <LabelList dataKey="label" position="top" fill={C.ink} fontSize={11} fontWeight={600} />}
           </Bar>
         </BarChart>
       </ResponsiveContainer>
