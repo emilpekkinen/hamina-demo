@@ -1,14 +1,16 @@
 # 5-minute demo script: Hamina revenue intelligence
 
-Setup: dashboard open on **Forecast** (hamina-revops-demo.vercel.app). Claude open in a second tab with the Hamina connector added. Click **Generate brief** once before the call, so it loads instantly.
+Setup: open hamina-revops-demo.vercel.app in a fresh tab so the **data room** shows (or click **Replay analysis** in the header). Claude open in a second tab with the Hamina connector added. Click **Generate brief** once before the call, so it loads instantly.
 ≈ 700 spoken words. **[Click]** = action on screen.
 
 ---
 
-### 0:00 – 0:30 · Hook
+### 0:00 – 0:40 · Hook and data room
 "Mia mentioned you have a lot of Stripe, HubSpot and marketing data, but no bandwidth to use it. So I built what I'd build in my first months, on synthetic data shaped exactly like your Stripe and HubSpot APIs. It answers three questions: will we hit plan, which deals and renewals are real, and is marketing working?"
+**[Data room]** Click the Stripe, HubSpot and Ad platforms cards. "Here's the raw data: about 15,000 rows across three systems that today don't talk to each other."
+**[Drag the slider]** "One slide, and it joins them, trains the models and runs 4,000 simulations." Let the steps play, about 6 seconds.
 
-### 0:30 – 1:20 · Forecast (Finance, CFO)
+### 0:40 – 1:20 · Forecast (Finance, CFO)
 **[Forecast page]**
 "This is a Stripe-first forecast. Revenue means cash collected, the same definition as your public revenue chart. 4,000 simulations combine renewals, new self-serve, enterprise renewals, open deals and pipeline that doesn't exist yet."
 "FY2026 lands at **€3.33M** against a €3.42M plan. That's roughly a **29% chance of hitting plan**. Finance can budget on P10, and sales can chase P90."
