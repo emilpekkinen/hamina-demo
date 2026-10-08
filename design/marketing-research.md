@@ -93,7 +93,7 @@ Researched 2026-10-08. Labels: **[S]** = taken from the cited source. **[A]** = 
 **Adstock and lags**
 | Motion | Adstock half-life | Geometric decay/week | Lag ad → revenue |
 |---|---|---|---|
-| Self-serve (€600–1,000 seats) | Search 0.5–1 wk; LinkedIn/Reddit 1–2 wk; YouTube 2–3 wk | 0.4–0.7 | 3–30 days (peak 7–14 days, 14-day trial) |
+| Self-serve (€599–980 seats) | Search 0.5–1 wk; LinkedIn/Reddit 1–2 wk; YouTube 2–3 wk | 0.4–0.7 | 3–30 days (peak 7–14 days, 14-day trial) |
 | Enterprise (€50–300k) | LinkedIn 6–10 wk; Search 3–5 wk; YouTube/events 8–12 wk | 0.88–0.93 | 4–10 months (opportunity ~120–180 days, plus 1–3 months pre-pipeline); max_lag ≥ 26 wk |
 | MSP / mid deals (€5–50k) | 3–6 wk | 0.8–0.89 | 2–4 months |
 Revenue attribution split (suggested): about 55–65% of new revenue from self-serve in 2023–24, falling to about 40% by 2026 as enterprise grows.

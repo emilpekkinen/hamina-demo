@@ -51,7 +51,7 @@ SELF_SERVE_PLAN = {2026: 1_320_000}
 EMAIL_TLD = "example"
 
 PRICE_6M = 599_00
-PRICE_12M = 1_000_00
+PRICE_12M = 980_00
 
 # Self-serve month-over-month growth inside each year (shapes the monthly curve).
 MONTHLY_GROWTH = {2022: 1.18, 2023: 1.09, 2024: 1.05, 2025: 1.04, 2026: 1.03}

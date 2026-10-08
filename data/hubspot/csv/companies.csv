@@ -3,106 +3,107 @@ hs_object_id,name,domain,industry,country,city,numberofemployees,lifecyclestage,
 25242404630,Kaarna Tech (KUT),kut.example,university,FI,Tampere,2502,customer,28451987,2022-10-08T12:29:27.000Z
 29643656535,Granite Institute of Technology,granite-institute-of-technology.example,university,US,Nashville,2111,opportunity,28451987,2022-11-06T17:15:22.000Z
 38331940061,Clearwater Steelworks,clearwater-steelworks.example,manufacturing,FI,Espoo,1493,opportunity,28451987,2023-01-12T15:01:47.000Z
-25686233106,Ashford Retail Group,ashford-retail-group.example,retail,US,Chicago,1013,opportunity,68913217,2023-02-10T17:41:41.000Z
-39621515047,Nordicstream Industries AS,nordicstream-industries.example,university,NO,Bergen,1405,opportunity,28451987,2023-02-11T17:42:31.000Z
+39621515047,Maplelink Managed Services LLC,maplelink-managed-services.example,university,US,Chicago,1405,opportunity,68913217,2023-02-11T17:42:31.000Z
 38606378819,St Alder Health,stalderhealth.example,hospital,US,Minneapolis,3171,customer,68913217,2023-02-24T10:53:34.000Z
-20663877119,Maplewood Hospitality,maplewood-hospitality.example,hospitality,US,San Diego,2545,opportunity,68913217,2023-05-24T15:36:00.000Z
-33427786634,Stonebridge Airport Authority,stonebridge-airport-authority.example,airport,US,Denver,10117,opportunity,68913217,2023-07-23T15:18:02.000Z
-29439633748,Oakmont Hotels,oakmont-hotels.example,hospitality,US,Nashville,1251,opportunity,68913217,2023-07-24T16:28:17.000Z
+18936054733,Ashford State College,ashford-state-college.example,university,US,Dallas,3214,opportunity,68913217,2023-05-26T10:39:39.000Z
+34458280922,Riverside Components,riverside-components.example,manufacturing,NL,Utrecht,7526,opportunity,28451987,2023-07-08T13:29:07.000Z
+31979654586,Northfield Logistics,northfield-logistics.example,logistics,US,Atlanta,1290,opportunity,68913217,2023-07-29T10:19:41.000Z
+32690263426,Silverfield Wireless Engineering LLC,silverfield-wireless-engineering.example,hospital,US,Austin,2964,opportunity,68913217,2023-08-15T11:53:40.000Z
 14888540457,Voltmark,voltmark.example,manufacturing,DE,Stuttgart,3721,customer,28451987,2023-08-24T15:40:10.000Z
-18488054230,Crestmark Hotels LLC,crestmark-hotels.example,logistics,US,Austin,576,opportunity,68913217,2023-08-30T15:36:49.000Z
-34856057084,Westbrook Stadium Group,westbrook-stadium-group.example,venues,CA,Toronto,3671,opportunity,68913217,2023-10-27T10:01:01.000Z
-25559511593,Oakmont Convention Center,oakmont-convention-center.example,venues,US,Dallas,1125,opportunity,68913217,2023-12-07T11:16:24.000Z
+21402217512,Clearwater Health System,clearwater-health-system.example,hospital,FR,Paris,2086,opportunity,28451987,2023-09-17T08:07:01.000Z
+30872242893,Northfield Outlets,northfield-outlets.example,retail,DK,Copenhagen,623,opportunity,28451987,2023-10-17T16:57:43.000Z
+10431740971,Beaconline Telecom GmbH,beaconline-telecom.example,airport,DE,Hamburg,2298,opportunity,28451987,2024-01-06T09:16:15.000Z
+25313068487,Granite Eastgate Medical Center,granite-eastgate-medical-center.example,hospital,GB,Birmingham,4014,opportunity,28451987,2024-01-17T10:59:51.000Z
 20536895418,Costa Lucera Hotels & Resorts,costa-lucera-hotels--resorts.example,hospitality,ES,Palma,588,customer,28451987,2024-01-31T02:26:45.000Z
-26222632011,Redhill Stores,redhill-stores.example,retail,DE,Munich,1521,opportunity,28451987,2024-03-20T08:02:38.000Z
-39578234261,Riverside Resorts Group,riverside-resorts-group.example,hospitality,FI,Helsinki,1237,opportunity,28451987,2024-03-21T08:49:07.000Z
-33297211040,Brightwater University,brightwater-university.example,university,NL,Rotterdam,6653,opportunity,28451987,2024-05-19T16:34:41.000Z
+25776473195,Bay Freight Terminals,bay-freight-terminals.example,logistics,US,Denver,1346,opportunity,68913217,2024-02-17T09:02:51.000Z
+25530527388,Riverside Retail Group,riverside-retail-group.example,retail,DE,Düsseldorf,2128,opportunity,28451987,2024-02-19T13:07:38.000Z
+28833006168,Brightwater Industries,brightwater-industries.example,manufacturing,US,Seattle,787,opportunity,68913217,2024-03-19T12:23:14.000Z
+19548621874,Redhill University,redhill-university.example,university,NL,Rotterdam,768,opportunity,28451987,2024-04-04T10:02:15.000Z
+12475961479,Bay Medical Center,bay-medical-center.example,hospital,US,Denver,960,opportunity,68913217,2024-04-04T14:08:56.000Z
+23508534996,Harborview Resorts Group,harborview-resorts-group.example,hospitality,SE,Gothenburg,558,opportunity,28451987,2024-04-20T10:51:12.000Z
 36412077230,Halden Ridge State Univ.,,university,US,Columbus,4460,customer,68913217,2024-05-29T08:11:21.000Z
-19412046526,Orbitcore Construction,orbitcore-construction.example,university,IE,Galway,2746,opportunity,28451987,2024-06-04T11:16:28.000Z
-26751129601,Kingsbridge Precision Manufacturing,kingsbridge-precision-manufacturing.example,manufacturing,DK,Odense,950,opportunity,28451987,2024-06-21T16:35:32.000Z
-15560955899,Northfield Stadium Group,northfield-stadium-group.example,venues,SE,Gothenburg,1791,opportunity,28451987,2024-08-12T10:06:44.000Z
-13723558798,Signalgate Wireless Engineering AB,signalgate-wireless-engineering.example,university,SE,Stockholm,2012,opportunity,28451987,2024-08-15T15:02:24.000Z
+16131515205,Kingsbridge Logistics,kingsbridge-logistics.example,logistics,US,Boston,3439,opportunity,68913217,2024-06-07T09:28:37.000Z
+14030090807,Fairhaven Distribution Centers,fairhaven-distribution-centers.example,logistics,US,Dallas,1874,opportunity,68913217,2024-07-03T10:30:00.000Z
+24835380660,Highland Steelworks,highland-steelworks.example,manufacturing,US,Dallas,1695,opportunity,68913217,2024-07-20T11:36:44.000Z
+21614622567,Kingsbridge Medical Center,kingsbridge-medical-center.example,hospital,DK,Copenhagen,1574,opportunity,28451987,2024-07-28T09:26:24.000Z
+12746894506,Apexline Foods BV,apexline-foods.example,manufacturing,BE,Ghent,3695,opportunity,28451987,2024-09-07T12:59:08.000Z
+11666448997,Silverlake Logistics,silverlake-logistics.example,logistics,US,Denver,3067,opportunity,68913217,2024-09-16T17:45:47.000Z
 25888065056,Kivimet Paper & Packaging Oyj,kivimet-paper--packaging.example,manufacturing,FI,Lahti,1878,customer,28451987,2024-09-18T11:00:27.000Z
-13004627483,Granite Regional Hospital,granite-regional-hospital.example,hospital,DE,Düsseldorf,3744,opportunity,28451987,2024-11-11T09:59:32.000Z
-24504753375,Ashford International Airport,ashford-international-airport.example,airport,GB,London,5533,opportunity,28451987,2024-11-18T15:55:34.000Z
+12110700867,Northfield Components,northfield-components.example,manufacturing,US,Austin,562,opportunity,68913217,2024-10-17T10:26:51.000Z
+14408108750,Elmstead Outlets,elmstead-outlets.example,retail,SE,Stockholm,648,opportunity,28451987,2024-10-31T16:37:45.000Z
 18983739667,Marlowe Valley University Hospital,marlowe-valley-university-hospital.example,hospital,GB,Leeds,680,customer,68913217,2024-11-22T22:42:07.000Z
-29058548278,Brightmark IT Solutions Inc.,brightmark-it-solutions.example,manufacturing,CA,Montreal,2988,opportunity,68913217,2024-11-25T14:18:04.000Z
-13066173106,Granitelink Logistics AB,granitelink-logistics.example,hospitality,SE,Gothenburg,2325,opportunity,28451987,2025-02-23T12:07:59.000Z
-23527561909,Deltaport IT Solutions,deltaport-it-solutions.example,venues,NO,Trondheim,1413,opportunity,28451987,2025-03-03T09:19:21.000Z
-24442834356,Greenstream Systems Integration Pty Ltd,greenstream-systems-integration.example,hospitality,AU,Melbourne,8776,opportunity,28451987,2025-03-18T11:36:40.000Z
-32114864457,Maplewood Granite Convention Center,maplewood-granite-convention-center.example,venues,US,San Diego,1207,opportunity,68913217,2025-03-29T12:29:31.000Z
+38503447014,Eastgate Institute of Technology,eastgate-institute-of-technology.example,university,DK,Copenhagen,588,opportunity,28451987,2024-12-13T10:14:49.000Z
+23474083509,Silverlake Children's Hospital,silverlake-children-s-hospital.example,hospital,CA,Montreal,4557,opportunity,68913217,2024-12-20T15:36:50.000Z
+24045398406,Beaconpath Industries Ltd,beaconpath-industries.example,hospitality,GB,London,502,opportunity,28451987,2024-12-23T16:30:51.000Z
+10761886840,Blueline IT Solutions Inc.,blueline-it-solutions.example,logistics,CA,Calgary,740,opportunity,68913217,2025-01-08T16:11:09.000Z
+17120220499,Fairhaven Resorts Group,fairhaven-resorts-group.example,hospitality,US,Austin,1042,opportunity,68913217,2025-01-27T17:27:17.000Z
+24485443102,Northview IT Solutions,northview-it-solutions.example,logistics,US,Raleigh,976,opportunity,68913217,2025-02-25T09:02:53.000Z
+33892724453,Silverfield Warehousing S.r.l.,silverfield-warehousing.example,venues,IT,Bologna,586,opportunity,28451987,2025-03-03T16:33:24.000Z
 26512314436,Aurelia Grand Hotels Group,aurelia-grand-hotels-group.example,hospitality,NL,Amsterdam,8778,customer,28451987,2025-04-01T00:33:06.000Z
-13064642768,Lakeview Industries,lakeview-industries.example,manufacturing,US,Seattle,4304,opportunity,68913217,2025-04-11T16:04:49.000Z
-31411119503,Westbrook Medical Center,westbrook-medical-center.example,hospital,US,Dallas,2362,opportunity,68913217,2025-04-18T13:00:15.000Z
-30623652398,Auroracore Wireless Engineering,auroracore-wireless-engineering.example,manufacturing,IT,Milan,794,opportunity,28451987,2025-05-12T09:58:04.000Z
-18461468248,Redhill Institute of Technology,redhill-institute-of-technology.example,university,US,Seattle,6093,opportunity,68913217,2025-05-13T16:45:07.000Z
-20733050035,Brightwater Redhill Industries,brightwater-redhill-industries.example,manufacturing,DE,Düsseldorf,1318,opportunity,28451987,2025-06-09T11:01:57.000Z
+15078055930,University of Lakeview,university-of-lakeview.example,university,GB,Leeds,578,opportunity,28451987,2025-04-09T11:07:18.000Z
+15953778736,Bluemark IT Solutions,bluemark-it-solutions.example,manufacturing,US,Boston,270,opportunity,68913217,2025-05-02T16:30:53.000Z
+35693876619,Brightwater Regional Hospital,brightwater-regional-hospital.example,hospital,US,Atlanta,3342,opportunity,68913217,2025-06-02T16:01:51.000Z
+22752722753,Northfield Institute of Technology,northfield-institute-of-technology.example,university,US,Dallas,499,opportunity,68913217,2025-06-13T12:09:33.000Z
+34148693717,Harborview State College,harborview-state-college.example,university,GB,Leeds,3139,opportunity,84634470,2025-06-13T13:35:59.000Z
 29880684626,Nordhavn Port Authority,nordhavn-port-authority.example,logistics,DK,Aarhus,1544,customer,84634470,2025-06-30T08:23:19.000Z
-38474289992,Harborview Regional Hospital,harborview-regional-hospital.example,hospital,US,Atlanta,1894,opportunity,68913217,2025-08-26T08:40:31.000Z
-11619773935,Clearwater Health System,clearwater-health-system.example,hospital,NL,Utrecht,3491,opportunity,28451987,2025-09-09T13:04:25.000Z
-12438909399,Stonebridge Regional Hospital,stonebridge-regional-hospital.example,hospital,GB,Birmingham,7433,opportunity,28451987,2025-09-25T15:30:17.000Z
-11875396030,Silverpoint Managed Services,silverpoint-managed-services.example,university,CH,Basel,941,opportunity,84634470,2025-09-28T09:09:26.000Z
-14124974643,Stonebridge Hospitality,stonebridge-hospitality.example,hospitality,US,Seattle,1630,opportunity,68913217,2025-10-11T11:48:32.000Z
-16090568177,Northstream Warehousing,northstream-warehousing.example,hospitality,FR,Paris,1614,opportunity,28451987,2025-10-11T11:55:45.000Z
-24870214394,Fairhaven Regional Hospital,fairhaven-regional-hospital.example,hospital,US,Denver,378,opportunity,68913217,2025-10-13T08:50:35.000Z
-35429091594,Ashford Institute of Technology,ashford-institute-of-technology.example,university,DE,Hamburg,1455,opportunity,84634470,2025-10-26T10:16:50.000Z
-28880545800,Highland Arena,highland-arena.example,venues,US,Seattle,722,opportunity,68913217,2025-11-08T15:16:24.000Z
+37633073849,Silverlake Institute of Technology,silverlake-institute-of-technology.example,university,FI,Kuopio,3793,opportunity,84634470,2025-07-25T11:42:10.000Z
+25026839127,Maplewood University,maplewood-university.example,university,FI,Turku,1623,opportunity,28451987,2025-07-26T10:17:51.000Z
+14634090893,Bluestream Clinics GmbH,bluestream-clinics.example,hospitality,AT,Graz,1125,opportunity,28451987,2025-08-10T16:32:29.000Z
+18259740261,Kingsbridge Airport Authority,kingsbridge-airport-authority.example,airport,US,Atlanta,604,opportunity,68913217,2025-08-29T11:16:55.000Z
+32076666386,Stonelink Managed Services AS,stonelink-managed-services.example,airport,NO,Trondheim,1332,opportunity,84634470,2025-10-18T17:10:17.000Z
+15252328608,Fairhaven Health System,fairhaven-health-system.example,hospital,FI,Kuopio,1839,opportunity,28451987,2025-11-10T13:08:01.000Z
+20989956502,Eastgate Hospitality,eastgate-hospitality.example,hospitality,FI,Helsinki,1173,opportunity,84634470,2025-11-16T10:59:55.000Z
 39987926322,Northgate Retail,northgate-retail.example,retail,GB,Manchester,2801,customer,84634470,2025-11-16T12:21:52.000Z
-27979755368,Oakmont Logistics,oakmont-logistics.example,logistics,US,Denver,277,opportunity,68913217,2025-11-18T12:54:14.000Z
+37992897995,Bay Clearwater Components,bay-clearwater-components.example,manufacturing,DE,Düsseldorf,1514,opportunity,28451987,2025-11-18T16:46:49.000Z
 30966107916,Rheinfeld Automotive Systems GmbH,rheinfeld-automotive-systems.example,manufacturing,DE,Ingolstadt,4162,customer,28451987,2025-11-24T22:17:52.000Z
+16184361570,Brightwater Distribution Centers,brightwater-distribution-centers.example,logistics,US,Atlanta,1308,opportunity,68913217,2025-11-26T14:10:49.000Z
+34899422966,Harborview Children's Hospital,harborview-children-s-hospital.example,hospital,US,Atlanta,1359,opportunity,68913217,2025-12-02T11:36:26.000Z
 10464219358,Lakeshore Community College District,lakeshore-community-college-district.example,university,US,Milwaukee,6845,customer,68913217,2025-12-03T12:09:19.000Z
-33232038937,Riverside Steelworks,riverside-steelworks.example,manufacturing,DE,Düsseldorf,287,opportunity,84634470,2025-12-05T09:23:59.000Z
-20269390499,Eastgate Industries,eastgate-industries.example,manufacturing,GB,London,1323,opportunity,84634470,2025-12-06T14:38:04.000Z
-16207849313,Pinecrest Resorts Group,pinecrest-resorts-group.example,hospitality,DE,Cologne,729,opportunity,28451987,2025-12-08T13:34:19.000Z
-19227017783,Highland Institute of Technology,highland-institute-of-technology.example,university,AU,Sydney,3249,opportunity,28451987,2025-12-21T15:17:19.000Z
-13149005316,Redhill Redhill Components,redhill-redhill-components.example,manufacturing,US,Austin,5914,opportunity,68913217,2025-12-23T16:46:18.000Z
-37901730923,Kingsbridge Children's Hospital,kingsbridge-children-s-hospital.example,hospital,FR,Paris,3827,opportunity,28451987,2025-12-25T14:51:00.000Z
-37840372051,Lakeview Stores,lakeview-stores.example,retail,FR,Paris,7288,opportunity,84634470,2025-12-30T08:18:33.000Z
-16617109171,Silverstream Foods GmbH,silverstream-foods.example,university,DE,Cologne,3061,opportunity,84634470,2025-12-31T13:12:17.000Z
-38852352727,Highland Airport Authority,highland-airport-authority.example,airport,FR,Lyon,369,opportunity,28451987,2026-01-01T15:02:56.000Z
-18668600275,Cedarpeak IT Solutions,cedarpeak-it-solutions.example,retail,DK,Copenhagen,2504,opportunity,28451987,2026-01-03T08:22:43.000Z
-18324688381,Northfield Elmstead Children's Hospital,northfield-elmstead-children-s-hospital.example,hospital,AU,Melbourne,1425,opportunity,84634470,2026-01-15T16:36:31.000Z
-27241859869,Riverside Hotels,riverside-hotels.example,hospitality,CA,Vancouver,1380,opportunity,49986920,2026-01-23T08:17:47.000Z
-18010852750,Highland Resorts Group,highland-resorts-group.example,hospitality,SE,Malmö,6364,opportunity,84634470,2026-01-25T09:22:54.000Z
-31039008553,Brightwater Components,brightwater-components.example,manufacturing,ES,Bilbao,1251,opportunity,84634470,2026-01-25T13:22:14.000Z
-18196978582,Redhill State College,redhill-state-college.example,university,DE,Cologne,1789,opportunity,84634470,2026-01-28T09:47:53.000Z
-36694712114,Oakmont Distribution Centers,oakmont-distribution-centers.example,logistics,DE,Düsseldorf,3833,opportunity,84634470,2026-02-03T08:07:35.000Z
-11166450303,Elmstead Health System,elmstead-health-system.example,hospital,AU,Melbourne,816,opportunity,84634470,2026-02-05T12:46:35.000Z
-16115522710,Crestbridge IT Solutions Ltd,crestbridge-it-solutions.example,retail,GB,Bristol,1214,opportunity,84634470,2026-02-13T09:28:06.000Z
-32533921978,Lakeview Institute of Technology,lakeview-institute-of-technology.example,university,DE,Düsseldorf,817,opportunity,28451987,2026-02-23T08:25:00.000Z
-29745454632,Stonebridge Retail Group,stonebridge-retail-group.example,retail,US,Chicago,522,opportunity,68913217,2026-02-25T15:12:01.000Z
-28333802354,Maplewood Outlets,maplewood-outlets.example,retail,AU,Melbourne,10560,opportunity,28451987,2026-03-07T08:59:49.000Z
-25103080527,Elmstead Freight Terminals,elmstead-freight-terminals.example,logistics,US,Dallas,752,opportunity,49986920,2026-03-07T10:16:37.000Z
+19299040373,Stonebridge Steelworks,stonebridge-steelworks.example,manufacturing,AU,Melbourne,1868,opportunity,28451987,2025-12-03T15:01:25.000Z
+29638655197,Eastgate Children's Hospital,eastgate-children-s-hospital.example,hospital,US,Nashville,2778,opportunity,68913217,2025-12-07T16:20:41.000Z
+28245687447,Pinecrest Industries,pinecrest-industries.example,manufacturing,DE,Cologne,622,opportunity,84634470,2025-12-19T12:08:22.000Z
+18339311613,Eastgate Precision Manufacturing,eastgate-precision-manufacturing.example,manufacturing,DK,Odense,2951,opportunity,84634470,2025-12-21T14:46:49.000Z
+30929891344,Pinecrest Children's Hospital,pinecrest-children-s-hospital.example,hospital,SE,Stockholm,3807,opportunity,84634470,2025-12-27T10:31:12.000Z
+38263074968,Pinegate Communications Pty Ltd,pinegate-communications.example,logistics,AU,Brisbane,1412,opportunity,84634470,2025-12-27T16:51:15.000Z
+22877919242,Elmstead Stores,elmstead-stores.example,retail,GB,Leeds,266,opportunity,84634470,2026-01-07T11:36:53.000Z
+31590222173,Maplewood Resorts Group,maplewood-resorts-group.example,hospitality,CA,Toronto,2434,opportunity,68913217,2026-01-07T13:48:52.000Z
+35175321016,Lakeview Components,lakeview-components.example,manufacturing,FI,Helsinki,4864,opportunity,28451987,2026-01-19T09:03:12.000Z
+16636243005,Balticport Systems Integration AS,balticport-systems-integration.example,hospitality,NO,Trondheim,2289,opportunity,28451987,2026-01-20T14:56:44.000Z
+13246205095,Lakeview Hospitality,lakeview-hospitality.example,hospitality,US,Nashville,3058,opportunity,68913217,2026-01-26T14:54:21.000Z
+30548486055,Redhill Regional Hospital,redhill-regional-hospital.example,hospital,FR,Lyon,3041,opportunity,84634470,2026-02-01T08:24:17.000Z
+13376792824,Fairhaven International Airport,fairhaven-international-airport.example,airport,FI,Oulu,2376,opportunity,28451987,2026-02-03T15:08:37.000Z
+39057084708,Stonebridge Children's Hospital,stonebridge-children-s-hospital.example,hospital,US,Austin,1134,opportunity,68913217,2026-02-03T17:04:27.000Z
+28633483666,Harborview International Airport,harborview-international-airport.example,airport,DE,Düsseldorf,6240,opportunity,84634470,2026-02-09T12:31:25.000Z
+14359757302,Kingsbridge Components,kingsbridge-components.example,manufacturing,US,Boston,1901,opportunity,68913217,2026-02-18T13:54:50.000Z
+32715566979,Clearwater Hotels,clearwater-hotels.example,hospitality,US,Chicago,4067,opportunity,68913217,2026-02-24T10:43:33.000Z
+15183689665,Northfield Steelworks,northfield-steelworks.example,manufacturing,NL,Rotterdam,849,opportunity,28451987,2026-02-26T13:01:05.000Z
+27692628805,Clearwater Silverlake Logistics,clearwater-silverlake-logistics.example,logistics,DK,Odense,2079,opportunity,28451987,2026-03-03T15:40:10.000Z
+37097491408,Eastgate Medical Center,eastgate-medical-center.example,hospital,FR,Lille,5180,opportunity,28451987,2026-03-04T14:57:27.000Z
+25842490860,Pinepeak Telecom Oy,pinepeak-telecom.example,retail,FI,Jyväskylä,952,opportunity,28451987,2026-03-04T15:41:53.000Z
 20371504428,Grand Meridian Resorts,grand-meridian-resorts.example,hospitality,US,Orlando,4933,customer,68913217,2026-03-08T07:31:14.000Z
-39543962433,Granite Logistics,granite-logistics.example,logistics,CA,Montreal,609,opportunity,68913217,2026-03-08T13:38:31.000Z
-16331679652,Stonebridge Precision Manufacturing,stonebridge-precision-manufacturing.example,manufacturing,US,Nashville,1294,opportunity,68913217,2026-03-14T08:56:28.000Z
-31822474946,Lumenstream Communications LLC,lumenstream-communications.example,venues,US,Atlanta,1192,opportunity,68913217,2026-03-22T11:38:12.000Z
-35984357822,Pinecrest Logistics,pinecrest-logistics.example,logistics,ES,Barcelona,3030,opportunity,84634470,2026-03-23T13:13:33.000Z
+27836662128,Clearwater Institute of Technology,clearwater-institute-of-technology.example,university,DK,Copenhagen,3514,opportunity,84634470,2026-03-08T08:38:00.000Z
+37467507797,Westbrook Hotels,westbrook-hotels.example,hospitality,DK,Copenhagen,1213,opportunity,84634470,2026-03-14T10:57:25.000Z
+12392293109,Elmstead Children's Hospital,elmstead-children-s-hospital.example,hospital,US,Phoenix,769,opportunity,49986920,2026-03-20T10:20:10.000Z
+10141517477,Pinecrest Institute of Technology,pinecrest-institute-of-technology.example,university,FI,Espoo,8539,opportunity,28451987,2026-03-21T08:14:09.000Z
+23177993220,Elmstead State College,elmstead-state-college.example,university,US,Phoenix,210,opportunity,49986920,2026-03-22T15:29:32.000Z
 10459769760,Pohjanmaan sairaanhoitopiiri (Pohjanmaa Hospital District),pshp.example,hospital,FI,Vaasa,2118,customer,28451987,2026-03-25T21:32:27.000Z
-39880343794,Lakeview Health System,lakeview-health-system.example,hospital,GB,Bristol,2133,opportunity,84634470,2026-03-31T16:52:57.000Z
-10158352024,Westbrook Steelworks,westbrook-steelworks.example,manufacturing,US,Denver,9625,opportunity,49986920,2026-04-03T09:19:55.000Z
-24619123224,Northfield Hotels,northfield-hotels.example,hospitality,FR,Lille,2650,opportunity,28451987,2026-04-03T10:20:55.000Z
-19543298522,Redhill Medical Center,redhill-medical-center.example,hospital,FR,Lille,1268,opportunity,28451987,2026-04-08T14:09:11.000Z
-34891470422,Harborview Medical Center,harborview-medical-center.example,hospital,US,San Diego,3093,opportunity,49986920,2026-04-10T16:58:56.000Z
-37338400578,Ashford Stores,ashford-stores.example,retail,US,Austin,1682,opportunity,49986920,2026-04-18T10:13:48.000Z
-39130101219,Pinecrest Industries,pinecrest-industries.example,manufacturing,GB,London,1277,opportunity,84634470,2026-04-20T10:28:18.000Z
-19794846007,Pinepath Telecom AS,pinepath-telecom.example,university,NO,Oslo,486,opportunity,28451987,2026-04-23T08:43:03.000Z
-13358646178,Silverlake Airport Authority,silverlake-airport-authority.example,airport,GB,London,1813,opportunity,84634470,2026-04-25T15:53:14.000Z
-29871393780,Lakeview Children's Hospital,lakeview-children-s-hospital.example,hospital,DE,Leipzig,4014,opportunity,28451987,2026-05-09T16:32:35.000Z
-21805746011,Lakeview Freight Terminals,lakeview-freight-terminals.example,logistics,GB,Leeds,2580,opportunity,28451987,2026-05-12T15:55:41.000Z
-13189185308,Pinecrest Steelworks,pinecrest-steelworks.example,manufacturing,AU,Melbourne,841,opportunity,84634470,2026-05-25T13:03:27.000Z
-20936774912,Elmstead Children's Hospital,elmstead-children-s-hospital.example,hospital,CA,Toronto,1043,opportunity,68913217,2026-06-01T09:08:35.000Z
-27112661507,Clearwater Freight Terminals,clearwater-freight-terminals.example,logistics,GB,Bristol,2243,opportunity,84634470,2026-06-13T13:31:08.000Z
-31553586434,Pineline Communications,pineline-communications.example,manufacturing,NL,Utrecht,1079,opportunity,28451987,2026-06-13T16:28:39.000Z
-12683801456,Westbrook Components,westbrook-components.example,manufacturing,FR,Paris,3544,opportunity,84634470,2026-07-08T15:26:29.000Z
-33686637197,Granite State College,granite-state-college.example,university,FR,Paris,2052,opportunity,28451987,2026-07-13T11:23:02.000Z
-36688210207,Highland Logistics,highland-logistics.example,logistics,DE,Leipzig,2240,opportunity,28451987,2026-07-16T16:21:04.000Z
-23847967008,Maplewood Regional Hospital,maplewood-regional-hospital.example,hospital,SE,Gothenburg,5988,opportunity,84634470,2026-07-31T17:17:41.000Z
-36141464775,Harborview State College,harborview-state-college.example,university,SE,Stockholm,2582,opportunity,84634470,2026-08-02T15:40:53.000Z
-14512547754,Cedarstream Clinics LLC,cedarstream-clinics.example,hospitality,US,Raleigh,634,opportunity,68913217,2026-08-09T08:23:40.000Z
-19346609870,Brightwater Logistics,brightwater-logistics.example,logistics,US,San Diego,672,opportunity,49986920,2026-08-11T10:26:58.000Z
-24402180992,Orbitview Communications Ltd,orbitview-communications.example,airport,GB,Leeds,553,opportunity,28451987,2026-08-20T16:01:11.000Z
-37824725996,Oakmont University,oakmont-university.example,university,US,Dallas,916,opportunity,49986920,2026-08-21T17:59:32.000Z
-23953735979,Brightwater Northfield Children's Hospital,brightwater-northfield-children-s-hospital.example,hospital,AU,Melbourne,637,opportunity,28451987,2026-09-01T08:28:01.000Z
-34339351719,Highland Children's Hospital,highland-children-s-hospital.example,hospital,SE,Gothenburg,3873,opportunity,84634470,2026-09-18T12:57:24.000Z
-35834751289,Stonebridge Components,stonebridge-components.example,manufacturing,US,Boston,3709,opportunity,49986920,2026-09-25T08:25:29.000Z
+24163173944,Beaconpoint Wireless Engineering Oy,beaconpoint-wireless-engineering.example,hospitality,FI,Jyväskylä,1202,opportunity,28451987,2026-03-28T14:57:35.000Z
+30168727757,Granite Airport Authority,granite-airport-authority.example,airport,US,Denver,438,opportunity,49986920,2026-04-10T12:35:00.000Z
+17206994008,University of Silverlake,university-of-silverlake.example,university,GB,Glasgow,869,opportunity,28451987,2026-04-14T11:10:59.000Z
+30855437502,Granite Maplewood Health System,granite-maplewood-health-system.example,hospital,US,Austin,1685,opportunity,49986920,2026-04-24T12:45:11.000Z
+36590066362,Atlasstream Communications,atlasstream-communications.example,manufacturing,IE,Dublin,587,opportunity,84634470,2026-05-01T17:31:47.000Z
+26815489612,Harborview Westbrook Children's Hospital,harborview-westbrook-children-s-hospital.example,hospital,SE,Stockholm,24493,opportunity,28451987,2026-05-05T10:11:27.000Z
+25639966207,Fairhaven University,fairhaven-university.example,university,US,Austin,1808,opportunity,68913217,2026-05-12T14:58:25.000Z
+28775269071,Lakeview Redhill Resorts Group,lakeview-redhill-resorts-group.example,hospitality,US,Chicago,3175,opportunity,68913217,2026-05-14T08:00:24.000Z
+21434673231,Northfield Stores,northfield-stores.example,retail,US,Denver,1664,opportunity,68913217,2026-05-24T16:51:50.000Z
+27729070418,Mapleworks Retail Group,mapleworks-retail-group.example,manufacturing,SE,Stockholm,3444,opportunity,28451987,2026-06-09T09:26:55.000Z
+33332213485,Clearwater State College,clearwater-state-college.example,university,US,Denver,420,opportunity,49986920,2026-06-19T14:10:48.000Z
+31101044180,Kingsbridge Steelworks,kingsbridge-steelworks.example,manufacturing,SE,Stockholm,3699,opportunity,84634470,2026-06-20T13:04:18.000Z
+20537259387,Highland Stadium Group,highland-stadium-group.example,venues,US,Denver,2382,opportunity,68913217,2026-07-01T09:37:03.000Z
+21520518924,Lumenpath Telecom Oy,lumenpath-telecom.example,retail,FI,Helsinki,1031,opportunity,28451987,2026-07-06T11:53:29.000Z
+38459389015,Oakmont Hotels,oakmont-hotels.example,hospitality,US,Austin,7063,opportunity,49986920,2026-07-12T15:31:09.000Z
+21551044175,Maplewood State College,maplewood-state-college.example,university,DE,Hamburg,526,opportunity,84634470,2026-07-26T13:03:21.000Z
+15490505046,Pinefield Systems Integration Pty Ltd,pinefield-systems-integration.example,logistics,AU,Perth,12526,opportunity,28451987,2026-08-07T13:42:15.000Z
+37385452361,Brightwater Resorts Group,brightwater-resorts-group.example,hospitality,ES,Barcelona,1516,opportunity,84634470,2026-08-08T11:43:23.000Z
+22595177905,Clearwater Precision Manufacturing,clearwater-precision-manufacturing.example,manufacturing,FI,Turku,2944,opportunity,28451987,2026-08-13T13:55:23.000Z
+30314438094,Harborcore Construction LLC,harborcore-construction.example,hospitality,US,Raleigh,3461,opportunity,49986920,2026-08-28T17:40:25.000Z

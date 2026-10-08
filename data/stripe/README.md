@@ -30,7 +30,7 @@ the bar height in the chart (~0.06 M, which the chart labels as 0,1); change it 
 
 ## What is modelled
 
-- **Self-serve licenses** (~1,300 customers): 6-month €599 and 12-month €1,000 subscriptions, 1–5 seats, paid by card
+- **Self-serve licenses** (~1,300 customers): 6-month €599 and 12-month €980 subscriptions, 1–5 seats, paid by card
   or SEPA debit. Buyers are network consultants, IT leads and heads of wireless (`customers.persona`).
   Includes renewals, churn, 6→12-month upgrades, seat changes, declined/expired cards with retries,
   involuntary churn, refunds and scheduled cancellations.

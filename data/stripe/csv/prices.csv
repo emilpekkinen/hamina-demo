@@ -1,6 +1,6 @@
 id,product_id,nickname,plan,currency,unit_amount,type,recurring_interval,recurring_interval_count,active,created
 price_1PzBpWVBZov7oibPYdDyuoxi,prod_M3CS6GTT1ck9Uq,Network Planner – 6-Month License,6_month,eur,59900,recurring,month,6,1,1642411800
-price_15mHNODG6kmsTAyehOoCotl4,prod_M3CS6GTT1ck9Uq,Network Planner – 12-Month License,12_month,eur,100000,recurring,year,1,1,1642411800
+price_15mHNODG6kmsTAyehOoCotl4,prod_M3CS6GTT1ck9Uq,Network Planner – 12-Month License,12_month,eur,98000,recurring,year,1,1,1642411800
 price_1jY4vdGA0UAGDPNOnXdqIbLt,prod_UkwBoiFOtO8drf,Enterprise – Kaarna University of Technology – 2023 term,enterprise,eur,11000000,recurring,year,1,1,1678116687
 price_1gcMtCQPHd41DMi83xKBhJdj,prod_UkwBoiFOtO8drf,Enterprise – St. Alder Regional Health System – 2023 term,enterprise,eur,13500000,recurring,year,1,1,1693575055
 price_1kNucL8K1EGHtRTSb4C2hpst,prod_UkwBoiFOtO8drf,Enterprise – Voltmark Fertigungstechnik GmbH – 2024 term,enterprise,eur,18000000,recurring,year,1,1,1706865217
